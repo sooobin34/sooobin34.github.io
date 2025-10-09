@@ -6,8 +6,8 @@ sections:
   - block: about
     content:
       title: About Me
-      authors: 
-      - 안수빈
+      author: 
+        - 안수빈
       show_name: true
       show_role: true
       #show_bio: true
@@ -17,4 +17,5 @@ sections:
       show_interests: true
 design:
   columns: '1'
+
 ---

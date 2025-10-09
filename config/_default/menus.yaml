@@ -5,7 +5,7 @@
 
 main:
   - name: About
-    url: /authors/안수빈/
+    url: /author/안수빈/
     weight: 100
 
   - name: Algorithm
