@@ -13,7 +13,6 @@ sections:
     design:
       columns: 1
       title_style: h2
-      spacing: wide
       show_role: true
       show_social: true
   
