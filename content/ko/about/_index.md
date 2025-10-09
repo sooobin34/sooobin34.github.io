@@ -6,7 +6,7 @@ sections:
   - block: about
     content:
       title: About Me
-      author: 
+      authors: 
       - 안수빈
       show_name: true
       show_role: true
