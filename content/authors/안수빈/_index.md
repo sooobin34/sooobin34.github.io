@@ -1,20 +1,19 @@
 ---
 # Display name
-title: Alice Wu 吳恩達
+title: 안수빈 (Ahn soo bin)
 
 # Full name (for SEO)
-first_name: Alice
-last_name: Wu
+first_name: 수빈
+last_name: 안
 
 # Username (this should match the folder name)
-authors:
-  - 吳恩達
+authors: 안수빈
 
 # Is this the primary user of the site?
 superuser: false
 
 # Role/position
-role: Professor of Artificial Intelligence
+role: 전북대학교 컴퓨터인공지능학부 3학년
 
 # Organizations/Affiliations
 organizations:
