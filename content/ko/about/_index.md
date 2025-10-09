@@ -3,7 +3,7 @@ title: "소개"
 type: landing
 
 sections:
-  - block: about #block: people
+  - block: people
     content:
       title: "About Me"
       subtitle: "안수빈 (Ahn Soo Bin)"
