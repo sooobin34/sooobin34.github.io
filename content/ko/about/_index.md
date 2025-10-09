@@ -1,19 +1,14 @@
 ---
-title: "About Test"
-date: 2025-10-09
+title: "소개"
 type: page
+slug: about
 
 sections:
   - block: markdown
     content:
-      title: "테스트 중입니다"
+      title: "안수빈 (Ahn Soo Bin)"
       text: |
-        안녕하세요!  
-        이 문장이 보인다면 **Hugo가 about 페이지를 정상적으로 렌더링 중입니다.**
-
-        만약 이 문장이 안 보이면,  
-        테마가 `page` 타입을 무시하거나 다른 경로(`layouts/page`)를 보고 있는 거예요.
-design:
-  columns: '1'
+        전북대학교 컴퓨터인공지능학부 3학년  
+        이메일: sooobin0304@naver.com  
+        깃허브: [sooobin34](https://github.com/sooobin34)
 ---
-
