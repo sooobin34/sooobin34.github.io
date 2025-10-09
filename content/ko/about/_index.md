@@ -6,6 +6,8 @@ sections:
   - block: people
     content:
       title: "About Me"
+      authors:
+        - 안수빈
       subtitle: "안수빈 (Ahn Soo Bin)"
       text: |
         저는 전북대학교 컴퓨터인공지능학부 3학년에 재학 중이며,  
@@ -15,8 +17,6 @@ sections:
         앞으로는 실무 중심의 개발 경험을 쌓으며,  
         기술로 사람들의 삶을 더 편리하게 만드는 개발자가 되고 싶습니다.
 
-      authors:
-        - 안수빈
 
     design:
       columns: 2               
