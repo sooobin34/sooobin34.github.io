@@ -5,30 +5,29 @@
 
 main:
   - name: About
-    url: /about/
+    url: /author/안수빈/
     weight: 100
 
   - name: Algorithm
-    url: /algorithm/
+    url: post
     weight: 200
   - parent: Algorithm
     name: Project1
-    url: /algorithm/project1/
+    url: project1
     weight: 210
   - parent: Algorithm
     name: Project2
-    url: /algorithm/project2/
+    url: post
     weight: 220
-
-
+  
   - name: Database
-    url: /database/
+    url: post
     weight: 300
 
   - name: Skills
-    url: /skills/
+    url: skills
     weight: 400
 
   - name: Contact
-    url: /contact/
+    url: contact
     weight: 500
