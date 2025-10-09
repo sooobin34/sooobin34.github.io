@@ -42,7 +42,7 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:sooobin@naver.com'
+    link: 'mailto:sooobin0304@naver.com'
   - icon: instagram
     icon_pack: fab
     link: https://instagram.com/_soobin116
