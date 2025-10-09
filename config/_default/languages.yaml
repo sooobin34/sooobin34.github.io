@@ -2,29 +2,25 @@
 #   Create a section for each of your site's languages.
 #   Documentation: https://docs.hugoblox.com/reference/language/
 
-
-
-
-en:
-  languageCode: en
-  contentDir: content/en
-  weight: 1
-  title: "My Portfolio"
-  params:
-    description: "English version of my portfolio"
-
 ko:
   languageCode: ko
   contentDir: content/ko
-  weight: 2
+  weight: 1
   title: "나의 포트폴리오"
   params:
     description: "한국어 버전 포트폴리오"
 
-# Default language
+en:
+  languageCode: en
+  contentDir: content/en
+  weight: 2
+  title: "My Portfolio"
+  params:
+    description: "English version of my portfolio"
+
+
 defaultContentLanguage: ko
 defaultContentLanguageInSubdir: false
-
 #en:
   #languageCode: en-us
   # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
