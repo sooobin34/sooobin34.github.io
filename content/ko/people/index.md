@@ -12,7 +12,7 @@ sections:
 
     design:
       columns: 1
-      show_interests: true
+      font_size: large
       show_role: true
       show_social: true
   
