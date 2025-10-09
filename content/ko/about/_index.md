@@ -1,10 +1,10 @@
 ---
 title: "소개"
-type: page
+type: landing
 slug: about
 
 sections:
-  - block: markdown
+  - block: people
     content:
       title: "안수빈 (Ahn Soo Bin)"
       text: |
