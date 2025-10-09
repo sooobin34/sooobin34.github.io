@@ -7,7 +7,7 @@ sections:
     content:
       title: "About Me"
       authors:
-        - 안수빈
+        - admin
       subtitle: "안수빈 (Ahn Soo Bin)"
       text: |
         저는 전북대학교 컴퓨터인공지능학부 3학년에 재학 중이며,  
@@ -22,6 +22,7 @@ sections:
       show_role: true
       show_social: true
       show_organizations: true
+      show_email: true
       background:
         color: "#ffffff"
 ---
