@@ -33,6 +33,6 @@ social:
 
 email: "sooobin0304@naver.com"
 
-user_groups:
-  - Student
+#user_groups:
+#  - Student
 ---
