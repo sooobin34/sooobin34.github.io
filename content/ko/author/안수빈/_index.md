@@ -10,7 +10,7 @@ first_name: 수빈
 last_name: 안
 
 # Username (this should match the folder name)
-authors: 
+author: 
   - 안수빈
 
 # Is this the primary user of the site?
