@@ -3,62 +3,33 @@
 #     desired widget in your `content/home/` folder.
 #   The weight parameter defines the order that the links will appear in.
 
-ko:
-  main:
-    - name: 소개
-      url: /about/
-      weight: 100
+main:
+  - name: About
+    url: /about/
+    weight: 100
 
-    - name: 알고리즘
-      url: /algorithm/
-      weight: 200
-    - parent: 알고리즘
-      name: 프로젝트1
-      url: /algorithm/project1/
-      weight: 210
-    - parent: 알고리즘
-      name: 프로젝트2
-      url: /algorithm/project2/
-      weight: 220
-    
-    - name: 데이터베이스
-      url: /database/
-      weight: 300
-    
-    - name: 기술
-      url: /skills/
-      weight: 400
-    
-    - name: 연락처
-      url: /contact/
-      weight: 500
+  - name: Algorithm
+    url: /algorithm/
+    weight: 200
 
-en:
-  main:
-    - name: About
-      url: /en/about/
-      weight: 100
-    
-    - name: Algorithm
-      url: /en/algorithm/
-      weight: 200
-    - parent: Algorithm
-      name: Project1
-      url: /en/algorithm/project1/
-      weight: 210
-    - parent: Algorithm
-      name: Project2
-      url: /en/algorithm/project2/
-      weight: 220
-    
-    - name: Database
-      url: /en/database/
-      weight: 300
-    
-    - name: Skills
-      url: /en/skills/
-      weight: 400
-    
-    - name: Contact
-      url: /en/contact/
-      weight: 500
+  - parent: Algorithm
+    name: Project1
+    url: /algorithm/project1/
+    weight: 210
+
+  - parent: Algorithm
+    name: Project2
+    url: /algorithm/project2/
+    weight: 220
+
+  - name: Database
+    url: /database/
+    weight: 300
+
+  - name: Skills
+    url: /skills/
+    weight: 400
+
+  - name: Contact
+    url: /contact/
+    weight: 500
