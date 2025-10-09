@@ -5,7 +5,8 @@ type: page
 sections:
   - block: portrait
     content:
-      author: 안수빈
+      author: 
+      - 안수빈
       show_name: true
       show_role: true
       show_bio: true
