@@ -10,7 +10,7 @@ sections:
       - 안수빈
       show_name: true
       show_role: true
-      show_bio: true
+      #show_bio: true
       show_email: true
       show_social: true
       show_education: true

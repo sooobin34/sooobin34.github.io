@@ -11,7 +11,7 @@ authors:
   - 안수빈
 
 # Is this the primary user of the site?
-superuser: ture
+superuser: true
 
 # Role/position
 role: 전북대학교 컴퓨터인공지능학부 3학년
