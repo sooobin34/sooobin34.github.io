@@ -5,29 +5,29 @@
 
 main:
   - name: About
-    url: about
+    url: /about/
     weight: 100
 
   - name: Algorithm
-    url: post
+    url: /algorithm/
     weight: 200
   - parent: Algorithm
     name: Project1
-    url: project1
+    url: /algorithm/project1/
     weight: 210
   - parent: Algorithm
     name: Project2
-    url: post
+    url: /algorithm/project2/
     weight: 220
   
   - name: Database
-    url: post
+    url: /database/
     weight: 300
 
   - name: Skills
-    url: skills
+    url: /skills/
     weight: 400
 
   - name: Contact
-    url: contact
+    url: /contact/
     weight: 500
