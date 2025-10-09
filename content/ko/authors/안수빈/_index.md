@@ -2,12 +2,15 @@
 # Display name
 title: 안수빈 (Ahn soo bin)
 
+slug: 안수빈
+type: author
+
 # Full name (for SEO)
 first_name: 수빈
 last_name: 안
 
 # Username (this should match the folder name)
-author: 
+authors: 
   - 안수빈
 
 # Is this the primary user of the site?

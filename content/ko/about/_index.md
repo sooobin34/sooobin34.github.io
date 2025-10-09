@@ -2,6 +2,7 @@
 title: About Me
 date: 2025-10-09
 type: page
+
 sections:
   - block: about
     content:
