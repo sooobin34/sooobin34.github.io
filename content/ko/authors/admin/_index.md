@@ -20,13 +20,13 @@ organizations:
     url: "https://www.jbnu.ac.kr"
 
 
-bio: "운영체제, 데이터베이스, 인공지능에 관심이 있으며, 다양한 프로젝트를 통해 기술적 성장을 이루고 있습니다."
+bio: ""
 avatar: "avatar.jpg"
 
-interests:
-  - 운영체제 (Operating Systems)
-  - 데이터베이스 (Databases)
-  - 인공지능 (Artificial Intelligence)
+#interests:
+#  - 운영체제 (Operating Systems)
+#  - 데이터베이스 (Databases)
+#  - 인공지능 (Artificial Intelligence)
 
 social:
   - icon: envelope
