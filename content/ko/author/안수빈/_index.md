@@ -3,11 +3,17 @@ title: "안수빈 (Ahn Soo Bin)"
 type: author
 slug: "안수빈"
 
+# Full name (for SEO)
+first_name: 수빈
+last_name: 안
+
 authors:
   - 안수빈
 
 superuser: true
+
 role: "전북대학교 컴퓨터인공지능학부 3학년"
+
 organizations:
   - name: "전북대학교 (Jeonbuk National University)"
     url: "https://www.jbnu.ac.kr"

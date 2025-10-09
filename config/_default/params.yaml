@@ -15,10 +15,10 @@ appearance:
 
 marketing:
   seo:
-    site_type: Organization
+    site_type: Person
     local_business_type: ''
     org_name: 'My_Portfolio'
-    description: '웹서비스 설계 과제용 개인 포트폴리오'
+    description: '전북대학교 컴퓨터인공지능학부 안수빈'
     twitter: 'GetResearchDev'
   analytics:
     google_analytics: ''
