@@ -6,9 +6,11 @@ sections:
   - block: people
     content:
       title: "About Me"
-      authors:
-        - admin
       subtitle: "안수빈 (Ahn Soo Bin)"
+
+      user_groups:
+        - admin
+        
       text: |
         저는 전북대학교 컴퓨터인공지능학부 3학년에 재학 중이며,  
         운영체제, 데이터베이스, 인공지능 분야에 깊은 관심을 가지고 있습니다.  
