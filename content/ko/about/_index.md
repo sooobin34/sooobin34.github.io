@@ -1,10 +1,11 @@
 ---
-title: 안수빈
+title: About Me
 date: 2025-10-09
 type: page
 sections:
-  - block: portrait
+  - block: about
     content:
+      title: About Me
       author: 
       - 안수빈
       show_name: true
