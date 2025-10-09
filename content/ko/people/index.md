@@ -3,7 +3,7 @@ title: "About Me"
 type: landing
 
 sections:
-  - block: markdown
+  - block: people
     content:
       title: "About Me"
       subtitle: "안수빈 (Ahn Soo Bin)"
