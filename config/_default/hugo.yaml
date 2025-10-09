@@ -15,13 +15,13 @@ hasCJKLanguage: false
 defaultContentLanguageInSubdir: false
 removePathAccents: true
 
-languages:
-  ko:
-    languageName: 한국어
-    contentDir: content/ko
-  en:
-    languageName: English
-    contentDir: content/en
+#languages:
+#  ko:
+#    languageName: 한국어
+#    contentDir: content/ko
+#  en:
+#    languageName: English
+#    contentDir: content/en
     
 ############################
 ## ADVANCED
