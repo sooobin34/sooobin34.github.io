@@ -1,6 +1,6 @@
 ---
 title: "안수빈 (Ahn Soo Bin)"
-type: author
+
 slug: "안수빈"
 
 # Full name (for SEO)
