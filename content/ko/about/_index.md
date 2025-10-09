@@ -16,7 +16,7 @@ sections:
         사용자 중심의 효율적인 시스템을 설계하기 위해 노력하고 있습니다.  
         앞으로는 실무 중심의 개발 경험을 쌓으며,  
         기술로 사람들의 삶을 더 편리하게 만드는 개발자가 되고 싶습니다.
-
+      avatar: "avatar.jpg"
       show_name: true
       show_role: true
       show_organizations: true
