@@ -8,18 +8,18 @@ main:
     url: /author/안수빈-ahn-soo-bin/
     weight: 100
 
-  - name: Algorithm
-    url: /algorithm/
+  - name: AI
+    url: /ai/
     weight: 200
 
-  - parent: Algorithm
+  - parent: AI
     name: Project1
-    url: /algorithm/project1/
+    url: /ai/project1/
     weight: 210
 
-  - parent: Algorithm
+  - parent: AI
     name: Project2
-    url: /algorithm/project2/
+    url: /ai/project2/
     weight: 220
 
   - name: Database
