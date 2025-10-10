@@ -7,9 +7,6 @@ type: post
 date: 2025-10-10
 share: false
 
-design:
-  align: center
-  
 tags:
   - Artificial Intelligence
   - Search Algorithm
@@ -22,6 +19,7 @@ links:
     name: "GitHub Repository"
     url: "https://github.com/sooobin34/8puzzle-search"
 ---
+{{< center >}}
                                                                                                                                                         
 ## 🧩 프로젝트 개요
 이 프로젝트는 인공지능 기초 수업의 탐색 알고리즘 단원 과제로 수행한 **8퍼즐 문제(8-Puzzle Problem)** 해결 프로젝트입니다.  
@@ -49,3 +47,4 @@ def heuristic(state, problem=None):
             if state.cells[row][col] != 0 and state.cells[row][col] != goal[row][col]:
                 misplaced += 1
     return misplaced
+{{< /center >}}

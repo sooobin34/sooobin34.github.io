@@ -6,9 +6,6 @@ summary: "애견 정보를 제공하고 용품을 거래할 수 있는 웹사이
 date: 2025-10-10
 type: post
 
-design:
-  align: center
-  
 tags:
   - Database
   - SQL
@@ -21,6 +18,7 @@ links:
     url: "https://github.com/sooobin34/database-project"
 
 ---
+{{< center >}}
                                                                                                                                                         
 ## 📘 프로젝트 개요
 애견인을 위한 다양한 정보를 제공하고, 애견 용품을 직거래·공동구매할 수 있는 웹사이트를 위한  
@@ -66,3 +64,5 @@ ERD 설계와 정규화를 통해 데이터 중복을 최소화하고,
 테이블 간 관계를 명확히 하여 **데이터 무결성과 관리 효율성**을 높였습니다.  
 또한 SQL Developer를 이용해 실제 데이터를 삽입하고 쿼리를 실행하며  
 DB 구축 과정을 실무적으로 경험할 수 있었습니다.
+
+{{< /center >}}

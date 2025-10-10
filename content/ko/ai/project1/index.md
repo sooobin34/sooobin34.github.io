@@ -7,9 +7,6 @@ type: post
 date: 2025-10-10
 share: false
 
-design:
-  align: center
-  
 image:
   filename: "omok_ai.png"
   caption: "AI가 다음 수를 계산하는 탐색 과정 시각화"
@@ -26,6 +23,7 @@ links:
     name: "GitHub Repository"
     url: "https://github.com/sooobin34/ai-gomoku"
 ---
+{{< center >}}
                                                                                                                                                         
 ## 🎯 프로젝트 개요
 이 프로젝트는 **Alpha-Beta 탐색(Pruning)** 과 **휴리스틱 평가함수**를 적용하여  
@@ -69,3 +67,4 @@ AI는 가능한 모든 수를 탐색하지 않고, 불필요한 가지를 가지
 - 게임 인공지능에서 **탐색 공간 축소와 평가 함수 설계의 중요성**을 체감했습니다.  
 - 상태 평가를 수식화하면서 **AI의 의사결정 로직을 수학적으로 설계하는 과정**을 익혔습니다.  
 - 단순한 규칙 기반 로직보다 **탐색 + 휴리스틱의 조합이 얼마나 효율적인지** 이해했습니다.
+{{< /center >}}
