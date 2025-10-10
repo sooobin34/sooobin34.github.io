@@ -7,8 +7,7 @@ date: 2025-10-10
 
 tags:
   - Algorithm
-  - Visualization
-  - JavaScript
+  - Python
 
 links:
   - icon: github
