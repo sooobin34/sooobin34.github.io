@@ -47,6 +47,3 @@ links:
 이번 프로젝트를 통해 **요구 분석 → 개념적 설계 → 논리적 설계 → 물리적 설계 → 구현**의 데이터베이스 구축 전 과정을 수행했습니다.  
 ERD 설계와 정규화를 통해 데이터 중복을 최소화하고, 테이블 간 관계를 명확히 하여 **데이터 무결성과 관리 효율성**을 높였습니다.  
 또한 SQL Developer를 이용해 실제 데이터를 삽입하고 쿼리를 실행하며 DB 구축 과정을 실무적으로 경험할 수 있었습니다.
-
----
-[![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sooobin34/database-project)
