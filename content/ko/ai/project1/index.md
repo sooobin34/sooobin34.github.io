@@ -7,6 +7,9 @@ type: post
 date: 2025-10-10
 share: false
 
+design:
+  align: center
+  
 image:
   filename: "omok_ai.png"
   caption: "AI가 다음 수를 계산하는 탐색 과정 시각화"

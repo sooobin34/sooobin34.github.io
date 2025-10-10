@@ -7,6 +7,9 @@ type: post
 date: 2025-10-10
 share: false
 
+design:
+  align: center
+  
 tags:
   - Artificial Intelligence
   - Search Algorithm

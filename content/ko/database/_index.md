@@ -2,10 +2,13 @@
 title: "DB Project"
 subtitle:  "애견인을 위한 정보 제공 및 거래를 위한 DB 설계 및 구현"
 summary: "애견 정보를 제공하고 용품을 거래할 수 있는 웹사이트의 데이터베이스 설계 및 구현"
-date: 2025-10-10
 
+date: 2025-10-10
 type: post
 
+design:
+  align: center
+  
 tags:
   - Database
   - SQL
