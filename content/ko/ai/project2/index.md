@@ -49,5 +49,6 @@ sections:
                       if state.cells[row][col] != 0 and state.cells[row][col] != goal[row][col]:
                           misplaced += 1
               return misplaced
-        
+    design:
+      align: center       
 ---
