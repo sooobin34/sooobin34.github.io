@@ -19,7 +19,6 @@ links:
     name: "GitHub Repository"
     url: "https://github.com/sooobin34/database-project"
 ---
-[![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sooobin34/database-project)
 
 ## 📘 프로젝트 개요  
 애견인을 위한 다양한 정보를 제공하고, 애견 용품을 직거래·공동구매할 수 있는 웹사이트를 위한 **데이터베이스를 설계하고 구현한 프로젝트**입니다.  
