@@ -17,8 +17,9 @@ marketing:
   seo:
     site_type: Person
     local_business_type: ''
-    org_name: 'SB_Portfolio'
-    description: '전북대학교 컴퓨터인공지능학부 안수빈'
+    org_name: 'Jeonbuk National University'
+    title: '전북대 안수빈 포트폴리오 | Ahn Soo Bin Portfolio'
+    description: '전북대학교 컴퓨터인공지능학부 안수빈의 포트폴리오 사이트입니다.'
     twitter: 'GetResearchDev'
   analytics:
     google_analytics: ''
@@ -26,7 +27,7 @@ marketing:
     google_tag_manager: ''
     microsoft_clarity: ''
   verification:
-    google: ''
+    google: 'BbSjPLeW3etJRsgqJ4S7ml6XfnnITcPmZWYOFjlJXsQ'
     baidu: ''
 
 # Site header
