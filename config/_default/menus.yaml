@@ -26,10 +26,14 @@ main:
     url: /database/
     weight: 300
 
+  - name: Python
+    url: /Python/
+    weight: 400
+
   - name: Skills
     url: /skills/
-    weight: 400
+    weight: 500
 
   - name: Contact
     url: /contact/
-    weight: 500
+    weight: 600
