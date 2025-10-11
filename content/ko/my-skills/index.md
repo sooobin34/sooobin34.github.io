@@ -15,14 +15,16 @@ tags:
   - Tech Stack
   - Portfolio
 ---
-<hr>
+---
 <br>
 
 ## 💻 프로그래밍 언어
+<div style= "text-align: justfiy;">
 - **C / C++** — 알고리즘, 자료구조, 운영체제 등 전공 실습에서 활용  
 - **Python** — 인공지능, 데이터 처리, 게임(Pygame) 프로젝트 구현  
 - **Java** — 객체지향 프로그래밍 및 기본 문법 학습  
 - **SQL** — Oracle SQL Developer를 활용한 데이터베이스 설계 수행  
+</div>
 
 <br>
 
