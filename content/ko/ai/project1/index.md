@@ -9,7 +9,6 @@ share: false
 
 image:
   filename: "omok_ai.png"
-  caption: "AI가 다음 수를 계산하는 탐색 과정 시각화"
 
 tags:
   - Artificial Intelligence
@@ -17,18 +16,20 @@ tags:
   - Search Algorithm
   - Python
 
-links:
-  - icon: github
-    icon_pack: fab
-    name: "GitHub Repository"
-    url: "https://github.com/sooobin34/ai-gomoku"
+#links:
+#  - icon: github
+#    icon_pack: fab
+#    name: "GitHub Repository"
+#    url: "https://github.com/sooobin34/ai-gomoku"
 ---
+<br>
 
 ## 🎯 프로젝트 개요
 이 프로젝트는 **Alpha-Beta 탐색(Pruning)** 과 **휴리스틱 평가함수**를 적용하여  
 AI가 스스로 돌의 위치를 판단하는 **오목 게임 인공지능**을 구현한 것입니다.  
 AI는 가능한 모든 수를 탐색하지 않고, 불필요한 가지를 가지치기(pruning)하여  
 **5초 이내에 합리적인 수를 계산**할 수 있습니다.
+[![Click here! →](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sooobin34/ai-gomoku)
 
 <br>
 
