@@ -3,7 +3,7 @@
 # Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-title: My_Portfolio # Website name
+title: SB_Portfolio # Website name
 baseURL: 'https://sooobin34.github.io/' # Website URL
 
 ############################

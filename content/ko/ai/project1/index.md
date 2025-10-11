@@ -8,7 +8,7 @@ date: 2025-10-10
 share: false
 
 image:
-  filename: "omok_ai.png"
+  filename: "omok_ai.jpg"
 
 tags:
   - Artificial Intelligence
@@ -29,7 +29,10 @@ tags:
 AI가 스스로 돌의 위치를 판단하는 **오목 게임 인공지능**을 구현한 것입니다.  
 AI는 가능한 모든 수를 탐색하지 않고, 불필요한 가지를 가지치기(pruning)하여  
 **5초 이내에 합리적인 수를 계산**할 수 있습니다.
-[![Click here! →](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sooobin34/ai-gomoku)
+
+<br>
+
+👉 **Click here! →** [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sooobin34/ai-gomoku)
 
 <br>
 
@@ -75,3 +78,5 @@ AI는 가능한 모든 수를 탐색하지 않고, 불필요한 가지를 가지
 - 게임 인공지능에서 **탐색 공간 축소와 평가 함수 설계의 중요성**을 체감했습니다.  
 - 상태 평가를 수식화하면서 **AI의 의사결정 로직을 수학적으로 설계하는 과정**을 익혔습니다.  
 - 과제를 통해 단순한 규칙 기반 로직보다 **탐색 + 휴리스틱의 조합이 얼마나 효율적인지** 이해하게 되었습니다.
+
+<br>
