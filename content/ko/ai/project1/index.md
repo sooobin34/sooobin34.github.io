@@ -16,7 +16,7 @@ tags:
   - Search Algorithm
   - Python
 
-#links:
+links:
   - icon: github
     icon_pack: fab
     name: "GitHub Repository"

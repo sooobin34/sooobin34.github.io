@@ -16,7 +16,7 @@ tags:
   - Python
   - A*
 
-#links:
+links:
   - icon: github
     icon_pack: fab
     name: "GitHub Repository"
