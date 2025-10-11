@@ -31,7 +31,7 @@ AI는 가능한 모든 수를 탐색하지 않고, 불필요한 가지를 가지
 <br>
 
 ## 📄 프로젝트 보고서
-[📥 Project 1 보고서 다운로드](upload/project1_report.pdf){target="_blank"}
+프로젝트에 대해 더 알고 싶다면 [보고서]를 다운받으세요! (files/project1_report.pdf)
 
 <br>
 
