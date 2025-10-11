@@ -31,6 +31,11 @@ links:
 
 <br>
 
+## 📄 프로젝트 보고서
+프로젝트에 대해 더 알고 싶다면 [보고서](/files/db_report.pdf)를 다운받으세요!
+
+<br>
+
 ## ⚙️ 사용 기술  
 - **DBMS:** Oracle SQL Developer  
 - **언어:** SQL  
