@@ -31,7 +31,7 @@ main:
     weight: 400
 
   - name: Skills
-    url: /skills/
+    url: /my-skills/
     weight: 500
 
   - name: Contact
