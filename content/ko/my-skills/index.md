@@ -3,8 +3,9 @@ title: "Skills"
 subtitle: "보유 기술 및 학습 역량"
 summary: "전공 수업과 개인 프로젝트를 통해 익힌 주요 프로그래밍 언어, 개발 도구, 운영체제 경험을 정리했습니다."
 
-type: landing
+type: post
 date: 2025-10-10
+share: false
 
 image:
   filename: "skills.png"
