@@ -25,11 +25,11 @@ links:
 <br>
 
 ## 🎯 프로젝트 개요
-<p style="text-align: justify; text-justify: inter-word; word-break: keep-all; margin-left: 0; margin-right: 0;">
+<div style="text-align: justify;">
 이 프로젝트는 <b>Alpha-Beta 탐색(Pruning)</b>과 <b>휴리스틱 평가함수</b>를 적용하여 AI가 스스로 돌의 위치를 판단하는 오목 게임 인공지능을 구현한 것입니다. 
 AI는 가능한 모든 수를 탐색하지 않고, 불필요한 가지를 가지치기(pruning)하여 
 <b>5초 이내에 합리적인 수를 계산</b>할 수 있습니다.
-</p>
+</div>
 
 
 <br>
