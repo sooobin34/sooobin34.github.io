@@ -31,7 +31,7 @@ AI는 가능한 모든 수를 탐색하지 않고, 불필요한 가지를 가지
 <br>
 
 ## 📄 프로젝트 보고서
-{{< button href="files/project1_report.pdf" text="📥 Project 1 보고서 다운로드" >}}
+[📥 Project 1 보고서 다운로드](upload/project1_report.pdf){target="_blank"}
 
 <br>
 
