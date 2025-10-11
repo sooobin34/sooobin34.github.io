@@ -17,10 +17,10 @@ tags:
   - Python
 
 #links:
-#  - icon: github
-#    icon_pack: fab
-#    name: "GitHub Repository"
-#    url: "https://github.com/sooobin34/ai-gomoku"
+  - icon: github
+    icon_pack: fab
+    name: "GitHub Repository"
+    url: "https://github.com/sooobin34/ai-gomoku"
 ---
 <br>
 
@@ -29,10 +29,6 @@ tags:
 AI가 스스로 돌의 위치를 판단하는 **오목 게임 인공지능**을 구현한 것입니다.  
 AI는 가능한 모든 수를 탐색하지 않고, 불필요한 가지를 가지치기(pruning)하여  
 **5초 이내에 합리적인 수를 계산**할 수 있습니다.
-
-<br>
-
-👉 **Click here! →** [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sooobin34/ai-gomoku)
 
 <br>
 

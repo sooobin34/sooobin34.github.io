@@ -17,21 +17,17 @@ tags:
   - ERD
 
 # 깃허브 링크 정보
-#links:
-#  - icon: github
-#    icon_pack: fab
-#    name: "GitHub Repository"
-#    url: "https://github.com/sooobin34/database-project"
+links:
+  - icon: github
+    icon_pack: fab
+    name: "GitHub Repository"
+    url: "https://github.com/sooobin34/database-project"
 ---
 <br>
 
 ## 📘 프로젝트 개요  
 애견인을 위한 다양한 정보를 제공하고, 애견 용품을 직거래·공동구매할 수 있는 웹사이트를 위한 **데이터베이스를 설계하고 구현한 프로젝트**입니다.  
 회원, 반려견, 분양, 병원, 거래 등 여러 기능을 효율적으로 관리할 수 있는 구조를 구축했습니다.  
-
-<br>
-
-👉 **Click here! →** [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sooobin34/database-project)
 
 <br>
 

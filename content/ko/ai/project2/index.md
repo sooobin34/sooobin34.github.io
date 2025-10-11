@@ -17,18 +17,16 @@ tags:
   - A*
 
 #links:
-#  - icon: github
-#    icon_pack: fab
-#    name: "GitHub Repository"
-#    url: "https://github.com/sooobin34/8puzzle-search"      
+  - icon: github
+    icon_pack: fab
+    name: "GitHub Repository"
+    url: "https://github.com/sooobin34/8puzzle-search"      
 ---
 <br>
 
 ## 🧩 프로젝트 개요
 이 프로젝트는 인공지능 기초 수업의 탐색 알고리즘 단원 과제로 수행한 **8퍼즐 문제(8-Puzzle Problem)** 해결 프로젝트입니다.  
 목표 상태에 도달하기 위해 다양한 탐색 기법(DFS, BFS, UCS, A*)을 직접 구현하고 성능을 비교하였습니다.8퍼즐은 3×3 보드에 숫자 타일이 배치되어 있으며, 빈 칸(0)을 상하좌우로 이동시켜 목표 상태에 도달하는 문제입니다.
-
-👉 **Click here! →** [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sooobin34/8puzzle-search)
 
 <br>
 
