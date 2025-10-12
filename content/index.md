@@ -1,46 +1,56 @@
 ---
-title:
-date: 2022-10-24
+title: "SB_Portfolio"
 type: landing
+date: 2025-10-12
 
 sections:
   - block: hero
     content:
-      title: |
-        안수빈의 포트폴리오
-      image:
-        filename: welcome.jpg
+      title: "안수빈의 개발 포트폴리오"
       text: |
-        <br>
         전북대학교 컴퓨터인공지능학부  
-        **Database · Algorithm · AI Project Portfolio**
+        AI · Database · Web Development  
+      image:
+        filename: main.jpg
+        filters:
+          brightness: 0.4
+      align: center
+
+  # 슬라이더
+
+  - block: carousel
+    content:
+      slides:
+        - image:
+            filename: slide-ai.jpg
+          title: "AI 프로젝트"
+          text: "탐색 알고리즘을 이용한 퍼즐 AI 구현"
+        - image:
+            filename: slide-db.jpg
+          title: "Database 프로젝트"
+          text: "애견인 커뮤니티 DB 설계 및 구현"
+        - image:
+            filename: slide-py.jpg
+          title: "파이썬 개발"
+          text: "파이썬을 이용한 게임 개발 및 알고리즘 구현"
+    design:
+      interval: 3500
+      height: "medium"
+      show_caption: true
+
   
+  # 프로젝트 카드 9개 (3×3)
+
   - block: collection
     content:
-      title: 📂 My Projects
-      subtitle: "AI, Database, Algorithm Projects"
-      text: "학부 프로젝트들을 카드 형태로 정리했습니다."
+      title: "📂 주요 프로젝트"
+      subtitle: "AI · Database · Web 등 다양한 작업물"
       count: 9
       filters:
         folders:
-          - project        # <- 프로젝트 폴더를 불러옴
-        author: ''
-        category: ''
-        tag: ''
-        publication_type: ''
-        exclude_featured: false
+          - project
       order: desc
     design:
       view: card
-      columns: '3'         # ✅ 가로 3개 × 세로 3줄 → 총 9개 카드
-      background:
-        color: 'none'
-
-  - block: markdown
-    content:
-      title: ''
-      text: |
-        {{% cta cta_link="./contact/" cta_text="📧 연락하기 →" %}}
-    design:
-      columns: '1'
+      columns: '3'
 ---
