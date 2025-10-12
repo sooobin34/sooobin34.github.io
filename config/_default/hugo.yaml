@@ -11,17 +11,28 @@ baseURL: 'https://sooobin34.github.io/' # Website URL
 ############################
 
 defaultContentLanguage: ko
-hasCJKLanguage: false
-defaultContentLanguageInSubdir: false
+hasCJKLanguage: true
+defaultContentLanguageInSubdir: ture
 removePathAccents: true
 
 languages:
   ko:
     languageName: 한국어
+    weight: 1
     contentDir: content/ko
+    title: SB_Portfolio
+    params:
+      description: "안수빈의 포트폴리오"
+      home_url: /ko/   
   en:
     languageName: English
+    weight: 2
     contentDir: content/en
+    title: SB_Portfolio
+    params:
+      description: "Portfolio of Ahn Soo Bin"
+      home_url: /en/
+
     
 ############################
 ## ADVANCED
