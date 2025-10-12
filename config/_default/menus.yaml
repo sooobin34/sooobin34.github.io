@@ -4,6 +4,13 @@
 #   The weight parameter defines the order that the links will appear in.
 
 main:
+  - name: Home
+    url: /
+    weight: 1
+    identifier: hidden-home
+    params:
+      display: false
+
   - name: About
     url: /author/안수빈-ahn-soo-bin/
     weight: 100
