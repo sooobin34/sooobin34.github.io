@@ -61,67 +61,11 @@ sections:
           - database
           - python
     design:
-      view: card
-      columns: 3
+      view: card       
+      columns: 3       
       spacing:
-        padding: ["10px", "20px", "20px", "20px"]
-    advanced:
-      css_style: |
-        /* 전체 카드 레이아웃 강제 (3×3) */
-        .block-collection .section-body {
-          display: grid !important;
-          grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) !important;
-          gap: 28px !important;
-          justify-items: center !important;
-          padding-top: 20px !important;
-        }
+        padding: ["20px", "20px", "20px", "20px"]
 
-        /* 개별 카드 박스 스타일 */
-        .block-collection article {
-          background: #fff !important;
-          border-radius: 14px !important;
-          box-shadow: 0 4px 14px rgba(0,0,0,0.1) !important;
-          overflow: hidden !important;
-          transition: all 0.25s ease !important;
-          width: 100% !important;
-          max-width: 360px !important;
-          display: flex !important;
-          flex-direction: column !important;
-          justify-content: space-between !important;
-        }
-
-        /* 이미지 */
-        .block-collection article img {
-          width: 100% !important;
-          height: 210px !important;
-          object-fit: cover !important;
-          border-bottom: 1px solid #ddd !important;
-        }
-
-        /* hover 효과 */
-        .block-collection article:hover {
-          transform: translateY(-6px) scale(1.02) !important;
-          box-shadow: 0 8px 18px rgba(0,0,0,0.2) !important;
-        }
-
-        /* 텍스트 꾸미기 */
-        .block-collection article h3 {
-          font-size: 1.15rem !important;
-          font-weight: 700 !important;
-          color: #0044cc !important;
-          padding: 14px 18px 6px !important;
-        }
-
-        .block-collection article p {
-          font-size: 0.95rem !important;
-          color: #444 !important;
-          padding: 0 18px 18px !important;
-        }
-
-        /* 카드 간격 정리 */
-        .block-collection .article-style {
-          margin: 0 !important;
-        }
 
   # 자기소개 요약
   - block: markdown
