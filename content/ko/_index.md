@@ -60,13 +60,13 @@ sections:
       page_type: post
       filters:
         folders:
-          - ko/authors/authors-info
-          - ko/ai
-          - ko/ai-info
-          - ko/database
-          - ko/python
-          - ko/my-skills/my-skills-info
-          - ko/contact/contact-info
+          - authors/authors_info
+          - ai
+          - ai_info
+          - database
+          - python
+          - my-skills/my-skills_info
+          - contact/contact_info
     design:
       view: card
       columns: 3
