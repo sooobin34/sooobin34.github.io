@@ -65,20 +65,7 @@ sections:
       columns: 3
       spacing:
         padding: ["20px", "20px", "20px", "20px"]
-    advanced:
-      css_style: |
-        /* 카드 전체를 감싸는 컨테이너를 grid로 변경 */
-        .section-collection .cards {
-          display: grid !important;
-          grid-template-columns: repeat(3, 1fr) !important;
-          gap: 1.5rem !important;
-        }
-
-        /* 각 카드 크기 균일하게 */
-        .section-collection .card {
-          width: 100% !important;
-        }
-
+        
   # 자기소개 요약
   - block: markdown
     content:
