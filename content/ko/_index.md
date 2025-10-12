@@ -3,7 +3,7 @@ title: ""
 type: landing
 
 sections:
-  # ✅ 메인 이미지 슬라이더
+  # 메인 이미지 슬라이더
   - block: slider
     content:
       slides:
@@ -49,11 +49,11 @@ sections:
       css_style: |
         .slick-prev, .slick-next { display: none !important; }
 
-  # ✅ 프로젝트 카드 (3×3 그리드 강제)
+  #프로젝트 카드 
   - block: collection
     content:
       title: "주요 프로젝트"
-      subtitle: "AI · Database · Python 분야의 다양한 프로젝트를 한눈에"
+      subtitle: "AI · Database · Python 프로젝트"
       count: 9
       filters:
         folders:
@@ -61,7 +61,7 @@ sections:
           - database
           - python
     design:
-      view: card       
+      view: masonry      
       columns: 3
       spacing:
         padding: ["20px", "20px", "20px", "20px"]
