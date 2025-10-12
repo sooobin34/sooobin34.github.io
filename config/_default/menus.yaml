@@ -17,13 +17,13 @@ main:
     weight: 200
 
   - parent: AI
-    name: Project1
-    url: /ai/project1/
+    name: AI_Project1
+    url: /ai/ai_project1/
     weight: 210
 
   - parent: AI
-    name: Project2
-    url: /ai/project2/
+    name: AI_Project2
+    url: /ai/ai_project2/
     weight: 220
 
   - name: Database
