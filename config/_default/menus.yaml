@@ -41,7 +41,7 @@ main:
 
   - parent: Python
     name: Py_Project1
-    url: /database/py_project1/
+    url: /python/py_project1/
     weight: 410
 
   - name: Skills
