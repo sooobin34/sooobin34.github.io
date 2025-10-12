@@ -16,7 +16,7 @@ sections:
               filters:
                 brightness: 0.6
             position: center
-            color: '#ffffffff
+            color: '#ffffffff'
 
         - title: "Database Project"
           content: "애견인을 위한 정보 제공 및 용품 거래 DB 설계"
@@ -64,7 +64,7 @@ sections:
           - database
           - python
           - skills
-          - contact
+          - contact/contact-info
     design:
       view: card
       columns: 3
