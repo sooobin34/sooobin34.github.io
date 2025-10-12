@@ -59,9 +59,12 @@ sections:
       count: 9
       filters:
         folders:
+          - authors
           - ai
           - database
           - python
+          - skills
+          - contact
     design:
       view: card
       columns: 3
