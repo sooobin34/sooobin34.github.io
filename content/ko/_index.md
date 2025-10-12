@@ -1,5 +1,5 @@
 ---
-title: "안수빈의 포트폴리오"
+title: ""
 type: landing
 
 sections:
@@ -7,17 +7,17 @@ sections:
     content:
       slides:
         - image:
-            filename: "slide-ai.png"
+            filename: "uploads/slide-ai.png"
             alt: "AI 프로젝트"
           title: "AI Project"
           text: "탐색 알고리즘과 휴리스틱 평가를 활용한 오목 인공지능"
         - image:
-            filename: "slide-db.jpg"
+            filename: "uploads/slide-db.jpg"
             alt: "Database 프로젝트"
           title: "Database Project"
           text: "애견인을 위한 정보 제공 및 용품 거래 웹사이트 DB 설계"
         - image:
-            filename: "slide-py.jpg"
+            filename: "uploads/slide-py.jpg"
             alt: "Python 프로젝트"
           title: "Python Project"
           text: "파이썬을 이용한 게임 구현"
