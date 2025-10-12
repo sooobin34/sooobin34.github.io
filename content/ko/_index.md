@@ -9,7 +9,7 @@ sections:
       slides:
         - title: "AI Project"
           content: "Alpha-Beta 탐색 기반 오목 인공지능"
-          align: left
+          align: center
           background:
             image:
               filename: slide-ai.png
@@ -26,7 +26,7 @@ sections:
 
         - title: "Database Project"
           content: "애견인을 위한 정보 제공 및 용품 거래 DB 설계"
-          align: right
+          align: center
           background:
             image:
               filename: slide-db.jpg
@@ -40,7 +40,7 @@ sections:
           align: center
           background:
             image:
-              filename: slide-py.jpg
+              filename: slide-py.png
               filters:
                 brightness: 0.5
             position: center
