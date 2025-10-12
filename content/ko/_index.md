@@ -66,7 +66,7 @@ sections:
           - my-skills/my-skills-info
           - contact/contact-info
     design:
-      view: projects
+      view: community/custom_card
       columns: 3
       spacing:
         padding: ["10px", "20px", "20px", "20px"]
