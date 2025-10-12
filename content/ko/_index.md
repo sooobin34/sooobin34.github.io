@@ -12,41 +12,39 @@ sections:
         아래에서 각 프로젝트를 확인해보세요!
       image:
         filename: "main.png"
-      # 이미지 위에 반투명 오버레이 적용
       overlay_color: "#000"
       overlay_filter: 0.3
     design:
       alignment: center
       background:
-        color: "#000000"
+        color: "#ffffff"
       spacing:
         padding: ["60px", "0", "60px", "0"]      
 
+  # 이미지 슬라이더 섹션
   - block: slider
     content:
       slides:
         - image:
-            filename: "uploads/slide-ai.png"
+            filename: "slide-ai.png"
             alt: "AI 프로젝트"
           title: "AI Project"
           text: "탐색 알고리즘과 휴리스틱 평가를 활용한 오목 인공지능"
         - image:
-            filename: "uploads/slide-db.jpg"
+            filename: "slide-db.jpg"
             alt: "Database 프로젝트"
           title: "Database Project"
           text: "애견인을 위한 정보 제공 및 용품 거래 웹사이트 DB 설계"
         - image:
-            filename: "uploads/slide-py.jpg"
+            filename: "slide-py.jpg"
             alt: "Python 프로젝트"
           title: "Python Project"
           text: "파이썬을 이용한 게임 구현"
     design:
-      slide_interval: 4000 
+      slide_interval: 4000
       alignment: center
       background:
-        color: "#ffffff"
-
-  
+        color: "#fff"
 
   # 프로젝트 카드 9개
   - block: collection
@@ -79,4 +77,3 @@ sections:
       background:
         color: "#f9f9f9"
 ---
-
