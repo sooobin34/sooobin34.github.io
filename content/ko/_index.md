@@ -3,42 +3,31 @@ title: "안수빈의 포트폴리오"
 type: landing
 
 sections:
-  # 메인 Hero 섹션
-  - block: hero
+  - block: slider
     content:
-      title: "안수빈의 포트폴리오 💻"
-      text: |
-        인공지능, 데이터베이스, 파이썬을 중심으로 한 다양한 프로젝트를 소개합니다.  
-        아래에서 각 프로젝트를 확인해보세요!
-      image:
-        filename: "main.png"
-      # 이미지 위에 반투명 오버레이 적용
-      overlay_color: "#000"
-      overlay_filter: 0.3
-    design:
-      alignment: center
-      background:
-        color: "#000000"
-      spacing:
-        padding: ["60px", "0", "60px", "0"]
-
-  # 이미지 슬라이더 섹션
-  - block: gallery
-    content:
-      images:
+      slides:
         - image:
             filename: "slide-ai.png"
-            caption: "AI Project"
+            alt: "AI 프로젝트"
+          title: "AI Project"
+          text: "탐색 알고리즘과 휴리스틱 평가를 활용한 오목 인공지능"
         - image:
             filename: "slide-db.jpg"
-            caption: "Database Project"
+            alt: "Database 프로젝트"
+          title: "Database Project"
+          text: "애견인을 위한 정보 제공 및 용품 거래 웹사이트 DB 설계"
         - image:
-            filename: "slide-py.png"
-            caption: "Python Project"
+            filename: "slide-py.jpg"
+            alt: "Python 프로젝트"
+          title: "Python Project"
+          text: "파이썬을 이용한 게임 구현"
     design:
-      columns: 1
-      spacing:
-        padding: ["10px", "0", "10px", "0"]
+      slide_interval: 4000 
+      alignment: center
+      background:
+        color: "#ffffff"
+
+  
 
   # 프로젝트 카드 9개
   - block: collection
