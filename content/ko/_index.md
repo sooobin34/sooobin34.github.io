@@ -1,6 +1,7 @@
 ---
 title: ""
 type: landing
+
 sections:
   # 메인 Hero 섹션
   - block: hero
@@ -20,7 +21,7 @@ sections:
         color: "#000000"
       spacing:
         padding: ["60px", "0", "60px", "0"]      
-sections:
+
   - block: slider
     content:
       slides:
