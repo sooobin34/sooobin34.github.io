@@ -12,7 +12,7 @@ baseURL: 'https://sooobin34.github.io/' # Website URL
 
 defaultContentLanguage: ko
 hasCJKLanguage: true
-defaultContentLanguageInSubdir: ture
+defaultContentLanguageInSubdir: true
 removePathAccents: true
 
 languages:
