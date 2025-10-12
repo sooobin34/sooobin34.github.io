@@ -16,13 +16,7 @@ sections:
               filters:
                 brightness: 0.6
             position: center
-            color: '#ffffffff'
-          link:
-            icon: github
-            icon_pack: fab
-            text: "View on GitHub →"
-            text_color: "#fff"
-            url: "https://github.com/sooobin34/ai-gomoku"
+            color: '#ffffffff
 
         - title: "Database Project"
           content: "애견인을 위한 정보 제공 및 용품 거래 DB 설계"
@@ -51,11 +45,11 @@ sections:
       is_fullscreen: false
       loop: true
       interval: 3000
-    advanced:
-      css_style: |
-        .slick-dots li button:before { color: #6c63ff !important; font-size: 12px; }
-        .slick-dots li.slick-active button:before { color: #ff6584 !important; }
-        .slick-prev, .slick-next { display: none !important; }
+#    advanced:
+#      css_style: |
+#        .slick-dots li button:before { color: #6c63ff !important; font-size: 12px; }
+#        .slick-dots li.slick-active button:before { color: #ff6584 !important; }
+#       .slick-prev, .slick-next { display: none !important; }
 
   # 프로젝트 카드 9개 (3×3)
   - block: collection
@@ -71,6 +65,11 @@ sections:
     design:
       view: card
       columns: 3
+      advanced:
+    css_style: |
+      .block-collection .section-subtitle {
+        white-space: nowrap !important;
+      }
 
   # 자기소개 요약
   - block: markdown
