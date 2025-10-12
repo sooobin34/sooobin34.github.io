@@ -17,7 +17,7 @@ sections:
           text: "애견인을 위한 정보 제공 및 용품 거래 웹사이트 DB 설계"
         - filename: "slide-py.jpg"
           text: "파이썬으로 구현한 다양한 알고리즘 프로젝트"
-      overlay_color: "#000"        
+      overlay_color: "#766767ff"        
       overlay_filter: 0.3          
     design:
       alignment: center
