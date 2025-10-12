@@ -69,15 +69,22 @@ sections:
       columns: 3
     advanced:
       css_style: |
-        .block-collection .card-grid {
+        .block-collection .cards {
           display: grid !important;
-          grid-template-columns: repeat(3, 1fr) !important;
-          gap: 20px !important;
+          grid-template-columns: repeat(3, minmax(250px, 1fr)) !important;
+          gap: 24px !important;
           justify-items: center !important;
         }
+
         .block-collection .card {
-          width: 100% !important;
           max-width: 350px !important;
+          border-radius: 16px !important;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
+          transition: transform 0.2s ease-in-out !important;
+        }
+
+        .block-collection .card:hover {
+          transform: translateY(-6px) !important;
         }
 
   # 자기소개 요약
