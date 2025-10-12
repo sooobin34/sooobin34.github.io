@@ -60,13 +60,13 @@ sections:
       page_type: post
       filters:
         folders:
-          - authors_info
+          - authors/authors_info
           - ai
-          - ai_info
+          - ai/ai_info
           - database
           - python
-          - my-skills_info
-          - contact_info
+          - my-skills/my-skills_info
+          - contact/contact_info
     design:
       view: card
       columns: 3
