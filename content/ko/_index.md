@@ -1,7 +1,25 @@
 ---
 title: ""
 type: landing
-
+sections:
+  # 메인 Hero 섹션
+  - block: hero
+    content:
+      title: "안수빈의 포트폴리오"
+      text: |
+        인공지능, 데이터베이스, 파이썬을 중심으로 한 다양한 프로젝트를 소개합니다.  
+        아래에서 각 프로젝트를 확인해보세요!
+      image:
+        filename: "main.png"
+      # 이미지 위에 반투명 오버레이 적용
+      overlay_color: "#000"
+      overlay_filter: 0.3
+    design:
+      alignment: center
+      background:
+        color: "#000000"
+      spacing:
+        padding: ["60px", "0", "60px", "0"]      
 sections:
   - block: slider
     content:
