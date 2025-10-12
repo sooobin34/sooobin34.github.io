@@ -67,11 +67,18 @@ sections:
     design:
       view: card
       columns: 3
-      advanced:
-    css_style: |
-      .block-collection .section-subtitle {
-        white-space: nowrap !important;
-      }
+    advanced:
+      css_style: |
+        .block-collection .card-grid {
+          display: grid !important;
+          grid-template-columns: repeat(3, 1fr) !important;
+          gap: 20px !important;
+          justify-items: center !important;
+        }
+        .block-collection .card {
+          width: 100% !important;
+          max-width: 350px !important;
+        }
 
   # 자기소개 요약
   - block: markdown
