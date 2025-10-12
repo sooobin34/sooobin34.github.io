@@ -5,6 +5,8 @@ image:
   filename: "contact.jpg"
 date: 2025-10-12
 type: post
+draft: false
+
 links:
   - icon: arrow-right
     icon_pack: fas

@@ -55,16 +55,18 @@ sections:
   - block: collection
     content:
       title: "주요 프로젝트"
-      subtitle: "AI · Database · Python 분야의 다양한 프로젝트를 한눈에"
+      subtitle: "AI · Database · Python 다양한 프로젝트를 한눈에"
       count: 9
+      page_type: post
       filters:
         folders:
-          - authors
-          - ai
-          - database
-          - python
-          - skills
-          - contact/contact-info
+          - ko/authors/authors-info
+          - ko/ai
+          - ko/ai-info
+          - ko/database
+          - ko/python
+          - ko/my-skills/my-skills-info
+          - ko/contact/contact-info
     design:
       view: card
       columns: 3

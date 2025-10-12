@@ -30,9 +30,19 @@ main:
     url: /database/
     weight: 300
 
+  - parent: Database
+    name: DB_Project1
+    url: /database/db_project1/
+    weight: 310
+
   - name: Python
     url: /Python/
     weight: 400
+
+  - parent: Python
+    name: Py_Project1
+    url: /database/py_project1/
+    weight: 410
 
   - name: Skills
     url: /my-skills/
