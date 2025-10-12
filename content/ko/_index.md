@@ -51,40 +51,59 @@ sections:
 #        .slick-dots li.slick-active button:before { color: #ff6584 !important; }
 #       .slick-prev, .slick-next { display: none !important; }
 
-  # 프로젝트 카드 9개 (3×3)
+  # 프로젝트 카드 (3×3)
   - block: collection
     content:
       title: "주요 프로젝트"
-      subtitle: "AI · Database · Python 다양한 프로젝트를 한눈에"
+      subtitle: "AI · Database · Python 분야의 다양한 프로젝트를 한눈에"
       count: 9
       page_type: post
       filters:
         folders:
           - ai
-          - ai/ai_info
           - database
           - python
+          - my-skills/my-skills-info
+          - contact/contact-info
     design:
-      view: card
+      view: projects
       columns: 3
+      spacing:
+        padding: ["10px", "20px", "20px", "20px"]
     advanced:
       css_style: |
-        .block-collection .cards {
+        /* 카드 전체 레이아웃 */
+        .block-collection .projects-grid {
           display: grid !important;
-          grid-template-columns: repeat(3, minmax(250px, 1fr)) !important;
-          gap: 24px !important;
+          grid-template-columns: repeat(3, 1fr) !important;
+          gap: 30px !important;
           justify-items: center !important;
         }
 
-        .block-collection .card {
-          max-width: 350px !important;
-          border-radius: 16px !important;
-          box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
-          transition: transform 0.2s ease-in-out !important;
+        /* 개별 카드 스타일 */
+        .block-collection .project-card {
+          border-radius: 12px !important;
+          overflow: hidden !important;
+          box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important;
+          transition: all 0.2s ease-in-out !important;
+          background: #fff !important;
         }
 
-        .block-collection .card:hover {
-          transform: translateY(-6px) !important;
+        /* hover 효과 */
+        .block-collection .project-card:hover {
+          transform: translateY(-6px) scale(1.02) !important;
+          box-shadow: 0 8px 16px rgba(0,0,0,0.2) !important;
+        }
+
+        /*카드 내 텍스트 */
+        .block-collection .project-card h3 {
+          color: #0044cc !important;
+          font-weight: 700 !important;
+        }
+
+        .block-collection .project-card p {
+          color: #555 !important;
+          font-size: 0.95rem !important;
         }
 
   # 자기소개 요약
