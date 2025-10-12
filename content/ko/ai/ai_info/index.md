@@ -20,3 +20,7 @@ tags:
 
 - **프로젝트 1:** Alpha-Beta 탐색 기반 오목 인공지능  
 - **프로젝트 2:** 휴리스틱을 이용한 8퍼즐 문제 해결  
+---
+
+[Project 1 바로가기 →](/ai/project1/)  
+[Project 2 바로가기 →](/ai/project2/)
