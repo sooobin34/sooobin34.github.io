@@ -1,5 +1,6 @@
 ---
 title: "안수빈 (Ahn Soo Bin)"
+summary: "About 페이지 안에 들어갈 자기소개,sns,깃허브 소개"
 
 name_ko: "안수빈"
 name_en: "Ahn Soo Bin"
