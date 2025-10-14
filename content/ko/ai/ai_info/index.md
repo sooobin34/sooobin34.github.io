@@ -25,8 +25,8 @@ tags:
 - **프로젝트 2:** 휴리스틱을 이용한 8퍼즐 문제 해결  
 ---
 
-<!--[Project 1 바로가기 →](../ai_project1/)  {.btn .btn-primary}
-[Project 2 바로가기 →](../ai_project2/) {.btn .btn-primary}-->
+{{< relref "../ai_project1/" >}}  
+{{< relref "../ai_project2/" >}}
 
-{{< button href="../ai_project1/" text="Project 1 바로가기 →" color="primary" >}}
-{{< button href="../ai_project2/" text="Project 2 바로가기 →" color="primary" >}}
+[Project 1 바로가기 →](../ai_project1/) {.btn .btn-primary}
+[Project 2 바로가기 →](../ai_project2/) {.btn .btn-primary}
