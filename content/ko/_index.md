@@ -106,25 +106,23 @@ sections:
 
 
 
-# 커스텀 뷰1
   - block: collection
     content:
-      title: "Compact View (Custom)"
+      title: ""
       count: 6
       filters:
         folders:
           - ai
           - ds
     design:
-      view_template: card-compact
+      view: card-compact
       columns: 3
       spacing:
         padding: ["20px", "20px", "20px", "20px"]
 
-# 커스텀 뷰2
   - block: collection
     content:
-      title: "Overlay View (Custom)"
+      title: ""
       count: 6
       filters:
         folders:
@@ -132,10 +130,11 @@ sections:
           - python
           - ds
     design:
-      view_template: card-overlay
+      view: card-overlay
       columns: 3
       spacing:
         padding: ["20px", "20px", "20px", "20px"]
+
 
   # 자기소개 요약
   - block: markdown
