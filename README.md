@@ -1,48 +1,65 @@
-# [Hugo Research Group Theme](https://github.com/wowchemy/starter-hugo-research-group)
 
-[![Screenshot](preview.png)](https://hugoblox.com/hugo-themes/)
+## 안수빈의 개인 포트폴리오
 
-The **Research Group Template** empowers your research group to easily create a beautiful website with a stunning homepage, news, academic publications, events, team profiles, and a contact form.
+이 포트폴리오에는 자기소개, 프로젝트 소개, 연락 방법들이 기재되어 있습니다.
 
-️**Trusted by 250,000+ researchers, educators, and students.** Highly customizable via the integrated **no-code, widget-based Wowchemy page builder**, making every site truly personalized ⭐⭐⭐⭐⭐
+# AI Project 1: Alpha-Beta 탐색 기반 오목 인공지능
 
-[![Get Started](https://img.shields.io/badge/-Get%20started-ff4655?style=for-the-badge)](https://hugoblox.com/hugo-themes/)
-[![Discord](https://img.shields.io/discord/722225264733716590?style=for-the-badge)](https://discord.com/channels/722225264733716590/742892432458252370/742895548159492138)  
-[![Twitter Follow](https://img.shields.io/twitter/follow/GetResearchDev?label=Follow%20on%20Twitter)](https://twitter.com/wowchemy)
+이 프로젝트는 전북대학교 인공지능 기초 과목에서 수행한 **오목 게임 인공지능 구현 과제**입니다.  
+교수님이 제공하신 오목 프로그램의 기본 구조를 기반으로,  
+**Alpha-Beta Pruning 탐색 알고리즘**을 직접 설계하여 최적의 수를 선택하도록 구현했습니다.
 
-Easily write technical content with plain text Markdown, LaTeX math, diagrams, RMarkdown, or Jupyter, and import publications from BibTeX.
+- 사용 언어: Python  
+- 주요 기술: Minimax, Alpha-Beta Pruning, 탐색 트리  
+- 기여 내용: 탐색 알고리즘 및 평가 함수 로직 구현
 
-[Check out the latest demo](https://research-group.netlify.app/) of what you'll get in less than 60 seconds, or [view the showcase](https://hugoblox.com/creators/).
 
-The integrated [**Wowchemy**](https://hugoblox.com) website builder and CMS makes it easy to create a beautiful website for free. Edit your site in the CMS (or your favorite editor), generate it with [Hugo](https://github.com/gohugoio/hugo), and deploy with GitHub or Netlify. Customize anything on your site with widgets, light/dark themes, and language packs.
+# AI Project 2: 8-Puzzle 탐색 알고리즘 구현
 
-- 👉 [**Get Started**](https://hugoblox.com/hugo-themes/)
-- 📚 [View the **documentation**](https://docs.hugoblox.com/)
-- 💬 [Chat with the **Wowchemy research community**](https://discord.gg/z8wNYzb) or [**Hugo community**](https://discourse.gohugo.io)
-- ⬇️ **Automatically import citations from BibTeX** with the [Hugo Academic CLI](https://github.com/GetRD/academic-file-converter)
-- 🐦 Share your new site with the community: [@wowchemy](https://twitter.com/wowchemy) [@GeorgeCushen](https://twitter.com/GeorgeCushen) [#MadeWithWowchemy](https://twitter.com/search?q=%23MadeWithWowchemy&src=typed_query)
-- 🗳 [Take the survey and help us improve #OpenSource](https://forms.gle/NioD9VhUg7PNmdCAA)
-- 🚀 [Contribute improvements](https://github.com/HugoBlox/hugo-blox-builder/blob/main/CONTRIBUTING.md) or [suggest improvements](https://github.com/HugoBlox/hugo-blox-builder/issues)
-- ⬆️ **Updating?** View the [Update Guide](https://docs.hugoblox.com/hugo-tutorials/update/) and [Release Notes](https://github.com/HugoBlox/hugo-blox-builder/releases)
+이 프로젝트는 전북대학교 인공지능 기초 과목의 **8-Puzzle 문제 해결 과제**입니다.  
+교수님이 제공하신 기본 코드 구조를 기반으로 **DFS, BFS, UCS, A\*** 탐색 알고리즘을 직접 구현하여 목표 상태로의 최단 경로를 탐색했습니다.
 
-## We ask you, humbly, to support this open source movement
+- 사용 언어: Python  
+- 주요 기술: 탐색 알고리즘(DFS, BFS, UCS, A\*), 휴리스틱(맨해튼 거리)  
+- 기여 내용: 탐색 로직 및 경로 탐색 알고리즘 구현
 
-Today we ask you to defend the open source independence of the Wowchemy website builder and themes 🐧
 
-We're an open source movement that depends on your support to stay online and thriving, but 99.9% of our creators don't give; they simply look the other way.
+# Data Structure Project 1: Balanced Binary Search Tree 구현
 
-### [❤️ Click here to become a GitHub Sponsor, unlocking awesome perks such as _exclusive academic templates and widgets_](https://github.com/sponsors/gcushen)
+이 프로젝트는 **이진 탐색 트리(Binary Search Tree)** 에서 삽입, 삭제, 탐색 기능을 구현하고 트리의 균형 여부를 검사하는 과제입니다. 각 서브트리의 높이 차이를 계산하여 **isBalanced() 함수**로 균형 상태를 판별했습니다.
 
-## Demo credits
+- 사용 언어: C++  
+- 주요 기술: BST 삽입/삭제/탐색, 트리 높이 계산, 균형 검사  
+- 기여 내용: 재귀 구조 기반의 BST 구현 및 균형 판단 로직 작성
 
-Please replace the demo images with your own.
 
-- [Female scientist](https://unsplash.com/photos/uVnRa6mOLOM)
-- [2 Coders](https://unsplash.com/photos/kwzWjTnDPLk)
-- [Cafe](https://unsplash.com/photos/RnDGGnMEOao)
-- Blog posts
-  - https://unsplash.com/photos/AndE50aaHn4
-  - https://unsplash.com/photos/OYzbqk2y26c
-- Avatars
-  - https://unsplash.com/photos/5yENNRbbat4
-  - https://unsplash.com/photos/WNoLnJo7tS8
+
+# Data Structure Project 2: 이진 트리 경로 합 계산
+
+이 프로젝트는 **이진 탐색 트리(Binary Search Tree)** 에서 삽입과 삭제 연산을 수행하고, **주어진 합(X)** 을 만족하는 경로의 개수를 계산하는 과제입니다.  
+해시맵을 이용해 누적 합을 추적하여 효율적으로 경로의 수를 계산했습니다.
+
+- 사용 언어: C++  
+- 주요 기술: BST 삽입/삭제, 재귀 탐색, 해시맵 기반 경로 합 계산  
+- 기여 내용: countPathsWithSum() 함수 구현 및 경로 탐색 최적화
+
+
+# Data Structure Project 3: Binary Search Tree 기반 사전 프로그램
+
+이 프로젝트는 **이진 탐색 트리(Binary Search Tree)** 를 이용한 **한–영(K-E) / 영–한(E-K) 사전(Dictionary)** 프로그램 구현 과제입니다. 단어와 의미를 노드로 저장하고, 삽입(i), 검색(k/e), 전체 출력(p) 기능을 제공합니다.
+
+- 사용 언어: C++  
+- 주요 기술: 이진 탐색 트리, 문자열 비교, 양방향 사전 구조  
+- 기여 내용: 트리 기반 사전 삽입/검색/삭제 로직 구현
+
+
+# Python Project: 점프 게임 (Jumping Game)
+
+이 프로젝트는 **Pygame 라이브러리를 활용해 제작한 점프 게임**으로 캐릭터가 장애물(펭귄)을 피하며 점수를 얻는 간단한 러닝 게임입니다.  
+캐릭터의 점프 동작, 충돌 판정, 점수 및 시간 표시 기능을 직접 구현했습니다.
+
+- 사용 언어: Python  
+- 주요 기술: pygame, 이벤트 처리, 충돌 판정, 게임 루프  
+- 기여 내용: 점프 로직, 충돌 처리, 점수·시간 시스템 구현
+
+
