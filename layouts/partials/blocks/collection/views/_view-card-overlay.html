@@ -1,0 +1,34 @@
+{{/* Overlay card view: image with gradient title overlay */}}
+{{ $items := .items | default .pages | default . }}
+<div class="hb-cards hb-card-overlay">
+  {{ range $items }}
+    {{ $title := .Title }}
+    {{ $url := .RelPermalink }}
+    {{ $img := "" }}
+    {{ with .Params.image }}{{ with .filename }}{{ $img = . }}{{ end }}{{ end }}
+
+    <a class="hb-card-overlay__item" href="{{ $url }}">
+      <div class="hb-card-overlay__media">
+        {{ if $img }}<img src="{{ $img | relURL }}" alt="{{ $title }}">
+        {{ else }}<div class="hb-card-overlay__bg"></div>{{ end }}
+        <div class="hb-card-overlay__grad"></div>
+        <div class="hb-card-overlay__text">
+          <h3>{{ $title }}</h3>
+          {{ with .Params.summary }}<p>{{ . }}</p>{{ end }}
+        </div>
+      </div>
+    </a>
+  {{ end }}
+</div>
+
+<style>
+.hb-card-overlay{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem}
+.hb-card-overlay__item{display:block;border-radius:14px;overflow:hidden;position:relative}
+.hb-card-overlay__media{position:relative;height:200px;background:#f2f4f7}
+.hb-card-overlay__media img,.hb-card-overlay__bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hb-card-overlay__grad{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.55),rgba(0,0,0,.08))}
+.hb-card-overlay__text{position:absolute;left:14px;right:14px;bottom:12px;color:#fff}
+.hb-card-overlay__text h3{margin:0 0 .25rem 0;font-size:1.05rem}
+.hb-card-overlay__text p{margin:0;font-size:.92rem;opacity:.95}
+.hb-card-overlay__item:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(0,0,0,.12);transition:.2s}
+</style>

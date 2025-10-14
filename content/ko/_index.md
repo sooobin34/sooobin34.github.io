@@ -77,6 +77,31 @@ sections:
       columns: 3
       spacing:
         padding: ["20px", "20px", "20px", "20px"]
+  
+  # 커스텀 뷰1
+  - block: collection
+    content:
+      title: "Compact View (Custom)"
+      count: 6
+      filters:
+        folders:
+          - ai
+          - ds
+    design:
+      view_template: card-compact
+
+  # 커스텀 뷰2
+  - block: collection
+    content:
+      title: "Overlay View (Custom)"
+      count: 6
+      filters:
+        folders:
+          - database
+          - python
+          - ds
+    design:
+      view_template: card-overlay
 
   # 자기소개 요약
   - block: markdown
