@@ -6,6 +6,7 @@ summary: "DFS, BFS, UCS, A* 탐색을 이용한 8퍼즐 문제 해결"
 type: post
 date: 2025-10-10
 share: false
+draft: false
 
 image:
   filename: "8puzzle.jpg"

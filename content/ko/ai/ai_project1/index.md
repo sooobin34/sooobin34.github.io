@@ -6,6 +6,7 @@ summary: "탐색 알고리즘과 휴리스틱 평가함수를 이용한 오목 �
 type: post
 date: 2025-10-10
 share: false
+draft: false
 
 image:
   filename: "omok_ai.jpg"
