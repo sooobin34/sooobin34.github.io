@@ -40,6 +40,17 @@ sections:
             position: center
             color: "#ffffffff"
 
+        - title: "Ds Project"
+          content: "이진 탐색 트리를 활용한 다양한 자료구조 프로젝트 모음"
+          align: center
+          background:
+            image:
+              filename: slide-py.png
+              filters:
+                brightness: 0.5
+            position: center
+            color: "#ffffffff"
+
     design:
       slide_height: "430px"
       is_fullscreen: false

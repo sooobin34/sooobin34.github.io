@@ -6,7 +6,7 @@ type: post
 draft: false
 
 image:
-  filename: "slide-ds.png"
+  filename: "slide-ds.jpg"
 
 tags:
   - Data Structure
