@@ -3,6 +3,8 @@
 
 이 포트폴리오에는 자기소개, 프로젝트 소개, 연락 방법들이 기재되어 있습니다.
 
+<br>
+
 # AI Project 1: Alpha-Beta 탐색 기반 오목 인공지능
 
 이 프로젝트는 전북대학교 인공지능 기초 과목에서 수행한 **오목 게임 인공지능 구현 과제**입니다.  
@@ -13,6 +15,7 @@
 - 주요 기술: Minimax, Alpha-Beta Pruning, 탐색 트리  
 - 기여 내용: 탐색 알고리즘 및 평가 함수 로직 구현
 
+<br>
 
 # AI Project 2: 8-Puzzle 탐색 알고리즘 구현
 
@@ -23,6 +26,7 @@
 - 주요 기술: 탐색 알고리즘(DFS, BFS, UCS, A\*), 휴리스틱(맨해튼 거리)  
 - 기여 내용: 탐색 로직 및 경로 탐색 알고리즘 구현
 
+<br>
 
 # Data Structure Project 1: Balanced Binary Search Tree 구현
 
@@ -32,7 +36,7 @@
 - 주요 기술: BST 삽입/삭제/탐색, 트리 높이 계산, 균형 검사  
 - 기여 내용: 재귀 구조 기반의 BST 구현 및 균형 판단 로직 작성
 
-
+<br>
 
 # Data Structure Project 2: 이진 트리 경로 합 계산
 
@@ -43,6 +47,7 @@
 - 주요 기술: BST 삽입/삭제, 재귀 탐색, 해시맵 기반 경로 합 계산  
 - 기여 내용: countPathsWithSum() 함수 구현 및 경로 탐색 최적화
 
+<br>
 
 # Data Structure Project 3: Binary Search Tree 기반 사전 프로그램
 
@@ -52,6 +57,7 @@
 - 주요 기술: 이진 탐색 트리, 문자열 비교, 양방향 사전 구조  
 - 기여 내용: 트리 기반 사전 삽입/검색/삭제 로직 구현
 
+<br>
 
 # Python Project: 점프 게임 (Jumping Game)
 
@@ -62,4 +68,4 @@
 - 주요 기술: pygame, 이벤트 처리, 충돌 판정, 게임 루프  
 - 기여 내용: 점프 로직, 충돌 처리, 점수·시간 시스템 구현
 
-
+<br>
