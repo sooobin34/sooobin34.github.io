@@ -1,5 +1,5 @@
 ---
-title: "DB Project"
+title: "DB Project 1"
 subtitle: "애견인을 위한 정보 제공 및 거래를 위한 DB 설계 및 구현"
 summary: "애견 정보를 제공하고 용품을 거래할 수 있는 웹사이트의 데이터베이스 설계 및 구현"
 
@@ -32,7 +32,7 @@ links:
 <br>
 
 ## 📄 프로젝트 보고서
-프로젝트에 대해 더 알고 싶다면 [보고서](/files/db_report.pdf)를 다운받으세요!
+프로젝트에 대해 더 알고 싶다면 [보고서](/files/db_project1_report.pdf)를 다운받으세요!
 
 <br>
 

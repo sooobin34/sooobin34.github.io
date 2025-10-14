@@ -1,5 +1,5 @@
 ---
-title: "Python Project - 점프 러너 게임"
+title: "Python Project 1 - 점프 러너 게임"
 subtitle: "Pygame을 이용한 점프 장애물 회피 게임"
 summary: "쿠키런처럼 장애물을 점프로 피하며 점수를 얻는 러너 게임을 Python(Pygame)으로 구현했습니다."
 
@@ -34,7 +34,7 @@ links:
 <br>
 
 ## 📄 프로젝트 보고서
-프로젝트에 대해 더 알고 싶다면 [보고서](/files/python_report.pdf)를 다운받으세요!
+프로젝트에 대해 더 알고 싶다면 [보고서](/files/python_project1_report.pdf)를 다운받으세요!
 
 <br>
 

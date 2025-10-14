@@ -31,7 +31,7 @@ links:
 <br>
 
 ## 📄 프로젝트 보고서
-프로젝트에 대해 더 알고 싶다면 [보고서](/files/project2_report.pdf)를 다운받으세요!
+프로젝트에 대해 더 알고 싶다면 [보고서](/files/ai_project2_report.pdf)를 다운받으세요!
 
 <br>
 

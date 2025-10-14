@@ -60,12 +60,13 @@ sections:
           - ai
           - database
           - python
+          - ds
     design:
       view: card     
       columns: 3
       spacing:
         padding: ["20px", "20px", "20px", "20px"]
-        
+
   # 자기소개 요약
   - block: markdown
     content:

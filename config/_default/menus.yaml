@@ -17,12 +17,12 @@ main:
     weight: 200
 
   - parent: AI
-    name: AI_Project1
+    name: AI_Project 1
     url: /ai/ai_project1/
     weight: 210
 
   - parent: AI
-    name: AI_Project2
+    name: AI_Project 2
     url: /ai/ai_project2/
     weight: 220
 
@@ -31,7 +31,7 @@ main:
     weight: 300
 
   - parent: Database
-    name: DB_Project1
+    name: DB_Project 1
     url: /database/db_project1/
     weight: 310
 
@@ -40,14 +40,33 @@ main:
     weight: 400
 
   - parent: Python
-    name: Py_Project1
+    name: Py_Project 1
     url: /python/py_project1/
     weight: 410
 
+  - name: Data Structure
+    url: /ds/
+    weight: 500
+
+  - parent: Data Structure
+    name: DS_Project 1
+    url: /ds/ds_project1/
+    weight: 510
+
+  - parent: Data Structure
+    name: DS_Project 2
+    url: /ds/ds_project2/
+    weight: 520
+
+  - parent: Data Structure
+    name: DS_Project 3
+    url: /ds/ds_project3/
+    weight: 530
+
   - name: Skills
     url: /my-skills/
-    weight: 500
+    weight: 600
 
   - name: Contact
     url: /contact/
-    weight: 600
+    weight: 700
