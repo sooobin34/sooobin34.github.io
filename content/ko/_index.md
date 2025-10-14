@@ -45,7 +45,7 @@ sections:
           align: center
           background:
             image:
-              filename: slide-py.png
+              filename: slide-ds.jpg
               filters:
                 brightness: 0.5
             position: center
