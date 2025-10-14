@@ -10,9 +10,7 @@ appearance:
   theme_night: minimal
   font: native
   font_size: M
-  color:
-    primary: "#8e44ad"     # 메인 색상
-    secondary: "#f1c40f"   # 강조 색상
+
 # SEO
 
 marketing:
