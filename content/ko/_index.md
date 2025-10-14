@@ -1,6 +1,7 @@
 ---
 title: ""
 type: landing
+view: compact
 
 sections:
   # 메인 이미지 슬라이더
