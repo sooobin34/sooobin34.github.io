@@ -1,34 +1,45 @@
-{{/* Overlay card view: image with gradient title overlay */}}
-{{ $items := .items | default .pages | default . }}
-<div class="hb-cards hb-card-overlay">
-  {{ range $items }}
-    {{ $title := .Title }}
-    {{ $url := .RelPermalink }}
-    {{ $img := "" }}
-    {{ with .Params.image }}{{ with .filename }}{{ $img = . }}{{ end }}{{ end }}
-
-    <a class="hb-card-overlay__item" href="{{ $url }}">
-      <div class="hb-card-overlay__media">
-        {{ if $img }}<img src="{{ $img | relURL }}" alt="{{ $title }}">
-        {{ else }}<div class="hb-card-overlay__bg"></div>{{ end }}
-        <div class="hb-card-overlay__grad"></div>
-        <div class="hb-card-overlay__text">
-          <h3>{{ $title }}</h3>
-          {{ with .Params.summary }}<p>{{ . }}</p>{{ end }}
-        </div>
-      </div>
-    </a>
-  {{ end }}
+<div class="custom-card-overlay">
+  <div class="overlay-bg" style="background-image:url('{{ .Params.image.filename | relURL }}');">
+    <div class="overlay-content">
+      <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+      {{ with .Summary }}<p>{{ . }}</p>{{ end }}
+    </div>
+  </div>
 </div>
 
 <style>
-.hb-card-overlay{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem}
-.hb-card-overlay__item{display:block;border-radius:14px;overflow:hidden;position:relative}
-.hb-card-overlay__media{position:relative;height:200px;background:#f2f4f7}
-.hb-card-overlay__media img,.hb-card-overlay__bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.hb-card-overlay__grad{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.55),rgba(0,0,0,.08))}
-.hb-card-overlay__text{position:absolute;left:14px;right:14px;bottom:12px;color:#fff}
-.hb-card-overlay__text h3{margin:0 0 .25rem 0;font-size:1.05rem}
-.hb-card-overlay__text p{margin:0;font-size:.92rem;opacity:.95}
-.hb-card-overlay__item:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(0,0,0,.12);transition:.2s}
+.custom-card-overlay {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;
+}
+.custom-card-overlay:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+.overlay-bg {
+  background-size: cover;
+  background-position: center;
+  height: 220px;
+  display: flex;
+  align-items: flex-end;
+}
+.overlay-content {
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  width: 100%;
+  padding: 14px 18px;
+}
+.overlay-content h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+.overlay-content p {
+  font-size: 0.9rem;
+  margin-top: 5px;
+  color: #ddd;
+}
 </style>

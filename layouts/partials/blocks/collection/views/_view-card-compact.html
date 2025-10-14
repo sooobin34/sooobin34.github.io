@@ -1,35 +1,53 @@
-{{/* Compact card view: thumbnail left, text right */}}
-{{ $items := .items | default .pages | default . }}
-<div class="hb-cards hb-card-compact">
-  {{ range $items }}
-    {{ $title := .Title }}
-    {{ $url := .RelPermalink }}
-    {{ $img := "" }}
-    {{ with .Params.image }}{{ with .filename }}{{ $img = . }}{{ end }}{{ end }}
-
-    <a class="hb-card-compact__item" href="{{ $url }}">
-      <div class="hb-card-compact__thumb">
-        {{ if $img }}<img src="{{ $img | relURL }}" alt="{{ $title }}">
-        {{ else }}<div class="hb-card-compact__placeholder"></div>{{ end }}
-      </div>
-      <div class="hb-card-compact__meta">
-        <h3 class="hb-card-compact__title">{{ $title }}</h3>
-        {{ with .Params.summary }}<p class="hb-card-compact__summary">{{ . }}</p>{{ end }}
-      </div>
-    </a>
+<div class="custom-card-compact">
+  {{ with .Params.image }}
+  <div class="card-img">
+    <img src="{{ .filename | relURL }}" alt="{{ $.Title }}">
+  </div>
   {{ end }}
+  <div class="card-info">
+    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    {{ with .Summary }}<p>{{ . }}</p>{{ end }}
+  </div>
 </div>
 
 <style>
-.hb-card-compact{display:grid;gap:1rem}
-.hb-card-compact__item{
-  display:grid;grid-template-columns:120px 1fr;gap:.8rem;
-  padding:.9rem;border:1px solid rgba(0,0,0,.06);border-radius:12px;background:#fff;
-  text-decoration:none
+.custom-card-compact {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  margin-bottom: 20px;
 }
-.hb-card-compact__item:hover{box-shadow:0 6px 18px rgba(0,0,0,.08);transform:translateY(-2px);transition:.2s}
-.hb-card-compact__thumb img{width:120px;height:80px;object-fit:cover;border-radius:10px}
-.hb-card-compact__placeholder{width:120px;height:80px;border-radius:10px;background:linear-gradient(135deg,#f0f2f5,#e9edf2)}
-.hb-card-compact__title{margin:0 0 .25rem 0;font-size:1.05rem;line-height:1.35}
-.hb-card-compact__summary{margin:0;color:#555;font-size:.92rem}
+.custom-card-compact:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+.custom-card-compact .card-img {
+  flex: 0 0 40%;
+  height: 160px;
+  overflow: hidden;
+}
+.custom-card-compact img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.custom-card-compact .card-info {
+  flex: 1;
+  padding: 16px 20px;
+}
+.custom-card-compact .card-info h3 {
+  margin-top: 0;
+  font-size: 1.15rem;
+  margin-bottom: 8px;
+  color: #222;
+}
+.custom-card-compact .card-info p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
 </style>
