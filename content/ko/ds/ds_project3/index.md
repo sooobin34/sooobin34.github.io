@@ -8,7 +8,7 @@ date: 2025-10-18
 share: false
 
 image:
-  filename: "bst_dictionary.jpg"
+  filename: "bst.jpg"
 
 tags:
   - Data Structure

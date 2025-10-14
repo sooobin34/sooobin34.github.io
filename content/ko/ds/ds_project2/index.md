@@ -8,7 +8,7 @@ date: 2025-10-15
 share: false
 
 image:
-  filename: "bst_pathsum.jpg"
+  filename: "bst.jpg"
 
 tags:
   - Data Structure
