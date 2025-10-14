@@ -20,7 +20,7 @@ links:
   - icon: github
     icon_pack: fab
     name: "GitHub Repository"
-    url: "https://github.com/sooobin34/ai-gomoku"
+    url: "https://github.com/sooobin34/AI_Project1"
 ---
 <br>
 

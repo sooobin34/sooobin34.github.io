@@ -20,7 +20,7 @@ links:
   - icon: github
     icon_pack: fab
     name: "GitHub Repository"
-    url: "https://github.com/sooobin34/8puzzle-search"      
+    url: "https://github.com/sooobin34/AI_Project2"      
 ---
 <br>
 

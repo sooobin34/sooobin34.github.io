@@ -21,7 +21,7 @@ links:
   - icon: github
     icon_pack: fab
     name: "GitHub Repository"
-    url: "https://github.com/sooobin34/ds_project3"
+    url: "https://github.com/sooobin34/DS_Project3"
 ---
 
 <br>

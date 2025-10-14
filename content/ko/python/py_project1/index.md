@@ -21,7 +21,7 @@ links:
   - icon: github
     icon_pack: fab
     name: "GitHub Repository"
-    url: "https://github.com/sooobin34/python-runner-game"
+    url: "https://github.com/sooobin34/PY_Project1"
 ---
 <br>
 
