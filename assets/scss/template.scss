@@ -8,3 +8,20 @@
   justify-content: center;
 }
 
+
+
+
+// 호버
+button,
+.btn,
+.btn-primary {
+  transition: all 0.3s ease;       // 색 전환 부드럽게
+}
+
+button:hover,
+.btn:hover,
+.btn-primary:hover {
+  background-color: #ff6b6b;       // hover 시 배경색 변경
+  color: #fff;                     // hover 시 글자색 변경
+  cursor: pointer;                 // 커서 손모양으로 변경
+}
