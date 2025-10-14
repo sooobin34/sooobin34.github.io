@@ -27,13 +27,3 @@ button:hover,
 }
 
 
-
-/* 커스텀 뷰 (card-compact / card-overlay) 3×3 카드 레이아웃 */
-[data-view-template="card-compact"] .collection-items,
-[data-view-template="card-overlay"] .collection-items {
-  display: grid !important;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) !important;
-  gap: 1.5rem !important;
-  align-items: start;
-  justify-items: center;
-}
