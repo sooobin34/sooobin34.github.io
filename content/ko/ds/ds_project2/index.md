@@ -8,7 +8,8 @@ date: 2025-10-14
 share: false
 
 image:
-  filename: "bst.jpg"
+  filename: "bst2.jpg"
+# 세번째 Unsplash 이미지 (bst2.jpg): https://images.unsplash.com/photo-1664526937033-fe2c11f1be25?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1332
 
 tags:
   - Data Structure

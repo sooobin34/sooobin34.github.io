@@ -12,7 +12,7 @@ sections:
           align: center
           background:
             image:
-              filename: slide-ai.png
+              filename: slide-ai.png 
               filters:
                 brightness: 0.6
             position: center
@@ -23,7 +23,7 @@ sections:
           align: center
           background:
             image:
-              filename: slide-db.jpg
+              filename: slide-db.jpg 
               filters:
                 brightness: 0.45
             position: center

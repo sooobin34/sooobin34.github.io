@@ -8,7 +8,7 @@ type: post
 
 image:
   filename: "db.jpg"
-
+# 두번째 Unsplash의 이미지 (db.jpg): https://images.unsplash.com/photo-1695668548342-c0c1ad479aee?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170
 
 # 메타데이터 (검색용)
 tags:

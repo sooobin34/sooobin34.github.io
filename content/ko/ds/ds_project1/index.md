@@ -8,7 +8,7 @@ date: 2025-10-13
 share: false
 
 image:
-  filename: "bst.jpg"
+  filename: "bst1.jpg"
 
 tags:
   - Data Structure
