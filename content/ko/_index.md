@@ -73,7 +73,7 @@ sections:
           - python
           - ds
     design:
-      view: card     
+      view: card-grid  
       columns: 3
       spacing:
         padding: ["20px", "20px", "20px", "20px"]
