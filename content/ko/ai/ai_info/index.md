@@ -29,4 +29,4 @@ tags:
 {{< relref "../ai_project2/" >}}
 
 [Project 1 바로가기 →](/ko/ai/ai_project1/) {.btn .btn-primary}
-[Project 2 바로가기 →](/ko/ai/ai_project1/) {.btn .btn-primary}
+[Project 2 바로가기 →](/ko/ai/ai_project1/) {.btn .btn-primary} 
