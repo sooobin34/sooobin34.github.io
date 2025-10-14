@@ -2,9 +2,9 @@
 title: "AI Projects"
 summary: "Alpha-Beta 탐색과 8퍼즐 알고리즘 등 AI 기반 프로젝트 모음"
 date: 2025-10-12
-type: landing
+type: post
 draft: false
-view: card
+
 
 image:
   filename: "ai-info.jpg"
@@ -25,5 +25,8 @@ tags:
 - **프로젝트 2:** 휴리스틱을 이용한 8퍼즐 문제 해결  
 ---
 
-[Project 1 바로가기 →](../../ai_project1/)  {.btn .btn-primary}
-[Project 2 바로가기 →](../../ai_project2/) {.btn .btn-primary}
+<!--[Project 1 바로가기 →](../ai_project1/)  {.btn .btn-primary}
+[Project 2 바로가기 →](../ai_project2/) {.btn .btn-primary}-->
+
+{{< button href="../ai_project1/" text="Project 1 바로가기 →" color="primary" >}}
+{{< button href="../ai_project2/" text="Project 2 바로가기 →" color="primary" >}}
