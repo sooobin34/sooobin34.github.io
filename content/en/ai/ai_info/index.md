@@ -1,5 +1,5 @@
 ---
-title: "AI Projects"
+title: "AI Projects info"
 summary: "A collection of AI-based projects, including Alpha-Beta search and the 8-puzzle algorithm."
 date: 2025-10-12
 type: post
@@ -16,6 +16,7 @@ tags:
   - Python
   - Search Algorithm
 ---
+<br>
 
 ## 🧠 AI Projects
 This section introduces the AI projects completed as part of the **Artificial Intelligence course**.  
