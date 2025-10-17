@@ -35,7 +35,7 @@ We implemented and compared the performance of multiple search algorithms (DFS, 
 
 ## 📄 Project Report
 If you’d like to learn more about the project, [download the report](/files/ai_project2_report.pdf)!  
-*Note: The report is written in Korean.*
+(*Note: The report is written in Korean.*)
 
 <br>
 
