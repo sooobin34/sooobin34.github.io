@@ -1,6 +1,6 @@
 ---
-title: "안수빈 (Ahn Soo Bin)"
-summary: "About 페이지 안에 들어갈 자기소개,sns,깃허브 소개"
+title: "Ahn Soo Bin"
+summary: "Introduction, social links, and GitHub profile for the About page"
 
 name_ko: "안수빈"
 name_en: "Ahn Soo Bin"
@@ -10,10 +10,9 @@ last_name: 안
 authors:
   - 안수빈-ahn-soo-bin
 
-superuser: true
-role: "전북대학교 컴퓨터인공지능학부 3학년"
+role: "3rd-year Student, Department of Computer & Artificial Intelligence, Jeonbuk National University"
 organizations:
-  - name: "전북대학교 (Jeonbuk National University)"
+  - name: "Jeonbuk National University"
     url: "https://www.jbnu.ac.kr"
 
 social:
@@ -35,9 +34,9 @@ user_groups:
 <br>
 <br>
 
-저는 전북대학교 **컴퓨터인공지능학부 3학년**에 재학 중이며, 다양한 전공 수업 중 특히 **데이터베이스, 운영체제, 컴퓨터구조** 수업을 흥미롭게 배웠습니다.  
-이러한 과목들을 통해 컴퓨터 시스템의 내부 구조와 효율적인 데이터 관리에 깊은 관심을 가지게 되었고, 현재는 이를 바탕으로 **클라우드 컴퓨팅 분야**에 관심을 두고 학습을 이어가고 있습니다.  
+I am a **3rd-year student** majoring in **Computer and Artificial Intelligence** at Jeonbuk National University. Among various courses, I found **Database Systems, Operating Systems, and Computer Architecture** particularly fascinating.  
+Through these subjects, I developed a strong interest in the internal structure of computer systems and efficient data management, which has led me to explore the field of **Cloud Computing** in more depth.
 
-앞으로는 사람들이 **더 쉽고 편리하게 사용할 수 있는 공익적인 앱**을 개발하거나, **클라우드 기반 서비스의 안정성과 효율성**을 높이는 일을 하고 싶습니다.  
-이를 위해 정보처리기사 자격증과 TOEIC 등 어학 성적 준비를 병행하며, 기술적 역량과 글로벌 커뮤니케이션 능력을 함께 키워가고 있습니다.  
-새로운 기술을 배우는 것을 즐기면서 꾸준히 성장하고 도전하는 개발자가 되는 것을 목표로 하고 있습니다.
+My goal is to develop **practical and user-friendly applications** or contribute to improving the **stability and efficiency of cloud-based services**.  
+To achieve this, I am preparing for the **Information Processing Engineer certification** and improving my English proficiency through TOEIC, while continuously enhancing both my technical and communication skills.  
+I enjoy learning new technologies and aspire to become a **dedicated developer who keeps growing and taking on new challenges**.
