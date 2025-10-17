@@ -1,11 +1,11 @@
 ---
 title: Contact
-summary: "연락 방법(이메일,전화번호,지도)"
+summary: "Ways to get in touch (email, phone, and map)"
 
 image:
   filename: "contact.jpg"
 
-date: 2022-10-24
+date: 2025-10-16
 
 type: landing
 
@@ -16,24 +16,19 @@ sections:
       email: sooobin0304@naver.com
       phone: +82-10-6206-1173
       address:
-        street: 여울로 109
-        city: 전주시
-        region: 전라북도
+        street: 109 Yeoul-ro
+        city: Jeonju-si
+        region: Jeollabuk-do
         postcode: '54944'
-        country: 대한민국
-        country_code: KO
+        country: Republic of Korea
+        country_code: KR
       coordinates:
         latitude: '35.837016'
         longitude: '127.113356'
       office_hours:
-        - '월요일 10:00 to 13:00'
-        - '목요일 10:00 to 14:00'
-      #contact_links:
-      #  - icon: comments
-      #    icon_pack: fas
-      #    name: Discuss on Forum
-      #    link: 'https://discourse.gohugo.io'
-    
+        - 'Monday: 10:00 AM – 1:00 PM'
+        - 'Thursday: 10:00 AM – 2:00 PM'
+      
       # Automatically link email and phone or display as text?
       autolink: true
     
