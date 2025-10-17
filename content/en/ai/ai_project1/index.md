@@ -33,7 +33,8 @@ The AI determines the optimal stone placement by pruning unnecessary branches, a
 <br>
 
 ## 📄 Project Report
-If you’d like to learn more about the project, [download the report](/files/ai_project1_report.pdf)!
+If you’d like to learn more about the project, [download the report](/files/ai_project1_report.pdf)! 
+*Note: The report is written in Korean.*
 
 <br>
 
