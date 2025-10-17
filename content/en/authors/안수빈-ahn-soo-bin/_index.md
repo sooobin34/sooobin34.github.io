@@ -1,5 +1,5 @@
 ---
-title: "Ahn Soo Bin"
+title: "안수빈 (Ahn Soo Bin)"
 summary: "Introduction, social links, and GitHub profile for the About page"
 
 name_ko: "안수빈"
