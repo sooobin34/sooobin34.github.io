@@ -1,5 +1,10 @@
 ---
 title: Contact
+summary: "연락 방법(이메일,전화번호,지도)"
+
+image:
+  filename: "contact.jpg"
+
 date: 2022-10-24
 
 type: landing
