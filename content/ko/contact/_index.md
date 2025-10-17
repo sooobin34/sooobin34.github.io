@@ -1,5 +1,6 @@
 ---
 title: Contact
+subtitle: "궁금한 점이 있거나 연락을 원하신다면 아래 정보를 참고해주세요."
 summary: "연락 방법(이메일,전화번호,지도)"
 
 image:
