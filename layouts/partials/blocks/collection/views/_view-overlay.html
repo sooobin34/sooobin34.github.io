@@ -1,69 +1,31 @@
 {{ $item := .item }}
 {{ $link := $item.RelPermalink }}
 {{ $target := "" }}
-{{ if $item.Params.external_link }}
-  {{ $link = $item.Params.external_link }}
-  {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
-{{ end }}
+{{ if $item.Params.external_link }}{{ $link = $item.Params.external_link }}{{ $target = "target=\"_blank\" rel=\"noopener\"" }}{{ end }}
 
 {{ $summary := "" }}
-{{ if $item.Params.summary }}
-  {{ $summary = $item.Params.summary | markdownify | emojify }}
-{{ else if $item.Params.abstract }}
-  {{ $summary = $item.Params.abstract | markdownify | emojify | truncate (site.Params.abstract_length | default 135) }}
-{{ else if $item.Summary }}
-  {{ $summary = $item.Summary }}
-{{ end }}
+{{ if $item.Params.summary }}{{ $summary = $item.Params.summary | markdownify | emojify }}
+{{ else if $item.Params.abstract }}{{ $summary = $item.Params.abstract | markdownify | emojify | truncate (site.Params.abstract_length | default 120) }}
+{{ else if $item.Summary }}{{ $summary = $item.Summary }}{{ end }}
 
-<div class="custom-card-overlay">
-  {{ with $item.Params.image }}
-  <div class="overlay-bg" style="background-image:url('{{ .filename | relURL }}');">
-    <div class="overlay-content">
-      <h3><a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{ $item.Title }}</a></h3>
-      {{ with $summary }}<p>{{ . }}</p>{{ end }}
+<!-- USING CUSTOM OVERLAY -->
+<div class="media stream-item overlay-card">
+  <a class="overlay-img" href="{{ $link }}" {{ $target | safeHTMLAttr }}>
+    {{ with $item.Params.image }}<img src="{{ .filename | relURL }}" alt="{{ $item.Title }}">{{ end }}
+    <div class="overlay-text">
+      <h3 class="overlay-title">{{ $item.Title }}</h3>
+      {{ with $summary }}<p class="overlay-summary">{{ . }}</p>{{ end }}
     </div>
-  </div>
-  {{ end }}
+  </a>
 </div>
 
 <style>
-.custom-card-overlay {
-  position: relative;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-bottom: 20px;
-}
-
-.custom-card-overlay:hover {
-  transform: scale(1.03);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-}
-
-.overlay-bg {
-  background-size: cover;
-  background-position: center;
-  height: 220px;
-  display: flex;
-  align-items: flex-end;
-}
-
-.overlay-content {
-  background: rgba(0,0,0,0.6);
-  color: #fff;
-  width: 100%;
-  padding: 14px 18px;
-}
-
-.overlay-content h3 {
-  margin: 0;
-  font-size: 1.1rem;
-}
-
-.overlay-content p {
-  font-size: 0.9rem;
-  margin-top: 5px;
-  color: #ddd;
-}
+.overlay-card{position:relative;border-radius:12px;overflow:hidden;box-shadow:0 4px 10px rgba(0,0,0,.08);transition:transform .25s,box-shadow .25s}
+.overlay-card:hover{transform:translateY(-6px);box-shadow:0 8px 18px rgba(0,0,0,.15)}
+.overlay-img{display:block;position:relative}
+.overlay-img img{width:100%;height:220px;object-fit:cover;display:block;filter:brightness(72%);transition:filter .25s,transform .35s}
+.overlay-card:hover .overlay-img img{filter:brightness(86%);transform:scale(1.03)}
+.overlay-text{position:absolute;left:0;bottom:0;width:100%;padding:14px;background:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,.55) 100%);color:#fff}
+.overlay-title{margin:0 0 6px;font-size:1.05rem;line-height:1.25}
+.overlay-summary{margin:0;font-size:.9rem;opacity:.95}
 </style>
