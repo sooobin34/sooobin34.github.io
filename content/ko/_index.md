@@ -82,7 +82,7 @@ sections:
   # 커스텀 뷰1
   - block: collection
     content:
-      title: "AI, Ds Projects"
+      title: "AI, Ds 프로젝트"
       count: 9
       filters:
         folders:
@@ -95,7 +95,7 @@ sections:
   # 커스텀 뷰2
   - block: collection
     content:
-      title: "DB, PY Projects"
+      title: "DB, PY 프로젝트"
       count: 9
       filters:
         folders:

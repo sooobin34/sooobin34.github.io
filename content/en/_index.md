@@ -62,48 +62,49 @@ sections:
         .slick-prev, .slick-next { display: none !important; }
 
   # Project Cards
-  - block: collection
-    content:
-      title: "Featured Projects"
-      subtitle: "AI · Database · Python Projects"
-      count: 9
-      filters:
-        folders:
-          - ai
-          - database
-          - python
-          - ds
-    design:
-      view: card 
-      columns: 3
-      spacing:
-        padding: ["20px", "20px", "20px", "20px"]
-  
-  # Custom View 1
   #- block: collection
   #  content:
-  #    title: "Compact View (Custom)"
-  #    count: 6
+  #    title: "Featured Projects"
+  #    subtitle: "AI · Database · Python Projects"
+  #    count: 9
   #    filters:
   #      folders:
   #        - ai
-  #        - ds
-  #  design:
-  #    view_template: card-compact
-
-  # Custom View 2
-  #- block: collection
-  #  content:
-  #    title: "Overlay View (Custom)"
-  #    count: 6
-  #    filters:
-  #      folders:
   #        - database
   #        - python
   #        - ds
   #  design:
-  #    view_template: card-overlay
+  #    view: card 
+  #    columns: 3
+  #    spacing:
+  #      padding: ["20px", "20px", "20px", "20px"]
+  
+  # Custom View 1
+  - block: collection
+    content:
+      title: "AI, Ds Projects"
+      count: 6
+      filters:
+        folders:
+          - ai
+          - ds
+    design:
+      view: compact
+      columns: 3
 
+
+  # Custom View 2
+  - block: collection
+    content:
+      title: "DB, PY Projects"
+      count: 6
+      filters:
+        folders:
+          - database
+          - python
+    design:
+      view: overlay
+      columns: 3
 
   # About Me Summary
   - block: markdown
