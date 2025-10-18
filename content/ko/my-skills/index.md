@@ -43,7 +43,7 @@ sections:
           - Study
       count: 6
     design:
-      view_template: card-compact
+      view: card-compact
       #view: card
       columns: 3
       spacing:
