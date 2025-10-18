@@ -17,13 +17,19 @@
 
 <div class="custom-card-compact">
   {{ with $item.Params.image }}
-    <div class="card-img">
-      {{ if .filename }}
-        <img src="{{ printf "media/%s" .filename | relURL }}" alt="{{ $item.Title }}">
-      {{ else }}
-        <img src="{{ . | relURL }}" alt="{{ $item.Title }}">
+    {{ $img := "" }}
+    {{ if reflect.IsMap . }}
+      {{ with .filename }}
+        {{ $img = . }}
       {{ end }}
-    </div>
+    {{ else if reflect.IsString . }}
+      {{ $img = . }}
+    {{ end }}
+    {{ if $img }}
+      <div class="card-img">
+        <img src="{{ $img | relURL }}" alt="{{ $item.Title }}">
+      </div>
+    {{ end }}
   {{ end }}
 
   <div class="card-info">
