@@ -83,6 +83,8 @@ sections:
   - block: collection
     content:
       title: "AI, Ds 프로젝트"
+      subtitle: "인공지능 및 자료구조 기반 프로젝트 모음"
+      text: "탐색 알고리즘, 오목 인공지능, 8퍼즐 문제 해결, 그리고 트리·그래프 구조 등 핵심 알고리즘을 직접 구현한 프로젝트입니다."
       count: 9
       filters:
         folders:
@@ -96,6 +98,8 @@ sections:
   - block: collection
     content:
       title: "DB, PY 프로젝트"
+      subtitle: "데이터베이스 및 파이썬 응용 프로젝트"
+      text: "Oracle SQL Developer를 이용한 데이터베이스 설계와 Python을 활용한 탐색 및 게임 개발 프로젝트입니다."
       count: 9
       filters:
         folders:
@@ -104,6 +108,7 @@ sections:
     design:
       view: overlay
       columns: 3
+
 
 
   # 자기소개 요약
