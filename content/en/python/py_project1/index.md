@@ -1,7 +1,7 @@
 ---
-title: "Python Project 1 - 점프 러너 게임"
-subtitle: "Pygame을 이용한 점프 장애물 회피 게임"
-summary: "쿠키런처럼 장애물을 점프로 피하며 점수를 얻는 러너 게임을 Python(Pygame)으로 구현했습니다."
+title: "Python Project 1 - Jump Runner Game"
+subtitle: "A Jump-and-Dodge Runner Game Built with Pygame"
+summary: "Developed a Cookie Run-style runner game in Python (Pygame), where the player jumps to avoid obstacles and earns points."
 
 type: post
 date: 2025-10-10
@@ -9,7 +9,7 @@ share: false
 
 image:
   filename: "runner.png"
-  caption: "실제 게임화면"
+  caption: "Actual gameplay screen"
 
 tags:
   - Python
@@ -25,42 +25,43 @@ links:
 ---
 <br>
 
-## 🎮 프로젝트 개요
-이 프로젝트는 **Pygame**을 이용해 제작한 **러너 스타일 점프 게임**입니다.  
-플레이어는 스페이스바로 점프하며 장애물(펭귄)을 피하고, 
-피할 때마다 점수가 오르는 **쿠키런 스타일 미니게임**입니다.
-게임이 끝나면 점수와 생존 시간을 표시하고, 스페이스바를 눌러 재시작할 수 있습니다.
+## 🎮 Project Overview
+This project is a **runner-style jump game** developed using **Pygame**.  
+The player jumps with the spacebar to avoid obstacles (penguins),  
+earning points each time an obstacle is successfully avoided—similar to **Cookie Run**.  
+After the game ends, the player’s score and survival time are displayed,  
+and pressing the spacebar restarts the game.
 
 <br>
 
-## 📄 프로젝트 보고서
-프로젝트에 대해 더 알고 싶다면 [보고서](/files/python_project1_report.pdf)를 다운받으세요!
+## 📄 Project Report
+If you’d like to learn more about the project, [download the report](/files/python_project1_report.pdf)!
 
 <br>
 
-## ⚙️ 주요 기능
-| 기능 | 설명 |
-|------|------|
-| **점프 물리 구현** | 중력과 최고점 계산을 통해 부드러운 점프 모션 구현 |
-| **랜덤 장애물 생성** | 일정 시간마다 위치와 간격이 다른 펭귄 등장 |
-| **충돌 감지** | 캐릭터와 장애물이 겹치면 즉시 Game Over 처리 |
-| **점수 시스템** | 피한 장애물 수에 따라 점수 상승 |
-| **재시작 기능** | 스페이스바를 눌러 게임 재시작 가능 |
+## ⚙️ Main Features
+| Feature | Description |
+|----------|-------------|
+| **Jump Physics** | Implemented smooth jump motion using gravity and peak height calculation |
+| **Random Obstacle Generation** | Penguins appear at random intervals and distances over time |
+| **Collision Detection** | Detects overlap between character and obstacle and triggers Game Over immediately |
+| **Scoring System** | Score increases each time an obstacle is avoided |
+| **Restart Function** | Press the spacebar to restart the game after it ends |
 
 <br>
 
-## 📈 결과
-- 플레이어의 점프하여 장애물을 뛰어넘을 시 점수를 획득  
-- 일정 시간 생존 시 난이도 상승  
-- 점수·시간·Game Over·재시작 기능 완비
+## 📈 Results
+- Players earn points by jumping over obstacles  
+- Difficulty gradually increases as survival time grows  
+- Fully supports score display, time tracking, Game Over, and restart functionality  
 
 <br>
 
-## 💡 배운 점
-- **이벤트 루프 구조와 게임 루프의 차이**를 이해하게 되었음  
-- **객체 간 충돌 감지와 시간 기반 스폰 로직** 구현 경험  
-- **Pygame의 기본 그래픽 처리 및 키 이벤트 제어**를 익힘  
-- **프로젝트 단위 실행 구조(`main()` 함수)** 익숙해짐
-- 팀 프로젝트를 통해 다른 팀원들과 협업하며 공동 개발 경험을 쌓을 수 있었음
+## 💡 Key Learnings
+- Gained a clear understanding of **the difference between event loops and game loops**  
+- Implemented **collision detection and time-based spawn logic** between objects  
+- Learned **basic graphics rendering and key event handling in Pygame**  
+- Became familiar with **modular project structure using `main()` functions**  
+- Experienced **team collaboration and co-development** through a group project  
 
 <br>
