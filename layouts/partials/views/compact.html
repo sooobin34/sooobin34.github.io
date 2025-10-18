@@ -19,8 +19,8 @@
 {{ with $item.Params.image }}
   {{ if .filename }}
     {{ $imageFile = .filename }}
-  {{ else if (reflect.IsString .) }}
-    {{ $imageFile = . }}
+  {{ else }}
+    {{ $imageFile = printf "%v" . }}
   {{ end }}
 {{ end }}
 
@@ -28,7 +28,7 @@
   {{ $imageFile = (printf "/media/%s" $imageFile) }}
 {{ end }}
 
-<div class="basic-card">
+<a href="{{ $link }}" class="basic-card" {{ $target | safeHTMLAttr }}>
   {{ if $imageFile }}
   <div class="card-image">
     <img src="{{ $imageFile | relURL }}" alt="{{ $item.Title }}">
@@ -36,80 +36,58 @@
   {{ end }}
 
   <div class="card-body">
-    <h3 class="card-title">
-      <a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{ $item.Title }}</a>
-    </h3>
+    <h3 class="card-title">{{ $item.Title }}</h3>
     {{ with $summary }}<p class="card-summary">{{ . }}</p>{{ end }}
   </div>
-</div>
+</a>
 
 <style>
-/* 카드 전체 스타일 */
 .basic-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.08);
   transition: transform .25s ease, box-shadow .25s ease;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
   text-align: center;
-  margin-bottom: 35px; /* 🔹 카드 간 간격 (기존보다 넓힘) */
+  margin-bottom: 35px;
+  cursor: pointer; /* 클릭 가능하게 커서 변경 */
 }
-
-/* Hover 효과 */
 .basic-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 8px 18px rgba(0,0,0,0.15);
 }
-
-/* 이미지 영역 */
 .card-image {
   width: 100%;
   height: 200px;
   overflow: hidden;
 }
-
 .card-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform .4s ease;
 }
-
 .basic-card:hover img {
   transform: scale(1.05);
 }
-
-/* 카드 텍스트 */
 .card-body {
   padding: 16px 18px;
 }
-
 .card-title {
   font-size: 1.1rem;
   font-weight: 600;
   color: #1d2c7b;
   margin: 0 0 10px;
 }
-
-.card-title a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.card-title a:hover {
-  color: #6d78cf;
-}
-
 .card-summary {
   color: #555;
   font-size: 0.95rem;
   line-height: 1.5;
   margin: 0;
 }
-
-/* 제목과 첫 카드 간 여백 */
 .home-section h2,
 .home-section h1,
 .home-section h3 {
