@@ -15,24 +15,29 @@
   {{ $summary = $item.Summary }}
 {{ end }}
 
-<div class="custom-card-compact">
-  {{ with $item.Params.image }}
-    {{ $img := "" }}
-    {{ if reflect.IsMap . }}
-      {{ with .filename }}
-        {{ $img = . }}
+
+<div class="basic-card">
+  {{/* ✅ 이미지 로딩 로직 (모든 경로 대응) */}}
+  {{ $img := "" }}
+  {{ if $item.Resources.GetMatch "featured*" }}
+    {{ $img = ($item.Resources.GetMatch "featured*").RelPermalink }}
+  {{ else if $item.Params.image }}
+    {{ if reflect.IsMap $item.Params.image }}
+      {{ with $item.Params.image.filename }}
+        {{ $img = (printf "media/%s" . | relURL) }}
       {{ end }}
-    {{ else if reflect.IsString . }}
-      {{ $img = . }}
-    {{ end }}
-    {{ if $img }}
-      <div class="card-img">
-        <img src="{{ $img | relURL }}" alt="{{ $item.Title }}">
-      </div>
+    {{ else if reflect.IsString $item.Params.image }}
+      {{ $img = ($item.Params.image | relURL) }}
     {{ end }}
   {{ end }}
 
-  <div class="card-info">
+  {{ if $img }}
+  <div class="card-image">
+    <img src="{{ $img }}" alt="{{ $item.Title }}">
+  </div>
+  {{ end }}
+
+  <div class="card-body">
     <h3 class="card-title">
       <a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{ $item.Title }}</a>
     </h3>
@@ -42,67 +47,58 @@
   </div>
 </div>
 
+
 <style>
-.custom-card-compact {
-  display: grid;
-  grid-template-rows: 200px 1fr;
-  width: 300px;
-  margin: 15px;
-  background: #ffffff;
-  border-radius: 12px;
+.basic-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
   overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
 
-.custom-card-compact:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+.basic-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
   border: 1px solid #8ea8ff;
 }
 
-.custom-card-compact .card-img {
+.basic-card img {
   width: 100%;
   height: 200px;
-  overflow: hidden;
-}
-
-.custom-card-compact .card-img img {
-  width: 100%;
-  height: 100%;
   object-fit: cover;
-  transition: transform 0.4s;
+  transition: transform 0.4s ease;
 }
 
-.custom-card-compact:hover .card-img img {
+.basic-card:hover img {
   transform: scale(1.05);
 }
 
-.custom-card-compact .card-info {
+.basic-card .card-body {
   padding: 15px;
 }
 
-.custom-card-compact .card-title {
-  font-size: 1.05rem;
-  font-weight: 600;
+.basic-card .card-title {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
   color: #1d2c7b;
-  margin-bottom: 8px;
 }
 
-.custom-card-compact .card-title a {
+.basic-card .card-title a {
   color: inherit;
   text-decoration: none;
 }
 
-.custom-card-compact .card-title a:hover {
+.basic-card .card-title a:hover {
   color: #6d78cf;
 }
 
-.custom-card-compact .card-summary {
+.basic-card .card-summary {
   color: #555;
-  font-size: 0.9rem;
-  line-height: 1.45;
-  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
 }
 </style>
