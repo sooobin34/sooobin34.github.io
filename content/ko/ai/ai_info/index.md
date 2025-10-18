@@ -19,8 +19,9 @@ sections:
       text: ""
       filters:
         folders:
-          - ai_project1
-          - ai_project2
+          - ai
+        exclude_folders:
+          - ai/ai_info
     design:
       view: card
       columns: 2
