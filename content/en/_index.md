@@ -83,6 +83,7 @@ sections:
   - block: collection
     content:
       title: "AI, Ds Projects"
+      subtitle: “Check out the projects below!”
       count: 9
       filters:
         folders:
@@ -97,6 +98,7 @@ sections:
   - block: collection
     content:
       title: "DB, PY Projects"
+      subtitle: “Check out the projects below!”
       count: 9
       filters:
         folders:

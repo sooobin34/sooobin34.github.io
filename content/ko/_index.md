@@ -83,7 +83,7 @@ sections:
   - block: collection
     content:
       title: "AI, Ds 프로젝트"
-      subtitle: "아래에서 프로젝트를 살펴보세요!"
+      subtitle: "프로젝트 세부 내용을 확인해보세요!"
       count: 9
       filters:
         folders:
@@ -97,7 +97,7 @@ sections:
   - block: collection
     content:
       title: "DB, PY 프로젝트"
-      subtitle: "아래에서 프로젝트를 살펴보세요!"
+      subtitle: "프로젝트 세부 내용을 확인해보세요!"
       count: 9
       filters:
         folders:
