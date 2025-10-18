@@ -1,6 +1,6 @@
 ---
-title: "DS Projects"
-summary: "이진 탐색 트리를 활용한 다양한 자료구조 프로젝트 모음"
+title: "DS Projects info"
+summary: "A collection of data structure projects using Binary Search Trees"
 date: 2025-10-14
 type: post
 draft: false
@@ -16,30 +16,31 @@ tags:
 ---
 <dr>
 
-## 📘 자료구조 프로젝트 소개
-이 섹션에서는 전북대학교 **자료구조(Data Structure)** 수업에서 수행한 세 가지 프로젝트를 소개합니다. 프로젝트는 모두 **이진 탐색 트리(Binary Search Tree, BST)** 를 중심으로 수행되었습니다. 트리의 특성과 효율적인 탐색 알고리즘을 실제 코드로 구현하는 데 중점을 두었습니다.
+## 📘 Introduction to Data Structure Projects
+This section introduces three projects completed in the **Data Structure** course at Jeonbuk National University.  
+All projects were developed around the **Binary Search Tree (BST)**, focusing on implementing the characteristics of trees and efficient search algorithms through practical coding.
 
 <dr>
 
-## 📂 프로젝트 목록
+## 📂 Project List
 
-### **Project 1 – 이진 탐색 트리 균형 확인**
-트리의 균형 여부를 판단하는 `isBalanced()` 함수를 구현했습니다.  
-각 노드의 서브트리 높이를 계산하여 왼쪽과 오른쪽의 높이 차이가 1 이하일 때만 균형으로 간주합니다.  
-[→ 자세히 보기](../ds_project1/)
-
-<dr>
-
-### **Project 2 – 이진 탐색 트리 합 경로 세기**
-루트에서 시작하는 모든 경로 중에서 **노드들의 합이 X가 되는 경우의 수**를 계산합니다.  
-누적 합(prefix sum)과 해시맵을 이용하여 효율적인 탐색을 구현했습니다.  
-[→ 자세히 보기](../ds_project2/)
+### **Project 1 – Checking Binary Search Tree Balance**
+Implemented the `isBalanced()` function to determine whether a tree is balanced.  
+The program calculates the height of each subtree and considers the tree balanced only if the height difference between the left and right subtrees is less than or equal to 1.  
+[→ View Details](../ds_project1/)
 
 <dr>
 
-### **Project 3 – 한영/영한 사전 검색**
-이진 탐색 트리를 이용하여 **양방향 사전(K-E, E-K)** 을 구성했습니다.  
-문자열 비교를 기반으로 삽입, 검색, 출력 기능을 모두 구현하였습니다.  
-[→ 자세히 보기](../ds_project3/)
+### **Project 2 – Counting Paths with a Given Sum**
+Counts the number of paths starting from the root where **the sum of node values equals X**.  
+Implemented efficient searching using **prefix sums** and a **hash map**.  
+[→ View Details](../ds_project2/)
+
+<dr>
+
+### **Project 3 – Korean–English / English–Korean Dictionary**
+Built a **bidirectional dictionary (K-E, E-K)** using a binary search tree.  
+Implemented insertion, search, and print functionalities based on string comparison.  
+[→ View Details](../ds_project3/)
 
 <dr>
