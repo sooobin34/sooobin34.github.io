@@ -47,7 +47,7 @@ sections:
     content:
       title:
       subtitle: ''
-      text: "If you have any questions or would like to get in touch, please see the information below."
+      text: 
     design:
       columns: '1'
       background:

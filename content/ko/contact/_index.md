@@ -52,7 +52,7 @@ sections:
     content:
       title:
       subtitle: ''
-      text: "궁금한 점이 있거나 연락을 원하신다면 아래 정보를 참고해주세요."
+      text:
     design:
       columns: '1'
       background:
