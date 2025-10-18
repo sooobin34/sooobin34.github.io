@@ -16,10 +16,11 @@ sections:
   - block: collection
     content:
       title: "📂 프로젝트 목록"
-      text: "아래 프로젝트를 클릭하면 세부 내용을 볼 수 있습니다."
+      text: ""
       filters:
         folders:
-          - ai
+          - ai_project1
+          - ai_project2
     design:
       view: card
       columns: 2
