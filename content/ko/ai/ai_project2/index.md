@@ -9,7 +9,7 @@ share: false
 draft: false
 
 image:
-  filename: "8puzzle.jpg"
+  filename: "ai_8puzzle.jpg"
 
 tags:
   - Artificial Intelligence

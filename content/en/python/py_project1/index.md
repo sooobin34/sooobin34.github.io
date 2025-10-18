@@ -8,7 +8,7 @@ date: 2025-10-10
 share: false
 
 image:
-  filename: "runner.png"
+  filename: "py_runner.png"
   caption: "Actual gameplay screen"
 
 tags:

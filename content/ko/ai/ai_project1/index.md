@@ -9,7 +9,7 @@ share: false
 draft: false
 
 image:
-  filename: "omok_ai.jpg"
+  filename: "ai_omok.jpg"
 
 tags:
   - Artificial Intelligence
