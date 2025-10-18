@@ -42,7 +42,6 @@
 </a>
 
 <style>
-/* ===== 카드 기본 스타일 ===== */
 .basic-card {
   display: block;
   text-decoration: none;
@@ -62,7 +61,7 @@
   box-shadow: 0 8px 18px rgba(0,0,0,0.15);
 }
 
-/* ===== 이미지 영역 ===== */
+/* 이미지 영역 */
 .card-image {
   width: 100%;
   height: 200px;
@@ -80,12 +79,12 @@
   transform: scale(1.05);
 }
 
-/* ===== 본문 영역 ===== */
+/* 본문 영역 */
 .card-body {
   padding: 16px 18px;
 }
 
-/* ===== 제목 스타일 ===== */
+/* 제목 스타일 */
 .card-title {
   font-size: 1.1rem;
   font-weight: 600;
@@ -93,7 +92,7 @@
   margin: 0 0 10px;
 }
 
-/* ===== 요약 텍스트 ===== */
+/* 요약 텍스트 */
 .card-summary {
   color: #555;
   font-size: 0.95rem;
@@ -101,14 +100,10 @@
   margin: 0;
 }
 
-/* ===== 제목과 부제 간격 조정 ===== */
+/* 섹션 제목 여백 */
+.home-section h2,
 .home-section h1,
-.home-section h2 {
-  margin-bottom: 0.3rem !important; /* 제목-부제 붙게 */
-}
-
-/* ===== 부제와 카드 간격 조정 ===== */
-.section-heading + .block-content {
-  margin-top: 1.8rem !important; /* 카드 위 여백 넓히기 */
+.home-section h3 {
+  margin-bottom: 25px !important;
 }
 </style>

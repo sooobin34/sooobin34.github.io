@@ -82,8 +82,7 @@ sections:
   # Custom View 1
   - block: collection
     content:
-      title: "AI, Ds Projects"
-      subtitle: “Check out the projects below!”
+      title: "AI, DS Projects"
       count: 9
       filters:
         folders:
@@ -98,7 +97,6 @@ sections:
   - block: collection
     content:
       title: "DB, PY Projects"
-      subtitle: “Check out the projects below!”
       count: 9
       filters:
         folders:
