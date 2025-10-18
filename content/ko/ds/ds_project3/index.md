@@ -1,7 +1,7 @@
 ---
-title: "DS Project 3 - Korean–English / English–Korean Dictionary"
-subtitle: "Bidirectional Dictionary Implementation Using a Binary Search Tree"
-summary: "Implemented a bidirectional dictionary based on a Binary Search Tree (BST) that supports both Korean→English and English→Korean word searches."
+title: "DS Project 3 - 한영/영한 사전 검색"
+subtitle: "이진 탐색 트리를 이용한 양방향 사전 구현"
+summary: "이진 탐색 트리를 기반으로 한국어→영어, 영어→한국어 단어 검색이 가능한 양방향 사전을 구현했습니다."
 
 type: post
 date: 2025-10-14
@@ -9,7 +9,7 @@ share: false
 
 image:
   filename: "bst3.jpg"
-# Fourth Unsplash image (bst3.jpg): https://images.unsplash.com/photo-1675044794037-9262cedb6d5d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1332
+# 네번째 Unsplash 이미지 (bst3.jpg): https://images.unsplash.com/photo-1675044794037-9262cedb6d5d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1332
 
 tags:
   - Data Structure
@@ -27,73 +27,74 @@ links:
 
 <br>
 
-## 🎯 Project Overview
-This project implements a program that manages both **Korean–English (K-E)** and **English–Korean (E-K)** dictionaries using a **Binary Search Tree (BST)**.  
+## 🎯 프로젝트 개요
+이 프로젝트는 **이진 탐색 트리(Binary Search Tree, BST)** 를 이용하여 **한-영(K-E)** 사전과 **영-한(E-K)** 사전을 동시에 관리하는 프로그램을 구현한 과제입니다.  
 
-Each dictionary consists of a key–value relationship:  
-- K-E Dictionary: *Korean word → English word*  
-- E-K Dictionary: *English word → Korean word*  
+각 사전은 키(key)와 값(value)의 관계로 구성되며,  
+- K-E 사전은 *한국어 단어 → 영어 단어*  
+- E-K 사전은 *영어 단어 → 한국어 단어*  
+형태로 각각 독립적으로 관리됩니다.  
 
-Users can perform word insertion, bilingual search, and dictionary printing.  
-By using a tree-based search structure, the program enables efficient word lookup and management.
-
-<br>
-
-## 📄 Project Report  
-For detailed design and experimental results, refer to the [report](/files/ds_project123_report.pdf).
+사용자는 단어 삽입, 단어 검색(한영/영한), 전체 사전 출력 등의 기능을 수행할 수 있으며,  
+트리 기반 탐색을 통해 효율적인 검색이 가능하도록 설계되었습니다.
 
 <br>
 
-## ⚙️ Main Features & Structure
-| Component | Description |
-|------------|-------------|
-| `insert()` | Inserts Korean and English words into two separate trees (K-E, E-K) |
-| `searchWord()` | Takes a Korean word as input and returns its English translation (K-E search) |
-| `searchMeaning()` | Takes an English word as input and returns its Korean translation (E-K search) |
-| `printAllWords()` | Prints both dictionaries in sorted order (inorder traversal) |
-| `remove()` | Deletes the specified word from the tree (duplicate keys not allowed) |
+## 📄 프로젝트 보고서  
+자세한 설계 및 실험 결과는 [보고서](/files/ds_project123_report.pdf)를 참고하세요!
 
 <br>
 
-## 🧠 Algorithm Summary
-- **Data Structure:** Binary Search Tree  
-- **Search Criteria:** Lexicographical order using `strcmp`  
-- **Traversal Methods:**  
-  - **Inorder traversal** for dictionary printing  
-  - K-E and E-K dictionaries are managed separately in independent trees  
-- **Time Complexity:**  
-  - Insertion / Search / Deletion: O(log n)  
-  - Printing: O(n)  
-- **Key Points:**  
-  - Supports **string inputs containing spaces** in both languages  
-  - Each word is managed as a **node object (`Record`)** for reusability  
+## ⚙️ 주요 기능 및 구조
+| 구성 요소 | 설명 |
+|------------|-------|
+| `insert()` | 한국어 단어와 영어 단어를 각각 두 개의 트리에 삽입 (K-E, E-K) |
+| `searchWord()` | 한국어 단어를 입력받아 영어 단어를 출력 (K-E 검색) |
+| `searchMeaning()` | 영어 단어를 입력받아 한국어 단어를 출력 (E-K 검색) |
+| `printAllWords()` | 두 사전을 각각 정렬된 순서(중위순회)로 출력 |
+| `remove()` | 주어진 단어를 트리에서 삭제 (중복 키 미허용) |
 
 <br>
 
-## 🧩 Technologies Used
-- **Language:** C++  
-- **Data Structure:** Binary Search Tree  
-- **Core Classes:** `Record`, `BinaryNode`, `BinSrchTree`, `Dictionary`  
-- **Input/Output:** String input handling using `cin` and `getline()`  
-- **Search Options:**  
-  - `k` → Korean–English (K-E) search  
-  - `e` → English–Korean (E-K) search  
-  - `p` → Print all dictionary entries  
-  - `q` → Quit program  
+## 🧠 알고리즘 요약
+- **자료구조:** Binary Search Tree  
+- **탐색 기준:** 문자열 비교(`strcmp`)를 통한 사전순 정렬  
+- **순회 방식:**  
+  - 사전 출력 시 **중위순회(inorder traversal)**  
+  - K-E 사전과 E-K 사전 모두 각각 별도의 트리에서 독립적으로 관리  
+- **시간 복잡도:**  
+  - 삽입 / 검색 / 삭제 : O(log n)  
+  - 출력 : O(n)  
+- **주요 포인트:**  
+  - 한국어/영어 모두 **공백이 포함된 문자열 입력 지원**  
+  - 각 단어를 **노드 객체(Record)** 로 관리하여 재사용성 확보  
 
 <br>
 
-## 💡 Key Learnings
-- Learned the importance of **string-based comparison and sorting** when implementing a Binary Search Tree for textual data.  
-- Practiced using `getline()` to handle **string inputs containing spaces**.  
-- Understood the need for **data consistency and memory management** when maintaining two trees simultaneously.  
-- Designed and implemented a **bidirectional search structure (K→E, E→K)** using tree traversal logic.  
+## 🧩 사용 기술
+- **언어:** C++  
+- **자료구조:** Binary Search Tree  
+- **핵심 클래스:** `Record`, `BinaryNode`, `BinSrchTree`, `Dictionary`  
+- **입출력 방식:** `cin`, `getline()`을 이용한 문자열 입력 처리  
+- **검색 방식:**  
+  - `k` → 한영사전(K-E) 검색  
+  - `e` → 영한사전(E-K) 검색  
+  - `p` → 전체 사전 출력  
+  - `q` → 종료  
 
 <br>
 
-## 📘 Conclusion
-Through this project, I reconfirmed the **efficiency of tree-based search structures**.  
-By implementing a BST with strings as keys, I gained a clear understanding of how **comparison operations, insertion/deletion logic, and traversal methods** differ from numerical trees.  
-Managing two trees in parallel provided practical insight into **data redundancy handling and search optimization** beyond single-structure systems.
+## 💡 배운 점
+- 문자열 기반의 **이진 탐색 트리 구현 과정**을 통해 단순 숫자 비교 트리와 달리 **문자열 비교 기반 정렬 구조**의 중요성을 배웠습니다.  
+- 입력 처리 과정에서 `getline()`을 사용해 **공백이 포함된 문자열 입력 처리 방법**을 익혔습니다.  
+- 두 개의 트리를 동시에 관리하며 **데이터 일관성 유지와 메모리 관리**가 중요하다는 것을 느꼈습니다.
+- 트리 탐색 로직을 응용하여 **양방향 검색 구조(한→영, 영→한)** 를 설계할 수 있었습니다.  
+
+<br>
+
+## 📘 결론
+이 과제를 통해 **트리 기반 검색 구조의 효율성**을 다시 한 번 확인하게 되었습니다.  
+특히 문자열을 키로 하는 BST를 구현하면서 **비교 연산, 삽입/삭제 로직, 순회 방식**의 차이를 명확히 이해할 수 있었습니다.  
+또한 두 개의 트리를 병행 관리함으로써 단일 구조를 넘어서는 **데이터 이중화 관리 및 검색 효율화 개념**을 학습할 수 있었습니다.
 
 <dr>
