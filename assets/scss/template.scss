@@ -26,4 +26,31 @@ button:hover,
   cursor: pointer;                 // 커서 손모양으로 변경
 }
 
+/* 메뉴에서 호버할 때 색상 변경 */
+.navbar a:hover,
+.nav-link:hover {
+  color: #6d78cf !important;   /* hover 시 글자색 */
+  transition: color 0.3s ease;
+}
 
+/* 현재 페이지 강조 */
+.navbar .active > a,
+.navbar a.active {
+  color: #4a55b5 !important;   /* 진한 파랑*/
+  font-weight: 600;
+}
+
+
+/* card-compact용 색상 */
+.custom-card-compact {
+  background-color: #e6f0ff; /* 옅은 파란색 */
+  border: 1px solid #b5d0ff;
+  transition: all 0.2s ease-in-out;
+}
+
+/* card-overlay용 색상 */
+.custom-card-overlay {
+  background-color: #f3f8ff; /* 거의 흰색 느낌 */
+  border: 1px solid #a9c9ff;
+  transition: all 0.2s ease-in-out;
+}
