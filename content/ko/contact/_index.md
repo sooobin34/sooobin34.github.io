@@ -1,34 +1,70 @@
 ---
-title: "AI Projects Overview"
+title: Contact
+summary: "연락 방법(이메일,전화번호,지도)"
+
+image:
+  filename: "contact.jpg"
+
+date: 2025-10-13
+
 type: landing
-date: 2025-10-12
-draft: false
 
 sections:
-  - block: markdown
+  - block: contact
     content:
-      title: "🧠 인공지능 프로젝트 소개"
-      text: |
-        전북대학교 **인공지능(Artificial Intelligence)** 수업에서 수행한 프로젝트들을 소개합니다.  
-        각 프로젝트에서는 탐색 알고리즘과 휴리스틱 평가 함수를 직접 구현하며,  
-        **게임 인공지능 및 탐색 문제 해결 능력**을 향상시키는 데 중점을 두었습니다.
-
-  - block: collection
-    content:
-      title: "📂 프로젝트 목록"
-      text: "아래 프로젝트를 클릭하면 세부 내용을 볼 수 있습니다."
-      filters:
-        folders:
-          - ai
+      title: Contact
+      email: sooobin0304@naver.com
+      phone: +82-10-6206-1173
+      address:
+        street: 여울로 109
+        city: 전주시
+        region: 전라북도
+        postcode: '54944'
+        country: 대한민국
+        country_code: KO
+      coordinates:
+        latitude: '35.837016'
+        longitude: '127.113356'
+      office_hours:
+        - '월요일 10:00 to 13:00'
+        - '목요일 10:00 to 14:00'
+      #contact_links:
+      #  - icon: comments
+      #    icon_pack: fas
+      #    name: Discuss on Forum
+      #    link: 'https://discourse.gohugo.io'
+    
+      # Automatically link email and phone or display as text?
+      autolink: true
+    
+      # Email form provider
+      form:
+        provider: netlify
+        formspree:
+          id:
+        netlify:
+          # Enable CAPTCHA challenge to reduce spam?
+          captcha: false
     design:
-      view: card
-      columns: 2
-      spacing:
-        padding: ["20px", "20px", "20px", "20px"]
+      columns: '1'
 
   - block: markdown
     content:
-      title: "🔗 프로젝트 바로가기"
-      text: |
-        [Project 1 – Alpha-Beta 탐색 기반 오목 인공지능](../ai_project1/)  
-        [Project 2 – 휴리스틱을 이용한 8퍼즐 문제 해결](../ai_project2/)
+      title:
+      subtitle: ''
+      text:
+    design:
+      columns: '1'
+      background:
+        image: 
+          filename: contact.jpg
+          filters:
+            brightness: 1
+          parallax: false
+          position: center
+          size: cover
+          text_color_light: true
+      spacing:
+        padding: ['20px', '0', '20px', '0']
+      css_class: fullscreen
+---
