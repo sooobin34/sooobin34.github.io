@@ -1,63 +1,62 @@
 ---
 title: "DB Project 1"
-subtitle: "애견인을 위한 정보 제공 및 거래를 위한 DB 설계 및 구현"
-summary: "애견 정보를 제공하고 용품을 거래할 수 있는 웹사이트의 데이터베이스 설계 및 구현"
+subtitle: "Database Design and Implementation for a Pet Information & Trading Platform"
+summary: "Designed and implemented a database system for a website that provides pet-related information and enables product trading."
 
 date: 2025-10-10
 type: post
 
 image:
   filename: "db.jpg"
-# 두번째 Unsplash의 이미지 (db.jpg): https://images.unsplash.com/photo-1695668548342-c0c1ad479aee?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170
+# Original Unsplash image (db.jpg): https://images.unsplash.com/photo-1695668548342-c0c1ad479aee?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170
 
-# 메타데이터 (검색용)
 tags:
   - Database
   - SQL
   - ERD
 
-# 깃허브 링크 정보
 links:
   - icon: github
     icon_pack: fab
     name: "GitHub Repository"
     url: "https://github.com/sooobin34/DB_Project1"
 ---
-<br>
-
-## 📘 프로젝트 개요 
-애견인을 위한 다양한 정보를 제공하고, 애견 용품을 직거래·공동구매할 수 있는 웹사이트를 위한 데이터베이스를 설계하고 구현한 프로젝트입니다.
-회원, 반려견, 분양, 병원, 거래 등 여러 기능을 효율적으로 관리할 수 있는 구조를 구축했습니다.  
 
 <br>
 
-## 📄 프로젝트 보고서
-프로젝트에 대해 더 알고 싶다면 [보고서](/files/db_project1_report.pdf)를 다운받으세요!
+## 📘 Project Overview
+This project focuses on designing and implementing a **database for a website that provides pet-related information and supports direct and group trading of pet products**.  
+The database was structured to efficiently manage multiple modules, including members, pets, adoption, hospitals, transactions, and more.
 
 <br>
 
-## ⚙️ 사용 기술  
+## 📄 Project Report
+If you’d like to learn more about the project, [download the report](/files/db_project1_report.pdf)!
+
+<br>
+
+## ⚙️ Technologies Used
 - **DBMS:** Oracle SQL Developer  
-- **언어:** SQL  
-- **설계:** 개념적 / 논리적 / 물리적 ERD 설계  
-- **정규화:** 제3정규형(3NF)까지 수행
+- **Language:** SQL  
+- **Design:** Conceptual / Logical / Physical ERD design  
+- **Normalization:** Up to Third Normal Form (3NF)
 
 <br>
 
-## 🧠 주요 기능  
-- 회원 가입 및 로그인  
-- 분양 정보 등록 및 조회  
-- 병원 및 카페 정보 제공  
-- DIY 콘텐츠 관리  
-- 용품 거래 및 공동구매  
-- 친구 매칭과 돌봄 품앗이 기능  
-- 훈련 프로그램 신청 및 일정 관리  
+## 🧠 Main Features
+- User registration and login  
+- Pet adoption listing and browsing  
+- Pet hospital and café information services  
+- DIY content management  
+- Product trading and group purchasing  
+- Friend matching and pet-sitting exchange  
+- Training program registration and schedule management  
 
 <br>
 
-## 💡 프로젝트 결과  
-이번 프로젝트를 통해 **요구 분석 → 개념적 설계 → 논리적 설계 → 물리적 설계 → 구현**의 데이터베이스 구축 전 과정을 수행했습니다.  
-ERD 설계와 정규화를 통해 데이터 중복을 최소화하고, 테이블 간 관계를 명확히 하여 **데이터 무결성과 관리 효율성**을 높였습니다.  
-또한 SQL Developer를 이용해 실제 데이터를 삽입하고 쿼리를 실행하며 DB 구축 과정을 실무적으로 경험할 수 있었습니다.
+## 💡 Project Outcomes
+Through this project, I completed the **entire database development process**, including *requirements analysis, conceptual design, logical design, physical design,* and *implementation*.  
+By designing the ERD and performing normalization, I minimized data redundancy and clarified relationships between tables, thereby improving **data integrity and management efficiency**.  
+Additionally, I used **Oracle SQL Developer** to insert real data and execute queries, gaining practical experience in building a real-world database system.
 
 <br>
