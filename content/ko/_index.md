@@ -95,7 +95,7 @@ sections:
   # 커스텀 뷰2
   - block: collection
     content:
-      title: "DB, PY 프로젝트""
+      title: "DB, PY 프로젝트"
       count: 9
       filters:
         folders:
