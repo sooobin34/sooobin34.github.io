@@ -31,7 +31,7 @@
 .custom-card-compact {
   display: flex;
   align-items: center;
-  background: #ffffff;
+  background: #bfcaf0;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0,0,0,0.08);
@@ -42,6 +42,7 @@
 .custom-card-compact:hover {
   transform: translateY(-6px);
   box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  background-color: #698cd1; 
 }
 
 .custom-card-compact .card-img {
@@ -56,6 +57,10 @@
   object-fit: cover;
 }
 
+.custom-card-compact:hover img {
+  transform: scale(1.05);
+}
+
 .custom-card-compact .card-info {
   flex: 1;
   padding: 16px 20px;
@@ -64,12 +69,16 @@
 .custom-card-compact .card-info h3 {
   margin-top: 0;
   font-size: 1.15rem;
-  margin-bottom: 8px;
-  color: #222;
+  color: #1c3d77; 
+  transition: color 0.3s ease;
+}
+
+.custom-card-compact .card-info h3 a:hover {
+  color: #2a5ad9; 
 }
 
 .custom-card-compact .card-info p {
-  color: #555;
+  color: #333;
   font-size: 0.95rem;
   line-height: 1.4;
 }

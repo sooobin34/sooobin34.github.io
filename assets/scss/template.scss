@@ -9,48 +9,60 @@
 }
 
 
-
-
-// 호버
+/* 버튼 Hover (gitbut 버튼) */
 button,
 .btn,
 .btn-primary {
-  transition: all 0.3s ease;       // 색 전환 부드럽게
+  transition: all 0.3s ease;
 }
 
 button:hover,
 .btn:hover,
 .btn-primary:hover {
-  background-color: #6d78cf;       // hover 시 배경색 변경
-  color: #fff;                     // hover 시 글자색 변경
-  cursor: pointer;                 // 커서 손모양으로 변경
+  background-color: #6d78cf;  /* 마우스 올리면 파란색 */
+  color: #fff;                /* 글자 흰색 */
+  cursor: pointer;
 }
 
-/* 메뉴에서 호버할 때 색상 변경 */
-.navbar a:hover,
-.nav-link:hover {
-  color: #6d78cf !important;   /* hover 시 글자색 */
+/* 메뉴 hover 효과 */
+.navbar-nav .nav-item .nav-link:hover,
+.navbar a:hover {
+  color: #6d78cf !important;  /* hover 시 연한 파랑 */
   transition: color 0.3s ease;
 }
 
-/* 현재 페이지 강조 */
-.navbar .active > a,
+/* 현재 활성 페이지 (active) 강조 */
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item .nav-link.active,
 .navbar a.active {
-  color: #4a55b5 !important;   /* 진한 파랑*/
+  color: #4a55b5 !important;  /* 진한 파랑 */
   font-weight: 600;
+  border-bottom: 2px solid #4a55b5;  /* 밑줄 강조 */
+  padding-bottom: 2px;
+  transition: all 0.3s ease;
 }
 
-
-/* card-compact용 색상 */
+/* Card Hover 색상 유지 (optional) */
 .custom-card-compact {
-  background-color: #e6f0ff; /* 옅은 파란색 */
+  background-color: #e6f0ff;
   border: 1px solid #b5d0ff;
-  transition: all 0.2s ease-in-out;
+  border-radius: 12px;
+  transition: all 0.25s ease-in-out;
 }
 
-/* card-overlay용 색상 */
+.custom-card-compact:hover {
+  background-color: #d7e6ff;
+  transform: translateY(-4px);
+}
+
 .custom-card-overlay {
-  background-color: #f3f8ff; /* 거의 흰색 느낌 */
+  background-color: #f3f8ff;
   border: 1px solid #a9c9ff;
-  transition: all 0.2s ease-in-out;
+  border-radius: 12px;
+  transition: all 0.25s ease-in-out;
+}
+
+.custom-card-overlay:hover {
+  background-color: #e2ecff;
+  transform: translateY(-4px);
 }

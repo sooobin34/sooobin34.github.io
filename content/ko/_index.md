@@ -89,7 +89,8 @@ sections:
           - ai
           - ds
     design:
-      view_template: card-compact
+      view_template: card
+      columns: 3
 
   # 커스텀 뷰2
   - block: collection
@@ -101,7 +102,8 @@ sections:
           - database
           - python  
     design:
-      view_template: card-overlay
+      view_template: card
+      columns: 3
 
 
   # 자기소개 요약
