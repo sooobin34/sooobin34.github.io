@@ -31,7 +31,9 @@ The database was structured to efficiently manage multiple modules, including me
 <br>
 
 ## 📄 Project Report
-If you’d like to learn more about the project, [download the report](/files/db_project1_report.pdf)!
+If you’d like to learn more about the project, [download the report!](/files/db_project1_report.pdf)
+<br>
+(*Note: The report is written in Korean.*)
 
 <br>
 
