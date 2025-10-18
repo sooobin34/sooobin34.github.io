@@ -32,27 +32,3 @@ button:hover,
 }
 
 
-/* Card Hover 색상 유지 (optional) */
-.custom-card-compact {
-  background-color: #e6f0ff;
-  border: 1px solid #b5d0ff;
-  border-radius: 12px;
-  transition: all 0.25s ease-in-out;
-}
-
-.custom-card-compact:hover {
-  background-color: #d7e6ff;
-  transform: translateY(-4px);
-}
-
-.custom-card-overlay {
-  background-color: #f3f8ff;
-  border: 1px solid #a9c9ff;
-  border-radius: 12px;
-  transition: all 0.25s ease-in-out;
-}
-
-.custom-card-overlay:hover {
-  background-color: #e2ecff;
-  transform: translateY(-4px);
-}
