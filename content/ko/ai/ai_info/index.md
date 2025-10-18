@@ -20,7 +20,7 @@ sections:
       filters:
         folders:
           - ai
-        exclude_folders:
+        exclude_content:
           - ai/ai_info
     design:
       view: card
