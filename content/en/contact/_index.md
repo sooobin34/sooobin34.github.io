@@ -1,6 +1,5 @@
 ---
 title: Contact
-subtitle: "If you have any questions or would like to get in touch, please see the information below."
 summary: "Ways to get in touch (email, phone, and map)"
 
 image:
@@ -48,7 +47,7 @@ sections:
     content:
       title:
       subtitle: ''
-      text:
+      text: "If you have any questions or would like to get in touch, please see the information below."
     design:
       columns: '1'
       background:
