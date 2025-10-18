@@ -23,7 +23,6 @@ links:
     name: "GitHub Repository"
     url: "https://github.com/sooobin34/AI_Project2"
 ---
-
 <br>
 
 ## 🧩 Project Overview
@@ -62,3 +61,18 @@ def heuristic(state, problem=None):
             if state.cells[row][col] != 0 and state.cells[row][col] != goal[row][col]:
                 misplaced += 1
     return misplaced
+```
+
+<br>
+
+## 🧠 Key Revision Points
+| Item | Change Description |
+|------|--------------------|
+| `type: langing` → ✅ `type: post` | Fixed typo and applied blog-style format |
+| Removed `sections:` | Simplified to allow direct Markdown content editing |
+| Added GitHub button | Added a clean, visually appealing button at the bottom of the page |
+| Preserved code blocks | Kept Python code intact to prevent rendering issues |
+| Removed unnecessary indentation | Prevented Markdown parsing errors |
+
+
+<br>

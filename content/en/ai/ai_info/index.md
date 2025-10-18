@@ -15,14 +15,13 @@ tags:
   - Python
   - Search Algorithm
 ---
-<dr>
+<br>
 
 ## 🧠 Introduction to AI Projects
 This section introduces the projects completed in the **Artificial Intelligence** course at Jeonbuk National University.  
 Each project focuses on implementing search algorithms and heuristic evaluation functions to enhance understanding of **game AI and problem-solving through search techniques**.
 
-<dr>
-<dr>
+<br>
 
 ## 📂 Project List
 
@@ -31,13 +30,11 @@ Implemented an Omok (Gomoku) AI using the **Alpha-Beta pruning** technique and *
 to enable the AI to calculate the optimal move autonomously.  
 [→ View Details](../ai_project1/)
 
-<dr>
-<dr>
+<br>
 
 ### **Project 2 – Solving the 8-Puzzle Problem Using Heuristic Search**
 Compared and analyzed various search algorithms including **DFS, BFS, UCS, and A\***  
 to develop a program that finds the optimal path to the goal state in the 8-puzzle problem.  
 [→ View Details](../ai_project2/)
 
-<dr>
-<dr>
+<br>
