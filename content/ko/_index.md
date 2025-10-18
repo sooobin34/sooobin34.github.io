@@ -62,47 +62,46 @@ sections:
         .slick-prev, .slick-next { display: none !important; }
 
   #프로젝트 카드 
-  - block: collection
-    content:
-      title: "주요 프로젝트"
-      subtitle: "AI · Database · Python 프로젝트"
-      count: 9
-      filters:
-        folders:
-          - ai
-          - database
-          - python
-          - ds
-    design:
-      view: card 
-      columns: 3
-      spacing:
-        padding: ["20px", "20px", "20px", "20px"]
-  
-  # 커스텀 뷰1
   #- block: collection
   #  content:
-  #    title: "Compact View (Custom)"
-  #    count: 6
+  #    title: "주요 프로젝트"
+  #    subtitle: "AI · Database · Python 프로젝트"
+  #    count: 9
   #    filters:
   #      folders:
   #        - ai
-  #       - ds
-  # design:
-  #    view_template: card-compact
-
-  # 커스텀 뷰2
-  #- block: collection
-  #  content:
-  #    title: "Overlay View (Custom)"
-  #    count: 6
-  #    filters:
-  #      folders:
   #        - database
   #        - python
   #        - ds
   #  design:
-  #    view_template: card-overlay
+  #    view: card 
+  #    columns: 3
+  #    spacing:
+  #      padding: ["20px", "20px", "20px", "20px"]
+  
+  # 커스텀 뷰1
+  - block: collection
+    content:
+      title: "AI, Ds Projects"
+      count: 9
+      filters:
+        folders:
+          - ai
+          - ds
+    design:
+      view_template: card-compact
+
+  # 커스텀 뷰2
+  - block: collection
+    content:
+      title: "DB, PY Projects"
+      count: 9
+      filters:
+        folders:
+          - database
+          - python  
+    design:
+      view_template: card-overlay
 
 
   # 자기소개 요약
