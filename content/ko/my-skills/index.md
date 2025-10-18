@@ -7,7 +7,7 @@ date: 2025-10-10
 share: false
 image:
   filename: "skills.png"
-  
+
 sections:
 
   # 소개
@@ -31,6 +31,7 @@ sections:
         - **Oracle SQL Developer** — 개념적·논리적·물리적 설계 및 정규화 수행  
         - **Git / GitHub (기초)** — 소스 버전 관리 및 저장소 업로드 경험  
 
+
   # 커스텀 뷰 섹션 (카드형)
   - block: collection
     content:
@@ -42,7 +43,8 @@ sections:
           - Study
       count: 6
     design:
-      view: card
+      view_template: card-compact
+      #view: card
       columns: 3
       spacing:
         padding: ["20px", "20px", "20px", "20px"]
