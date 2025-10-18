@@ -15,7 +15,6 @@
   {{ $summary = $item.Summary }}
 {{ end }}
 
-<!-- ✅ 이미지 자동 감지 (string / map 모두 대응) -->
 {{ $imageFile := "" }}
 {{ with $item.Params.image }}
   {{ if .filename }}
@@ -46,6 +45,7 @@
 </div>
 
 <style>
+/* 🔹 카드 기본 스타일 */
 .overlay-card {
   position: relative;
   border-radius: 12px;
@@ -53,17 +53,23 @@
   box-shadow: 0 4px 10px rgba(0,0,0,.08);
   transition: transform .25s, box-shadow .25s;
   background: #fff;
+  margin-bottom: 30px; /* 카드 간격 띄움 */
 }
+
+/* 🔹 카드 hover 효과 */
 .overlay-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 8px 18px rgba(0,0,0,.15);
 }
+
+/* 🔹 이미지 영역 */
 .overlay-image {
   position: relative;
   width: 100%;
-  height: 190px;
+  height: 210px;
   overflow: hidden;
 }
+
 .overlay-image img {
   width: 100%;
   height: 100%;
@@ -72,32 +78,44 @@
   filter: brightness(70%);
   transition: filter .25s, transform .35s;
 }
+
 .overlay-card:hover img {
   filter: brightness(85%);
   transform: scale(1.05);
 }
+
+/* 🔹 오버레이 텍스트 */
 .overlay-text {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 14px;
+  padding: 16px 18px;
   background: linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,.55) 100%);
   color: #fff;
   text-align: left;
 }
+
 .overlay-title {
-  margin: 0 0 4px;
+  margin: 0 0 6px;
   font-size: 1.05rem;
   font-weight: 600;
 }
+
 .overlay-summary {
   margin: 0;
   font-size: .9rem;
   opacity: .95;
 }
+
+/* 🔹 이미지 없는 경우 */
 .no-image {
   background: #eee;
   height: 190px;
+}
+
+/* 🔹 섹션 제목과 카드 사이 여백 */
+.home-section h2, .home-section h3, .home-section h1 {
+  margin-bottom: 25px !important;  /* 제목과 첫 카드 사이 간격 */
 }
 </style>
