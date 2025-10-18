@@ -89,7 +89,7 @@ sections:
           - ai
           - ds
     design:
-      view: card-compact
+      view_template: card-compact
       columns: 3
 
   # 커스텀 뷰2
@@ -102,7 +102,7 @@ sections:
           - database
           - python  
     design:
-      view: card-overlay
+      view_template: card-overlay
       columns: 3
 
 
