@@ -1,7 +1,6 @@
-<!-- ✅ 전체 카드 묶음에 grid-wrapper 적용 -->
 <div class="grid-wrapper">
 
-  {{ range .Items }}
+  {{ range .page.Pages }}
     {{ $link := .RelPermalink }}
     {{ $target := "" }}
     {{ if .Params.external_link }}
@@ -30,7 +29,6 @@
       {{ $imageFile = (printf "/media/%s" $imageFile) }}
     {{ end }}
 
-    <!-- ✅ 각 카드 -->
     <div class="grid-item">
       <a href="{{ $link }}" class="basic-card" {{ $target | safeHTMLAttr }}>
         {{ if $imageFile }}
@@ -50,7 +48,6 @@
 </div>
 
 <style>
-/* ✅ grid를 전체 카드 묶음 단위로 적용 */
 .grid-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -59,7 +56,6 @@
   align-items: start;
 }
 
-/* 카드 공통 */
 .basic-card {
   display: block;
   width: 100%;
@@ -115,7 +111,6 @@
   margin: 0;
 }
 
-/* 섹션 제목 간격 */
 .home-section h2,
 .home-section h1,
 .home-section h3 {
