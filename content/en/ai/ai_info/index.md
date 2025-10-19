@@ -4,6 +4,7 @@ summary: "A collection of AI-based projects including Alpha-Beta search and 8-pu
 date: 2025-10-12
 type: page
 draft: false
+share: false
 
 image:
   filename: "ai-info.jpg"
