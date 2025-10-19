@@ -88,16 +88,11 @@ sections:
         folders:
           - ai
           - ds
-        page_type: page
-      sort_by: date
-      order: desc
-      
-    design:
-      view: compact
-      columns: 3
-      spacing:
-        padding: ["10px", "10px", "40px", "10px"]
 
+    design:
+      columns: 3
+      view: compact
+      
 
   # Custom View 2
   - block: collection
