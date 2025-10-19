@@ -28,25 +28,38 @@
   {{ $imageFile = (printf "/media/%s" $imageFile) }}
 {{ end }}
 
-<!-- ✅ grid-item 래퍼 추가 -->
-<div class="grid-item">
-  <a href="{{ $link }}" class="basic-card" {{ $target | safeHTMLAttr }}>
-    {{ if $imageFile }}
-    <div class="card-image">
-      <img src="{{ $imageFile | relURL }}" alt="{{ $item.Title }}">
-    </div>
-    {{ end }}
+<!-- ✅ grid-wrapper 전체 감싸기 -->
+<div class="grid-wrapper">
+  <div class="grid-item">
+    <a href="{{ $link }}" class="basic-card" {{ $target | safeHTMLAttr }}>
+      {{ if $imageFile }}
+      <div class="card-image">
+        <img src="{{ $imageFile | relURL }}" alt="{{ $item.Title }}">
+      </div>
+      {{ end }}
 
-    <div class="card-body">
-      <h3 class="card-title">{{ $item.Title }}</h3>
-      {{ with $summary }}<p class="card-summary">{{ . }}</p>{{ end }}
-    </div>
-  </a>
+      <div class="card-body">
+        <h3 class="card-title">{{ $item.Title }}</h3>
+        {{ with $summary }}<p class="card-summary">{{ . }}</p>{{ end }}
+      </div>
+    </a>
+  </div>
 </div>
 
 <style>
+/* ✅ 3열 grid 적용 */
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  justify-items: center;
+}
+
+/* ✅ 카드 3×3 형태 */
 .basic-card {
   display: block;
+  width: 100%;
+  max-width: 320px;
   text-decoration: none;
   color: inherit;
   background: #fff;
@@ -55,18 +68,12 @@
   transition: transform .25s ease, box-shadow .25s ease;
   overflow: hidden;
   text-align: center;
-  margin-bottom: 35px;
   cursor: pointer;
 }
 
 .basic-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 8px 18px rgba(0,0,0,0.15);
-}
-
-/* ✅ 3열 간격 자연스럽게 보이도록 여백 추가 */
-.grid-item {
-  padding: 10px;
 }
 
 /* 이미지 영역 */
