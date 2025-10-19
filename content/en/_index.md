@@ -90,9 +90,8 @@ sections:
           - ds
 
     design:
-      columns: 3
       view: compact
-      
+      columns: 3
 
   # Custom View 2
   - block: collection
