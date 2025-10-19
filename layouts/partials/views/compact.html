@@ -1,61 +1,65 @@
-{{ $item := .item }}
-{{ $link := $item.RelPermalink }}
-{{ $target := "" }}
-{{ if $item.Params.external_link }}
-  {{ $link = $item.Params.external_link }}
-  {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
-{{ end }}
-
-{{ $summary := "" }}
-{{ if $item.Params.summary }}
-  {{ $summary = $item.Params.summary | markdownify | emojify }}
-{{ else if $item.Params.abstract }}
-  {{ $summary = $item.Params.abstract | markdownify | emojify | truncate (site.Params.abstract_length | default 135) }}
-{{ else if $item.Summary }}
-  {{ $summary = $item.Summary }}
-{{ end }}
-
-{{ $imageFile := "" }}
-{{ with $item.Params.image }}
-  {{ if .filename }}
-    {{ $imageFile = .filename }}
-  {{ else }}
-    {{ $imageFile = printf "%v" . }}
-  {{ end }}
-{{ end }}
-
-{{ if $imageFile }}
-  {{ $imageFile = (printf "/media/%s" $imageFile) }}
-{{ end }}
-
-<!-- ✅ grid-wrapper 전체 감싸기 -->
+<!-- ✅ 전체 카드 묶음에 grid-wrapper 적용 -->
 <div class="grid-wrapper">
-  <div class="grid-item">
-    <a href="{{ $link }}" class="basic-card" {{ $target | safeHTMLAttr }}>
-      {{ if $imageFile }}
-      <div class="card-image">
-        <img src="{{ $imageFile | relURL }}" alt="{{ $item.Title }}">
-      </div>
-      {{ end }}
 
-      <div class="card-body">
-        <h3 class="card-title">{{ $item.Title }}</h3>
-        {{ with $summary }}<p class="card-summary">{{ . }}</p>{{ end }}
-      </div>
-    </a>
-  </div>
+  {{ range .Items }}
+    {{ $link := .RelPermalink }}
+    {{ $target := "" }}
+    {{ if .Params.external_link }}
+      {{ $link = .Params.external_link }}
+      {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
+    {{ end }}
+
+    {{ $summary := "" }}
+    {{ if .Params.summary }}
+      {{ $summary = .Params.summary | markdownify | emojify }}
+    {{ else if .Params.abstract }}
+      {{ $summary = .Params.abstract | markdownify | emojify | truncate (site.Params.abstract_length | default 135) }}
+    {{ else if .Summary }}
+      {{ $summary = .Summary }}
+    {{ end }}
+
+    {{ $imageFile := "" }}
+    {{ with .Params.image }}
+      {{ if .filename }}
+        {{ $imageFile = .filename }}
+      {{ else }}
+        {{ $imageFile = printf "%v" . }}
+      {{ end }}
+    {{ end }}
+    {{ if $imageFile }}
+      {{ $imageFile = (printf "/media/%s" $imageFile) }}
+    {{ end }}
+
+    <!-- ✅ 각 카드 -->
+    <div class="grid-item">
+      <a href="{{ $link }}" class="basic-card" {{ $target | safeHTMLAttr }}>
+        {{ if $imageFile }}
+        <div class="card-image">
+          <img src="{{ $imageFile | relURL }}" alt="{{ .Title }}">
+        </div>
+        {{ end }}
+
+        <div class="card-body">
+          <h3 class="card-title">{{ .Title }}</h3>
+          {{ with $summary }}<p class="card-summary">{{ . }}</p>{{ end }}
+        </div>
+      </a>
+    </div>
+  {{ end }}
+
 </div>
 
 <style>
-/* ✅ 3열 grid 적용 */
+/* ✅ grid를 전체 카드 묶음 단위로 적용 */
 .grid-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 28px;
   justify-items: center;
+  align-items: start;
 }
 
-/* ✅ 카드 3×3 형태 */
+/* 카드 공통 */
 .basic-card {
   display: block;
   width: 100%;
@@ -76,7 +80,6 @@
   box-shadow: 0 8px 18px rgba(0,0,0,0.15);
 }
 
-/* 이미지 영역 */
 .card-image {
   width: 100%;
   height: 200px;
@@ -94,12 +97,10 @@
   transform: scale(1.05);
 }
 
-/* 본문 영역 */
 .card-body {
   padding: 16px 18px;
 }
 
-/* 제목 스타일 */
 .card-title {
   font-size: 1.1rem;
   font-weight: 600;
@@ -107,7 +108,6 @@
   margin: 0 0 10px;
 }
 
-/* 요약 텍스트 */
 .card-summary {
   color: #555;
   font-size: 0.95rem;
@@ -115,7 +115,7 @@
   margin: 0;
 }
 
-/* 섹션 제목 여백 */
+/* 섹션 제목 간격 */
 .home-section h2,
 .home-section h1,
 .home-section h3 {
