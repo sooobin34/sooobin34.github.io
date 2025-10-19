@@ -121,5 +121,5 @@ sections:
     design:
       alignment: center
       background:
-        color: "#a8c1caff"
+        color: "#e2f7ffff"
 ---
