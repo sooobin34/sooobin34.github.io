@@ -31,4 +31,9 @@ button:hover,
   transition: color 0.3s ease;
 }
 
+/* 사이트 전체 기본색상 변경 */
+body {
+  background-color: #bad1f4; /* 배경색 */
+  color: #333333;            /* 텍스트색 */
+}
 

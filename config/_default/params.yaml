@@ -6,18 +6,11 @@
 # Appearance
 
 appearance:
-  theme_day: custom
-  theme_night: custom
+  theme_day: minimal
+  theme_night: minimal
   font: native
   font_size: M
-
-# 커스텀 색상 지정
-theme:
-  primary: "#0066ff"    # 기본 메인 색상
-  secondary: "#ffcc00"  # 포인트 색상
-  background: "#0066ff" # 배경색
-  text: "#333333"       # 텍스트 색상
-
+  
 # SEO
 
 marketing:
