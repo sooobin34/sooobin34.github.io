@@ -101,7 +101,6 @@ sections:
         folders:
           - database
           - python  
-        page_type: post
     design:
       view: overlay
       columns: 3

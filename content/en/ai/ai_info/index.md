@@ -2,7 +2,7 @@
 title: "AI Projects Overview"
 summary: "A collection of AI-based projects including Alpha-Beta search and 8-puzzle algorithms"
 date: 2025-10-12
-type: page
+type: post
 draft: false
 share: false
 

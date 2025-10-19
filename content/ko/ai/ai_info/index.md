@@ -4,6 +4,7 @@ summary: "Alpha-Beta 탐색과 8퍼즐 알고리즘 등 AI 기반 프로젝트 �
 date: 2025-10-12
 type: post
 draft: false
+share: false
 
 image:
   filename: "ai-info.jpg"
