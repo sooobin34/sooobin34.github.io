@@ -43,4 +43,9 @@ section[data-block-type="contact"],
 section#contact {
   background-color: #e9fae7 !important;
 }
-
+// 양쪽 정렬 
+.markdown p {
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.6;
+}
