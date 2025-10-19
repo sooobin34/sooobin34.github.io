@@ -37,10 +37,9 @@ body {
   color: #333333;            /* 텍스트색 */
 }
 
-/* contact 전체 영역 배경/글자색 */
-.contact,
-.contact-form,
-.bg-light {
-  background-color: #e9fae7 !important;  /* 전체 배경색과 통일 */
-  color: #333333 !important;              /* 텍스트색 통일 */
+/* Contact 페이지 본문 영역 배경 통일 */
+.universal-wrapper,
+.page-body,
+.section {
+  background-color: #e9fae7 !important;
 }
