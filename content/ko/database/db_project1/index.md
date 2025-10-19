@@ -5,6 +5,7 @@ summary: "애견 정보를 제공하고 용품을 거래할 수 있는 웹사이
 
 date: 2025-10-10
 type: post
+share: false
 
 image:
   filename: "db.jpg"

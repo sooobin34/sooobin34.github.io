@@ -4,6 +4,7 @@ summary: "이진 탐색 트리를 활용한 다양한 자료구조 프로젝트 
 date: 2025-10-14
 type: post
 draft: false
+share: false
 
 image:
   filename: "slide-ds.jpg"

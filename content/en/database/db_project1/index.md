@@ -5,6 +5,7 @@ summary: "Designed and implemented a database system for a website that provides
 
 date: 2025-10-10
 type: post
+share: false
 
 image:
   filename: "db.jpg"
