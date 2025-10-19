@@ -37,9 +37,10 @@ body {
   color: #333333;            /* 텍스트색 */
 }
 
-/* Contact 페이지 본문 영역 배경 통일 */
-.universal-wrapper,
-.page-body,
-.section {
+/* contact 페이지 본문 섹션 배경 덮기 */
+.home-section.wg-contact,
+section[data-block-type="contact"],
+section#contact {
   background-color: #e9fae7 !important;
 }
+
