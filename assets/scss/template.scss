@@ -43,9 +43,14 @@ section[data-block-type="contact"],
 section#contact {
   background-color: #e9fae7 !important;
 }
-// 양쪽 정렬 
-.markdown p {
+
+/* 텍스트 양쪽 정렬 (본문 전체에 적용) */
+.universal-wrapper p,
+.page-body p,
+.article-style p,
+.section p {
   text-align: justify;
   text-justify: inter-word;
   line-height: 1.6;
 }
+
