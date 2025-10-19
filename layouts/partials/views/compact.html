@@ -28,18 +28,21 @@
   {{ $imageFile = (printf "/media/%s" $imageFile) }}
 {{ end }}
 
-<a href="{{ $link }}" class="basic-card" {{ $target | safeHTMLAttr }}>
-  {{ if $imageFile }}
-  <div class="card-image">
-    <img src="{{ $imageFile | relURL }}" alt="{{ $item.Title }}">
-  </div>
-  {{ end }}
+<!-- ✅ grid-item 래퍼 추가 -->
+<div class="grid-item">
+  <a href="{{ $link }}" class="basic-card" {{ $target | safeHTMLAttr }}>
+    {{ if $imageFile }}
+    <div class="card-image">
+      <img src="{{ $imageFile | relURL }}" alt="{{ $item.Title }}">
+    </div>
+    {{ end }}
 
-  <div class="card-body">
-    <h3 class="card-title">{{ $item.Title }}</h3>
-    {{ with $summary }}<p class="card-summary">{{ . }}</p>{{ end }}
-  </div>
-</a>
+    <div class="card-body">
+      <h3 class="card-title">{{ $item.Title }}</h3>
+      {{ with $summary }}<p class="card-summary">{{ . }}</p>{{ end }}
+    </div>
+  </a>
+</div>
 
 <style>
 .basic-card {
@@ -53,12 +56,17 @@
   overflow: hidden;
   text-align: center;
   margin-bottom: 35px;
-  cursor: pointer; /* 클릭 가능하게 커서 변경 */
+  cursor: pointer;
 }
 
 .basic-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+/* ✅ 3열 간격 자연스럽게 보이도록 여백 추가 */
+.grid-item {
+  padding: 10px;
 }
 
 /* 이미지 영역 */
