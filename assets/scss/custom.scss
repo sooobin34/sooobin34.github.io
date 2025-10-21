@@ -47,36 +47,53 @@ body {
   background-color: #e9fae7;
   color: #333333;
 }
-/* ------------------------------- */
-/* 🌞 라이트모드 색상 강제 적용 */
-/* ------------------------------- */
-[data-theme="light"] body,
-[data-theme="light"] header,
-[data-theme="light"] .navbar,
-[data-theme="light"] .home-section,
-[data-theme="light"] .custom-view,
-[data-theme="light"] section {
-  background-color: #e9fae7 !important; /* 연두색 */
-  color: #333333 !important; /* 글자 어둡게 */
+/* 🌞 라이트 모드 */
+html:not([data-theme="dark"]):not(.dark):not(.theme-dark) body,
+html:not([data-theme="dark"]):not(.dark):not(.theme-dark) header,
+html:not([data-theme="dark"]):not(.dark):not(.theme-dark) .navbar,
+html:not([data-theme="dark"]):not(.dark):not(.theme-dark) .home-section,
+html:not([data-theme="dark"]):not(.dark):not(.theme-dark) .custom-view,
+html:not([data-theme="dark"]):not(.dark):not(.theme-dark) section {
+  background-color: #e9fae7 !important;
+  color: #333333 !important;
 }
 
-/* ------------------------------- */
-/* 🌙 다크모드 색상 강제 적용 */
-/* ------------------------------- */
-[data-theme="dark"] body,
-[data-theme="dark"] header,
-[data-theme="dark"] .navbar,
-[data-theme="dark"] .home-section,
-[data-theme="dark"] .custom-view,
-[data-theme="dark"] section {
-  background-color: #1e1e1e !important; /* Hugo 기본 다크 배경 */
-  color: #ffffff !important; /* 흰색 글자 */
-}
-
-/* 🌙 markdown 블록(About Me 같은 부분) 색상 보정 */
-[data-theme="dark"] .home-section.wg-markdown,
-[data-theme="dark"] .home-section.wg-markdown *,
-[data-theme="dark"] .wg-contact,
-[data-theme="dark"] .wg-contact * {
+/* 🌙 다크 모드 */
+html[data-theme="dark"] body,
+html[data-theme="dark"] header,
+html[data-theme="dark"] .navbar,
+html[data-theme="dark"] .home-section,
+html[data-theme="dark"] .custom-view,
+html[data-theme="dark"] section,
+html.dark body,
+html.dark header,
+html.dark .navbar,
+html.dark .home-section,
+html.dark .custom-view,
+html.dark section,
+html.theme-dark body,
+html.theme-dark header,
+html.theme-dark .navbar,
+html.theme-dark .home-section,
+html.theme-dark .custom-view,
+html.theme-dark section {
+  background-color: #1e1e1e !important;
   color: #ffffff !important;
 }
+
+/* 🌙 markdown, contact 블록 글자색 보정 */
+html[data-theme="dark"] .home-section.wg-markdown,
+html[data-theme="dark"] .home-section.wg-markdown *,
+html.dark .home-section.wg-markdown,
+html.dark .home-section.wg-markdown *,
+html.theme-dark .home-section.wg-markdown,
+html.theme-dark .home-section.wg-markdown *,
+html[data-theme="dark"] .wg-contact,
+html[data-theme="dark"] .wg-contact *,
+html.dark .wg-contact,
+html.dark .wg-contact *,
+html.theme-dark .wg-contact,
+html.theme-dark .wg-contact * {
+  color: #ffffff !important;
+}
+
