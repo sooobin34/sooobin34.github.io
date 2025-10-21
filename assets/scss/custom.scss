@@ -31,3 +31,28 @@ button:hover,
   transition: color 0.3s ease;
 }
 
+/* 헤더 */
+header,
+.navbar {
+  background-color: #e9fae7;
+}
+/* 사이트 전체 기본색상 변경 */
+body {
+  background-color: #e9fae7;
+  color: #333333;
+}
+/* 커스텀 섹션 */
+.home-section,
+.custom-view {
+  background-color: #e9fae7;
+  color: #333333;
+}
+/*라이트 모드 전용 색상 적용 */
+:root:not([data-theme="dark"]) header,
+:root:not([data-theme="dark"]) .navbar,
+:root:not([data-theme="dark"]) body,
+:root:not([data-theme="dark"]) .home-section,
+:root:not([data-theme="dark"]) .custom-view {
+  background-color: #e9fae7; /* 연두색 */
+  color: #333333;
+}
