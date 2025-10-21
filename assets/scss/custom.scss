@@ -1,93 +1,45 @@
-// --------------------------------------
-// ✨ 기본 공통 설정
-// --------------------------------------
+// Make page header alignment consistent with widget page header alignment
 .universal-wrapper h1 {
   text-align: center;
 }
+
+// Center the CTA shortcode button
 .cta-group {
   justify-content: center;
 }
 
-/* 버튼 hover */
+
+/* 버튼 Hover (gitbut 버튼) */
 button,
 .btn,
 .btn-primary {
   transition: all 0.3s ease;
 }
+
 button:hover,
 .btn:hover,
 .btn-primary:hover {
-  background-color: #6d78cf;
-  color: #fff;
+  background-color: #6d78cf;  /* 마우스 올리면 파란색 */
+  color: #fff;                /* 글자 흰색 */
   cursor: pointer;
 }
 
-/* 메뉴 hover */
+/* 메뉴 hover 효과 */
 .navbar-nav .nav-item .nav-link:hover,
 .navbar a:hover {
-  color: #1c35f1 !important;
-  transition: color 0.3s ease;
-}
-/* -------------------------------------- */
-/* ✨ 공통 요소 */
-/* -------------------------------------- */
-.universal-wrapper h1 {
-  text-align: center;
-}
-.cta-group {
-  justify-content: center;
-}
-button,
-.btn,
-.btn-primary {
-  transition: all 0.3s ease;
-}
-button:hover,
-.btn:hover,
-.btn-primary:hover {
-  background-color: #6d78cf;
-  color: #fff;
-  cursor: pointer;
-}
-.navbar-nav .nav-item .nav-link:hover,
-.navbar a:hover {
-  color: #1c35f1 !important;
+  color: #1c35f1 !important;  /* hover 시 연한 파랑 */
   transition: color 0.3s ease;
 }
 
-/* -------------------------------------- */
-/* 🌞 라이트 모드 (항상 위쪽에 위치) */
-/* -------------------------------------- */
-:root:not([data-theme="dark"]) body,
-:root:not([data-theme="dark"]) header,
-:root:not([data-theme="dark"]) .navbar,
-:root:not([data-theme="dark"]) .home-section,
-:root:not([data-theme="dark"]) .custom-view,
-:root:not([data-theme="dark"]) section#contact,
-:root:not([data-theme="dark"]) .wg-contact {
+/* 사이트 전체 기본색상 변경 */
+body {
+  background-color: #e9fae7; /* 배경색 */
+  color: #333333;            /* 텍스트색 */
+}
+
+/* 헤더 */
+header,
+.navbar {
   background-color: #e9fae7;
-  color: #333;
 }
 
-/* -------------------------------------- */
-/* 🌙 다크 모드 (항상 라이트 코드 아래에 위치해야 함!) */
-/* -------------------------------------- */
-[data-theme="dark"] body,
-[data-theme="dark"] header,
-[data-theme="dark"] .navbar,
-[data-theme="dark"] .home-section,
-[data-theme="dark"] .custom-view,
-[data-theme="dark"] section#contact,
-[data-theme="dark"] .wg-contact {
-  background-color: #1e1e1e !important;
-  color: #f0f0f0 !important;
-}
-
-/* 🌙 다크 모드 인라인 배경 제거 (Hugo 렌더링 대응) */
-[data-theme="dark"] [style*="background-color:#e9fae7"],
-[data-theme="dark"] [style*="background-color: #e9fae7"],
-[data-theme="dark"] [style*="rgb(233,250,231)"],
-[data-theme="dark"] [style*="rgb(233, 250, 231)"] {
-  background-color: #1e1e1e !important;
-  color: #f0f0f0 !important;
-}
