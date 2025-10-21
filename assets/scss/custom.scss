@@ -47,53 +47,31 @@ body {
   background-color: #e9fae7;
   color: #333333;
 }
-/* 🌞 라이트 모드 */
-html:not([data-theme="dark"]):not(.dark):not(.theme-dark) body,
-html:not([data-theme="dark"]):not(.dark):not(.theme-dark) header,
-html:not([data-theme="dark"]):not(.dark):not(.theme-dark) .navbar,
-html:not([data-theme="dark"]):not(.dark):not(.theme-dark) .home-section,
-html:not([data-theme="dark"]):not(.dark):not(.theme-dark) .custom-view,
-html:not([data-theme="dark"]):not(.dark):not(.theme-dark) section {
-  background-color: #e9fae7 !important;
+/* ------------------------------- */
+/* 🌞 라이트모드 색상 (모든 섹션 연두색) */
+/* ------------------------------- */
+html:not(.dark) section.home-section,
+html:not(.dark) body,
+html:not(.dark) header,
+html:not(.dark) .navbar {
+  background-color: #e9fae7 !important; /* 연두색 */
   color: #333333 !important;
 }
 
-/* 🌙 다크 모드 */
-html[data-theme="dark"] body,
-html[data-theme="dark"] header,
-html[data-theme="dark"] .navbar,
-html[data-theme="dark"] .home-section,
-html[data-theme="dark"] .custom-view,
-html[data-theme="dark"] section,
+/* ------------------------------- */
+/* 🌙 다크모드 색상 (글자 흰색, 배경 어둡게) */
+/* ------------------------------- */
+html.dark section.home-section,
 html.dark body,
 html.dark header,
-html.dark .navbar,
-html.dark .home-section,
-html.dark .custom-view,
-html.dark section,
-html.theme-dark body,
-html.theme-dark header,
-html.theme-dark .navbar,
-html.theme-dark .home-section,
-html.theme-dark .custom-view,
-html.theme-dark section {
+html.dark .navbar {
   background-color: #1e1e1e !important;
   color: #ffffff !important;
 }
 
-/* 🌙 markdown, contact 블록 글자색 보정 */
-html[data-theme="dark"] .home-section.wg-markdown,
-html[data-theme="dark"] .home-section.wg-markdown *,
-html.dark .home-section.wg-markdown,
+/* 🌙 markdown/contact 블록 텍스트 색상 보정 */
 html.dark .home-section.wg-markdown *,
-html.theme-dark .home-section.wg-markdown,
-html.theme-dark .home-section.wg-markdown *,
-html[data-theme="dark"] .wg-contact,
-html[data-theme="dark"] .wg-contact *,
-html.dark .wg-contact,
-html.dark .wg-contact *,
-html.theme-dark .wg-contact,
-html.theme-dark .wg-contact * {
+html.dark .wg-contact * {
   color: #ffffff !important;
 }
 
