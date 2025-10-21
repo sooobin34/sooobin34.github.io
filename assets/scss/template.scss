@@ -1,75 +1,67 @@
-// Make page header alignment consistent with widget page header alignment
+// --------------------------------------
+// ✨ 기본 공통 설정
+// --------------------------------------
 .universal-wrapper h1 {
   text-align: center;
 }
-
-// Center the CTA shortcode button
 .cta-group {
   justify-content: center;
 }
 
-/* 버튼 Hover (gitbut 버튼) */
+/* 버튼 hover */
 button,
 .btn,
 .btn-primary {
   transition: all 0.3s ease;
 }
-
 button:hover,
 .btn:hover,
 .btn-primary:hover {
-  background-color: #6d78cf;  /* 마우스 올리면 파란색 */
-  color: #fff;                /* 글자 흰색 */
+  background-color: #6d78cf;
+  color: #fff;
   cursor: pointer;
 }
 
-/* 메뉴 hover 효과 */
+/* 메뉴 hover */
 .navbar-nav .nav-item .nav-link:hover,
 .navbar a:hover {
-  color: #1c35f1 !important;  /* hover 시 연한 파랑 */
+  color: #1c35f1 !important;
   transition: color 0.3s ease;
 }
 
-/* 🌞 라이트 모드 기본 배경 */
-body {
-  background-color: #e9fae7; /* 기본 연두색 배경 */
-  color: #333333;
-}
-
-/* 🌞 라이트 모드일 때 메인(home)과 커스텀 뷰만 연두색 */
-:not([data-theme="dark"]) .home-section:not(.wg-contact),
-:not([data-theme="dark"]) .custom-view,
+// --------------------------------------
+// 🌞 라이트 모드 스타일
+// --------------------------------------
+:not([data-theme="dark"]) body,
 :not([data-theme="dark"]) header,
-:not([data-theme="dark"]) .navbar {
-  background-color: #e9fae7 !important;
+:not([data-theme="dark"]) .navbar,
+:not([data-theme="dark"]) .home-section,
+:not([data-theme="dark"]) .custom-view,
+:not([data-theme="dark"]) section#contact,
+:not([data-theme="dark"]) .wg-contact {
+  background-color: #e9fae7 !important; /* 연두색 */
   color: #333333 !important;
 }
 
-/* 🌞 라이트 모드 contact 전용 */
-:not([data-theme="dark"]) .home-section.wg-contact,
-:not([data-theme="dark"]) section[data-block-type="contact"],
-:not([data-theme="dark"]) section#contact {
-  background-color: #e9fae7 !important;
-  color: #333333 !important;
-}
-
-/* 🌙 다크모드 - 라이트 색상 무효화 */
+// --------------------------------------
+// 🌙 다크 모드 스타일
+// --------------------------------------
 [data-theme="dark"] body,
 [data-theme="dark"] header,
 [data-theme="dark"] .navbar,
 [data-theme="dark"] .home-section,
 [data-theme="dark"] .custom-view,
-[data-theme="dark"] .wg-contact,
-[data-theme="dark"] section[data-block-type="contact"],
-[data-theme="dark"] section#contact {
-  background-color: inherit !important;
-  color: inherit !important;
+[data-theme="dark"] section#contact,
+[data-theme="dark"] .wg-contact {
+  background-color: #1e1e1e !important; /* Hugo 기본 다크 배경 */
+  color: #f0f0f0 !important;
 }
 
-/* 🌙 인라인 스타일로 연두색 박힌 섹션 무효화 (Hugo 인라인 대응) */
+/* 🌙 인라인 스타일 강제 제거 (Hugo 기본 inline style 무효화) */
 [data-theme="dark"] [style*="background-color:#e9fae7"],
 [data-theme="dark"] [style*="background-color: #e9fae7"],
-[data-theme="dark"] [style*="background-color: rgb(233, 250, 231)"] {
-  background-color: inherit !important;
-  color: inherit !important;
+[data-theme="dark"] [style*="background-color: rgb(233, 250, 231)"],
+[data-theme="dark"] [style*="background-color:rgb(233,250,231)"] {
+  background-color: #1e1e1e !important;
+  color: #f0f0f0 !important;
 }
