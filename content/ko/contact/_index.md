@@ -7,7 +7,7 @@ image:
 
 date: 2025-10-13
 
-type: landing
+type: page
 
 sections:
   - block: contact
