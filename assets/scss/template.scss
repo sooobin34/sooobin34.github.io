@@ -30,21 +30,21 @@ button:hover,
   transition: color 0.3s ease;
 }
 
-/* 사이트 전체 기본색상 변경 (라이트 모드) */
+/* 사이트 전체 기본색상 변경 (라이트 모드 기본) */
 body {
   background-color: #e9fae7; /* 배경색 */
   color: #333333;            /* 텍스트색 */
 }
 
-/* contact 페이지 본문 섹션 배경 (라이트 모드 전용) */
-[data-theme="light"] .home-section.wg-contact,
-[data-theme="light"] section[data-block-type="contact"],
-[data-theme="light"] section#contact {
+/* contact 페이지 본문 섹션 배경 (다크모드가 아닐 때 적용) */
+:not([data-theme="dark"]) .home-section.wg-contact,
+:not([data-theme="dark"]) section[data-block-type="contact"],
+:not([data-theme="dark"]) section#contact {
   background-color: #e9fae7 !important;
   color: #333333 !important;
 }
 
-/* 다크모드일 때 라이트모드 배경색 비활성화 */
+/* 🌙 다크모드일 때 라이트모드 배경색 비활성화 */
 [data-theme="dark"] body,
 [data-theme="dark"] .home-section,
 [data-theme="dark"] footer,
