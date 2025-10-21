@@ -48,7 +48,7 @@ body {
   color: #333333;
 }
 
-/* 🌞 라이트 모드 (dark 클래스 없을 때) */
+/* 라이트 모드 (dark 클래스 없을 때) */
 body:not(.dark),
 body:not(.dark) section.home-section,
 body:not(.dark) header,
@@ -58,7 +58,7 @@ body:not(.dark) .custom-view {
   color: #333333 !important;
 }
 
-/* 🌙 다크 모드 (dark 클래스 있을 때 — 테마 기본 CSS 강제 무시) */
+/* 다크 모드 (dark 클래스 있을 때 — 테마 기본 CSS 강제 무시) */
 body.dark,
 body.dark section.home-section,
 body.dark header,
@@ -71,12 +71,12 @@ body.dark .wg-markdown {
   color: #ffffff !important;
 }
 
-/* 🌙 다크모드: markdown / contact / 기타 모든 요소 텍스트 하양으로 통일 */
+/* 다크모드: markdown / contact / 기타 모든 요소 텍스트 하양으로 통일 */
 body.dark * {
   color: #ffffff !important;
 }
 
-/* 🌙 Hugo 기본 CSS에 남은 라이트모드 스타일 전부 무효화 */
+/* Hugo 기본 CSS에 남은 라이트모드 스타일 전부 무효화 */
 body.dark [style*="background-color:#e9fae7"],
 body.dark [style*="background-color: #e9fae7"],
 body.dark [style*="background-color: rgb(233,250,231)"],
