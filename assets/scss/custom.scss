@@ -30,38 +30,4 @@ button:hover,
   color: #1c35f1 !important;  /* hover 시 연한 파랑 */
   transition: color 0.3s ease;
 }
-/* 헤더 */
-header,
-.navbar {
-  background-color: #e9fae7;
-}
-/* 사이트 전체 기본색상 변경 */
-body {
-  background-color: #e9fae7; /* 배경색 */
-  color: #333333;            /* 텍스트색 */
-}
-
-/* 커스텀 섹션(뷰) 배경색 바꾸기 */
-.home-section,
-.custom-view {
-  background-color: #e9fae7; /* 연두색 */
-  color: #333333;            /* 텍스트색 */
-}
-
-/* 🌙 다크모드에서 markdown 블록 텍스트 색상 보정 */
-[data-theme="dark"] .home-section.wg-markdown,
-[data-theme="dark"] .home-section.wg-markdown *,
-[data-theme="dark"] .wg-contact,
-[data-theme="dark"] .wg-contact * {
-  color: #ffffff !important; /* 다크모드 글자색 흰색으로 강제 */
-}
-
-/* 🌙 다크모드에서 markdown 인라인 스타일 무효화 */
-[data-theme="dark"] .home-section.wg-markdown[style*="color:#333"],
-[data-theme="dark"] .home-section.wg-markdown[style*="color: #333"],
-[data-theme="dark"] .home-section.wg-markdown[style*="color:#333333"],
-[data-theme="dark"] .home-section.wg-markdown[style*="color: #333333"] {
-  color: #ffffff !important;
-}
-
 
