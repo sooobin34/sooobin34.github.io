@@ -47,31 +47,42 @@ body {
   background-color: #e9fae7;
   color: #333333;
 }
-/* ------------------------------- */
-/* 🌞 라이트모드 색상 (모든 섹션 연두색) */
-/* ------------------------------- */
-html:not(.dark) section.home-section,
-html:not(.dark) body,
-html:not(.dark) header,
-html:not(.dark) .navbar {
+
+/* 🌞 라이트 모드 (dark 클래스 없을 때) */
+body:not(.dark),
+body:not(.dark) section.home-section,
+body:not(.dark) header,
+body:not(.dark) .navbar,
+body:not(.dark) .custom-view {
   background-color: #e9fae7 !important; /* 연두색 */
   color: #333333 !important;
 }
 
-/* ------------------------------- */
-/* 🌙 다크모드 색상 (글자 흰색, 배경 어둡게) */
-/* ------------------------------- */
-html.dark section.home-section,
-html.dark body,
-html.dark header,
-html.dark .navbar {
+/* 🌙 다크 모드 (dark 클래스 있을 때 — 테마 기본 CSS 강제 무시) */
+body.dark,
+body.dark section.home-section,
+body.dark header,
+body.dark .navbar,
+body.dark .custom-view,
+body.dark section[data-block-type],
+body.dark .wg-contact,
+body.dark .wg-markdown {
   background-color: #1e1e1e !important;
   color: #ffffff !important;
 }
 
-/* 🌙 markdown/contact 블록 텍스트 색상 보정 */
-html.dark .home-section.wg-markdown *,
-html.dark .wg-contact * {
+/* 🌙 다크모드: markdown / contact / 기타 모든 요소 텍스트 하양으로 통일 */
+body.dark * {
   color: #ffffff !important;
 }
 
+/* 🌙 Hugo 기본 CSS에 남은 라이트모드 스타일 전부 무효화 */
+body.dark [style*="background-color:#e9fae7"],
+body.dark [style*="background-color: #e9fae7"],
+body.dark [style*="background-color: rgb(233,250,231)"],
+body.dark [style*="color:#333"],
+body.dark [style*="color:#333333"],
+body.dark [style*="color: #333333"] {
+  background-color: #1e1e1e !important;
+  color: #ffffff !important;
+}
