@@ -36,11 +36,12 @@ body {
   color: #333333;            /* 텍스트색 */
 }
 
-/* contact 페이지 본문 섹션 배경 덮기 (라이트 모드용) */
-.home-section.wg-contact,
-section[data-block-type="contact"],
-section#contact {
+/* contact 페이지 본문 섹션 배경 (라이트 모드 전용) */
+[data-theme="light"] .home-section.wg-contact,
+[data-theme="light"] section[data-block-type="contact"],
+[data-theme="light"] section#contact {
   background-color: #e9fae7 !important;
+  color: #333333 !important;
 }
 
 /* 다크모드일 때 라이트모드 배경색 비활성화 */
@@ -50,6 +51,6 @@ section#contact {
 [data-theme="dark"] .wg-contact,
 [data-theme="dark"] section[data-block-type="contact"],
 [data-theme="dark"] section#contact {
-  background-color: inherit !important;  /* 상위(테마)의 기본 어두운 색을 따름 */
+  background-color: inherit !important;  /* 테마의 어두운색 유지 */
   color: inherit !important;             /* 글자색도 테마 기본값 유지 */
 }
