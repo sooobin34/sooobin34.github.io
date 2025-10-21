@@ -28,24 +28,23 @@ button:hover,
   color: #1c35f1 !important;
   transition: color 0.3s ease;
 }
+/* -------------------------------------- */
 /* 🌞 라이트 모드 */
+/* -------------------------------------- */
 :root:not([data-theme="dark"]) body,
 :root:not([data-theme="dark"]) header,
 :root:not([data-theme="dark"]) .navbar,
-:root:not([data-theme="dark"]) .home-section:not(.wg-contact),
-:root:not([data-theme="dark"]) .custom-view {
+:root:not([data-theme="dark"]) .home-section,
+:root:not([data-theme="dark"]) .custom-view,
+:root:not([data-theme="dark"]) section#contact,
+:root:not([data-theme="dark"]) .wg-contact {
   background-color: #e9fae7;
   color: #333;
 }
 
-/* 🌞 라이트 모드 Contact 섹션만 인라인 스타일 무시 */
-:root:not([data-theme="dark"]) .wg-contact,
-:root:not([data-theme="dark"]) section#contact {
-  background-color: #e9fae7 !important; /* 인라인 때문에만 강제 */
-  color: #333;
-}
-
+/* -------------------------------------- */
 /* 🌙 다크 모드 */
+/* -------------------------------------- */
 [data-theme="dark"] body,
 [data-theme="dark"] header,
 [data-theme="dark"] .navbar,
@@ -53,13 +52,16 @@ button:hover,
 [data-theme="dark"] .custom-view,
 [data-theme="dark"] section#contact,
 [data-theme="dark"] .wg-contact {
-  background-color: inherit;
-  color: inherit;
+  background-color: #1e1e1e;
+  color: #f0f0f0;
 }
 
-/* 🌙 다크모드에서 라이트 인라인 배경만 제거 */
-[data-theme="dark"] [style*="background-color:#e9fae7"],
-[data-theme="dark"] [style*="rgb(233,250,231)"] {
-  background-color: inherit !important;
-  color: inherit !important;
+/* 🌙 다크모드에서 라이트 색 인라인 스타일 무효화 (가장 중요한 부분) */
+[data-theme="dark"] section[style*="background-color"],
+[data-theme="dark"] div[style*="background-color"],
+[data-theme="dark"] .home-section[style],
+[data-theme="dark"] .wg-contact[style],
+[data-theme="dark"] section#contact[style] {
+  background-color: #1e1e1e !important; /* 어두운 배경으로 강제 */
+  color: #f0f0f0 !important;
 }
