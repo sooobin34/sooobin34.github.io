@@ -30,11 +30,15 @@ button:hover,
   color: #1c35f1 !important;  /* hover 시 연한 파랑 */
   transition: color 0.3s ease;
 }
-
+/* 헤더 */
+header,
+.navbar {
+  background-color: #e9fae7;
+}
 /* 사이트 전체 기본색상 변경 */
 body {
   background-color: #e9fae7; /* 배경색 */
-  color: #333333;            /* 텍스트색 */
+  //color: #333333;            /* 텍스트색 */
 }
 
 /* 커스텀 섹션(뷰) 배경색 바꾸기 */
