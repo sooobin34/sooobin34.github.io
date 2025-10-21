@@ -28,9 +28,24 @@ button:hover,
   color: #1c35f1 !important;
   transition: color 0.3s ease;
 }
-// --------------------------------------
-// 🌙 다크 모드 스타일
-// --------------------------------------
+/* 🌞 라이트 모드 */
+:root:not([data-theme="dark"]) body,
+:root:not([data-theme="dark"]) header,
+:root:not([data-theme="dark"]) .navbar,
+:root:not([data-theme="dark"]) .home-section:not(.wg-contact),
+:root:not([data-theme="dark"]) .custom-view {
+  background-color: #e9fae7;
+  color: #333;
+}
+
+/* 🌞 라이트 모드 Contact 섹션만 인라인 스타일 무시 */
+:root:not([data-theme="dark"]) .wg-contact,
+:root:not([data-theme="dark"]) section#contact {
+  background-color: #e9fae7 !important; /* 인라인 때문에만 강제 */
+  color: #333;
+}
+
+/* 🌙 다크 모드 */
 [data-theme="dark"] body,
 [data-theme="dark"] header,
 [data-theme="dark"] .navbar,
@@ -38,30 +53,13 @@ button:hover,
 [data-theme="dark"] .custom-view,
 [data-theme="dark"] section#contact,
 [data-theme="dark"] .wg-contact {
-  background-color: #1e1e1e ; /* Hugo 기본 다크 배경 */
-  color: #f0f0f0 ;
-}
-// --------------------------------------
-// 🌞 라이트 모드 스타일
-// --------------------------------------
-:not([data-theme="dark"]) body,
-:not([data-theme="dark"]) header,
-:not([data-theme="dark"]) .navbar,
-:not([data-theme="dark"]) .home-section,
-:not([data-theme="dark"]) .custom-view,
-:not([data-theme="dark"]) section#contact,
-:not([data-theme="dark"]) .wg-contact {
-  background-color: #e9fae7; /* 연두색 */
-  color: #333333 ;
+  background-color: inherit;
+  color: inherit;
 }
 
-
-
-/* 🌙 인라인 스타일 강제 제거 (Hugo 기본 inline style 무효화) */
+/* 🌙 다크모드에서 라이트 인라인 배경만 제거 */
 [data-theme="dark"] [style*="background-color:#e9fae7"],
-[data-theme="dark"] [style*="background-color: #e9fae7"],
-[data-theme="dark"] [style*="background-color: rgb(233, 250, 231)"],
-[data-theme="dark"] [style*="background-color:rgb(233,250,231)"] {
-  background-color: #1e1e1e ;
-  color: #f0f0f0 ;
+[data-theme="dark"] [style*="rgb(233,250,231)"] {
+  background-color: inherit !important;
+  color: inherit !important;
 }
