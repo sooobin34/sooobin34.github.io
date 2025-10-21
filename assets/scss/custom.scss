@@ -43,3 +43,18 @@ header,
   background-color: #e9fae7;
 }
 
+/* 🌞 라이트 모드일 때만 contact 색상 적용 */
+:root:not([data-theme="dark"]) .home-section.wg-contact,
+:root:not([data-theme="dark"]) section[data-block-type="contact"],
+:root:not([data-theme="dark"]) section#contact {
+  background-color: #e9fae7 !important;
+  color: #333333;
+}
+
+/* 🌙 다크 모드일 때 contact 색상 제거 (기본 어두운 배경) */
+[data-theme="dark"] .home-section.wg-contact,
+[data-theme="dark"] section[data-block-type="contact"],
+[data-theme="dark"] section#contact {
+  background-color: inherit !important;
+  color: inherit !important;
+}
