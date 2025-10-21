@@ -38,8 +38,8 @@ button:hover,
 [data-theme="dark"] .custom-view,
 [data-theme="dark"] section#contact,
 [data-theme="dark"] .wg-contact {
-  background-color: #1e1e1e !important; /* Hugo 기본 다크 배경 */
-  color: #f0f0f0 !important;
+  background-color: #1e1e1e ; /* Hugo 기본 다크 배경 */
+  color: #f0f0f0 ;
 }
 // --------------------------------------
 // 🌞 라이트 모드 스타일
@@ -51,8 +51,8 @@ button:hover,
 :not([data-theme="dark"]) .custom-view,
 :not([data-theme="dark"]) section#contact,
 :not([data-theme="dark"]) .wg-contact {
-  background-color: #e9fae7 !important; /* 연두색 */
-  color: #333333 !important;
+  background-color: #e9fae7; /* 연두색 */
+  color: #333333 ;
 }
 
 
@@ -62,6 +62,6 @@ button:hover,
 [data-theme="dark"] [style*="background-color: #e9fae7"],
 [data-theme="dark"] [style*="background-color: rgb(233, 250, 231)"],
 [data-theme="dark"] [style*="background-color:rgb(233,250,231)"] {
-  background-color: #1e1e1e !important;
-  color: #f0f0f0 !important;
+  background-color: #1e1e1e ;
+  color: #f0f0f0 ;
 }
