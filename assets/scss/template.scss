@@ -36,13 +36,21 @@ body {
   color: #333333;            /* 텍스트색 */
 }
 
-/* 다크모드일 때 라이트모드 배경색 비활성화 */
-[data-theme="dark"] body,
-[data-theme="dark"] .home-section,
-[data-theme="dark"] footer,
-[data-theme="dark"] .wg-contact,
-[data-theme="dark"] section[data-block-type="contact"],
-[data-theme="dark"] section#contact {
-  background-color: inherit !important;  /* 테마의 어두운색 유지 */
-  color: inherit !important;             /* 글자색도 테마 기본값 유지 */
+/* 라이트 모드일 때 contact 색상 적용 */
+:not([data-theme="dark"]) section#contact,
+:not([data-theme="dark"]) .home-section.wg-contact,
+:not([data-theme="dark"]) section[data-block-type="contact"] {
+  background-color: #e9fae7 !important; /* 연두색 */
+  color: #333333 !important;
+}
+
+/*다크모드일 때 contact 색상 제거 (기본 Hugo 어두운색 사용) */
+[data-theme="dark"] [style*="background-color:#e9fae7"],
+[data-theme="dark"] [style*="background-color: #e9fae7"],
+[data-theme="dark"] [style*="background-color: rgb(233, 250, 231)"],
+[data-theme="dark"] section#contact,
+[data-theme="dark"] .home-section.wg-contact,
+[data-theme="dark"] section[data-block-type="contact"] {
+  background-color: inherit !important;
+  color: inherit !important;
 }
