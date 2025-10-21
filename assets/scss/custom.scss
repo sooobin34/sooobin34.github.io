@@ -29,7 +29,34 @@ button:hover,
   transition: color 0.3s ease;
 }
 /* -------------------------------------- */
-/* 🌞 라이트 모드 */
+/* ✨ 공통 요소 */
+/* -------------------------------------- */
+.universal-wrapper h1 {
+  text-align: center;
+}
+.cta-group {
+  justify-content: center;
+}
+button,
+.btn,
+.btn-primary {
+  transition: all 0.3s ease;
+}
+button:hover,
+.btn:hover,
+.btn-primary:hover {
+  background-color: #6d78cf;
+  color: #fff;
+  cursor: pointer;
+}
+.navbar-nav .nav-item .nav-link:hover,
+.navbar a:hover {
+  color: #1c35f1 !important;
+  transition: color 0.3s ease;
+}
+
+/* -------------------------------------- */
+/* 🌞 라이트 모드 (항상 위쪽에 위치) */
 /* -------------------------------------- */
 :root:not([data-theme="dark"]) body,
 :root:not([data-theme="dark"]) header,
@@ -43,7 +70,7 @@ button:hover,
 }
 
 /* -------------------------------------- */
-/* 🌙 다크 모드 */
+/* 🌙 다크 모드 (항상 라이트 코드 아래에 위치해야 함!) */
 /* -------------------------------------- */
 [data-theme="dark"] body,
 [data-theme="dark"] header,
@@ -52,16 +79,15 @@ button:hover,
 [data-theme="dark"] .custom-view,
 [data-theme="dark"] section#contact,
 [data-theme="dark"] .wg-contact {
-  background-color: #1e1e1e;
-  color: #f0f0f0;
+  background-color: #1e1e1e !important;
+  color: #f0f0f0 !important;
 }
 
-/* 🌙 다크모드에서 라이트 색 인라인 스타일 무효화 (가장 중요한 부분) */
-[data-theme="dark"] section[style*="background-color"],
-[data-theme="dark"] div[style*="background-color"],
-[data-theme="dark"] .home-section[style],
-[data-theme="dark"] .wg-contact[style],
-[data-theme="dark"] section#contact[style] {
-  background-color: #1e1e1e !important; /* 어두운 배경으로 강제 */
+/* 🌙 다크 모드 인라인 배경 제거 (Hugo 렌더링 대응) */
+[data-theme="dark"] [style*="background-color:#e9fae7"],
+[data-theme="dark"] [style*="background-color: #e9fae7"],
+[data-theme="dark"] [style*="rgb(233,250,231)"],
+[data-theme="dark"] [style*="rgb(233, 250, 231)"] {
+  background-color: #1e1e1e !important;
   color: #f0f0f0 !important;
 }
