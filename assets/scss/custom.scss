@@ -38,7 +38,7 @@ header,
 /* 사이트 전체 기본색상 변경 */
 body {
   background-color: #e9fae7; /* 배경색 */
-  //color: #333333;            /* 텍스트색 */
+  color: #333333;            /* 텍스트색 */
 }
 
 /* 커스텀 섹션(뷰) 배경색 바꾸기 */
@@ -48,11 +48,20 @@ body {
   color: #333333;            /* 텍스트색 */
 }
 
-/* 🌙 다크모드 텍스트 색상 보정 */
-[data-theme="dark"] .home-section,
-[data-theme="dark"] .home-section p,
-[data-theme="dark"] .home-section a,
-[data-theme="dark"] .home-section strong,
-[data-theme="dark"] .home-section em {
-  color: #ffffff !important; /* 하얀색으로 변경 */
+/* 🌙 다크모드에서 markdown 블록 텍스트 색상 보정 */
+[data-theme="dark"] .home-section.wg-markdown,
+[data-theme="dark"] .home-section.wg-markdown *,
+[data-theme="dark"] .wg-contact,
+[data-theme="dark"] .wg-contact * {
+  color: #ffffff !important; /* 다크모드 글자색 흰색으로 강제 */
 }
+
+/* 🌙 다크모드에서 markdown 인라인 스타일 무효화 */
+[data-theme="dark"] .home-section.wg-markdown[style*="color:#333"],
+[data-theme="dark"] .home-section.wg-markdown[style*="color: #333"],
+[data-theme="dark"] .home-section.wg-markdown[style*="color:#333333"],
+[data-theme="dark"] .home-section.wg-markdown[style*="color: #333333"] {
+  color: #ffffff !important;
+}
+
+
