@@ -47,3 +47,12 @@ body {
   background-color: #e9fae7; /* 연두색 */
   color: #333333;            /* 텍스트색 */
 }
+
+/* 🌙 다크모드 텍스트 색상 보정 */
+[data-theme="dark"] .home-section,
+[data-theme="dark"] .home-section p,
+[data-theme="dark"] .home-section a,
+[data-theme="dark"] .home-section strong,
+[data-theme="dark"] .home-section em {
+  color: #ffffff !important; /* 하얀색으로 변경 */
+}
