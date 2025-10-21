@@ -119,6 +119,6 @@ sections:
         🌐 **GitHub:** [sooobin34](https://github.com/sooobin34)
     design:
       alignment: center
-      background:
-        color: "#e9fae7"
+      #background:
+      #  color: "#e9fae7"
 ---
